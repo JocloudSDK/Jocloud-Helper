@@ -1,0 +1,37 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+#source 'https://github.com/yyqapm/specs.git'
+source 'http://git.yy.com/ci_team/Specs.git' # 对外请放开外网source删除该内网source
+
+# 本地仓库
+def LocalPod()
+  pod 'baseui',                 :path => 'baseui'
+  pod 'utils',                  :path => 'utils'
+  pod 'common',                 :path => 'common'
+  pod 'interfaces',             :path => 'interfaces'
+  pod 'jly_rtc',                :path => 'jly_rtc'
+#  pod 'jly_rts',                :path => 'jly_rts'
+end
+
+# 本地模块仓库
+def ModulePod()
+  pod 'jly_logcat',             :path => 'jly_logcat'
+  pod 'feedback',               :path => 'feedback'
+  pod 'video_samechannel',      :path => 'video_samechannel'
+#  pod 'video_crosschannel',     :path => 'video_crosschannel'
+end
+
+# 三方仓库
+def ThirdPod()
+  pod 'IQKeyboardManager',            '6.4.0'
+  pod 'Hummer', '3.2.0'
+  pod 'Masonry',                      '~> 1.1'
+end
+
+target 'app' do
+  LocalPod()
+  ModulePod()
+  ThirdPod()
+end

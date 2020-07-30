@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_cross_local_push"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/blue_btn_selector"
+        android:enabled="false"
+        android:gravity="center_horizontal"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:text="@string/cross_local_start_push"
+        android:textColor="@drawable/blue_button_txt_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_cross_local_rid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline15" />
+
+    <EditText
+        android:id="@+id/et_cross_local_rid"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/cross_input_bg"
+        android:digits="1234567890"
+        android:gravity="left|center"
+        android:maxLength="8"
+        android:hint="@string/cross_local_roomid_hint"
+        android:inputType="phone|number"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="#272E44"
+        android:textColorHint="#CBCBCB"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cross_local_rid" />
+
+    <EditText
+        android:id="@+id/et_cross_local_uid"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/cross_input_bg"
+        android:digits="1234567890"
+        android:gravity="left|center"
+        android:importantForAutofill="no"
+        android:inputType="phone|number"
+        android:maxLength="6"
+        android:singleLine="true"
+        android:windowSoftInputMode="adjustPan|stateVisible"
+        android:hint="@string/cross_local_uid_hint"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:textColor="#272E44"
+        android:textColorHint="#CBCBCB"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cross_local_uid" />
+
+    <ImageView
+        android:id="@+id/iv_clear_local_rid"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="6dp"
+        android:src="@mipmap/ic_cross_clean"
+        app:layout_constraintBottom_toBottomOf="@+id/et_cross_local_rid"
+        app:layout_constraintEnd_toEndOf="@+id/et_cross_local_rid"
+        app:layout_constraintTop_toTopOf="@+id/et_cross_local_rid" />
+
+    <ImageView
+        android:id="@+id/iv_clear_local_uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:src="@mipmap/ic_cross_clean"
+        app:layout_constraintBottom_toBottomOf="@+id/et_cross_local_uid"
+        app:layout_constraintEnd_toEndOf="@+id/et_cross_local_uid"
+        app:layout_constraintTop_toTopOf="@+id/et_cross_local_uid" />
+
+    <TextView
+        android:id="@+id/tv_cross_local_rid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/cross_local_roomid"
+        android:textColor="#858585"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cross_local_uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/cross_local_uid"
+        android:textColor="#858585"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.67" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="text_same_channel_mutil_video">同房间多人连麦</string>
+    <string name="text_uid">UID</string>
+    <string name="text_room_id">Room ID</string>
+    <string name="text_start_publish">开播</string>
+    <string name="text_stop_publish">关播</string>
+    <string name="text_hint_et_uid">最多6位数字</string>
+    <string name="text_hint_et_room_id">最多8位数字</string>
+    <string name="text_input_correct_uid">请输入正确的uid</string>
+    <string name="text_only_number">只支持纯数字,不可输入特殊字符</string>
+    <string name="text_local_preview">本地预览/</string>
+    <string name="text_start_publish_success">开播成功</string>
+    <string name="text_end_live_success">关播成功</string>
+
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Jocloud</string>
+    <string name="main_title_tips">Professional Real-Time Streaming Services</string>
+
+    <string name="main_q_start_tips">Quick Start</string>
+
+    <string name="main_base_fun_tips">Basic usage of Media and Signalling SDK</string>
+    <string name="main_video_tips">Advanced Usage of Thunderbolt</string>
+    <string name="main_video_sub_tips">Portrail/landscape, screensharing, media extra info, etc</string>
+    <string name="main_audio_tips">Advanced Usage of Thunder</string>
+    <string name="main_audio_sub_tips">Voice changer, accompany, reverb, record, in-ear monitor, etc</string>
+    <string name="main_msg_tips">Real-Time Signalling</string>
+    <string name="main_msg_sub_tips">Room/P2P message, room/user attribute management, etc</string>
+    <string name="main_mix_video_tips">CDN Streaming</string>
+    <string name="main_mix_video_sub_tips">Pull/push stream, picture mixing, etc</string>
+    <string name="main_cr_channel_tips">Cross-Room Video Call</string>
+    <string name="main_sa_channel_tips">Multi-User Video Call</string>
+    <string name="main_features_not_implemented">Not Implemented</string>
+
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="loading_progress">Loading...</string>
+    <string name="text_title">title</string>
+
+    <string name="confirm_logout_scenario">Logging out from current scenario?</string>
+
+    <string name="ok">Yes</string>
+    <string name="confirm_cancel">No</string>
+
+    <string name="main_funs_tips">Sample APP to Integrate APIs of Aivacom SDKs</string>
+
+    <string name="network_error">Network error</string>
+
+    <string name="title_api">api</string>
+</resources>

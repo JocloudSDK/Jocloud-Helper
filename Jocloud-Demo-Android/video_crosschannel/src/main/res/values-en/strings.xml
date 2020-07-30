@@ -1,0 +1,60 @@
+<resources>
+    <string name="cross_channel">Cross-Room Video Call</string>
+
+    //video
+    <string name="cross_local_preview_txt">Preview</string>
+    <string name="cross_remote_subcribe_txt">Remote</string>
+    <string name="cross_up_bitrate">Upload：%1d kbps  A：%2d kbps  V：%3d kbps</string>
+    <string name="cross_down_bitrate">Download：%1d kbps  A：%2d kbps  V：%3d kbps</string>
+
+    //local
+    <string name="cross_local_uid">Local UID</string>
+    <string name="cross_local_roomid">Local Room ID</string>
+    <string name="cross_local_start_push">Go Live</string>
+    <string name="cross_local_stop_push">End</string>
+    <string name="cross_local_uid_hint">Up to 6 digits</string>
+    <string name="cross_local_roomid_hint">Up to 8 digits</string>
+
+    //remote
+    <string name="cross_remote_uid">Remote UID</string>
+    <string name="cross_remote_roomid">Remote Room ID</string>
+    <string name="cross_remote_subscribe">Connect</string>
+    <string name="cross_remote_unsubscribe">Disconnect</string>
+    <string name="cross_remote_uid_hint">Up to 6 digits</string>
+    <string name="cross_remote_roomid_hint">Up to 8 digits</string>
+
+    //Push
+    <string name="cross_stream_url">Up-stream URL</string>
+    <string name="cross_stream_hint">rtmp://</string>
+    <string name="cross_push_stream">Push</string>
+    <string name="cross_stop_push_stream">Stop</string>
+
+    //toast
+    <string name="cross_toast_live_succeed">Go live successfully</string>
+    <string name="cross_toast_joinroom_faild">Failed to join room</string>
+    <string name="cross_toast_end_live_succeed">End live successfully</string>
+    <string name="cross_toast_subcribe_succeed">1v1 video call connected</string>
+    <string name="cross_toast_subcribe_timeout">1v1 video call request timeout</string>
+    <string name="cross_refuse">1v1 video call rejected</string>
+    <string name="cross_call_end">1v1 video call ended</string>
+    <string name="cross_call_ended_abnormally">1v1 video call ended abnormally</string><!--异常情况下断开连麦-->
+    <string name="cross_push_succeed">Push stream successfully</string>
+    <string name="cross_push_faild">Failed to push stream. Please confirm the upstream address is correct.</string>
+    <string name="cross_push_stoped">Stop stream successfully</string>
+    <string name="confirm_invite_one2one_call">1v1 video call with %1d ?</string>
+    <string name="confirm_refuse_one2one_call">Reject</string>
+    <string name="confirm_agree_one2one_call">Accept</string>
+    <string name="confirm_logout_yes">Yes</string>
+    <string name="confirm_logout_no">No</string>
+    <string name="cross_loading">Loading</string>
+    <string name="cross_waitting_remote">Request time out &#160; </string>
+    <string name="cross_toast_busy">Remote user is not available. Please try again later.</string>
+
+    <string name="cross_toast_cant_same_room">Please enter another Room ID</string>
+    <string name="cross_toast_end_live">Please end live first</string>
+    <string name="cross_toast_end_1v1call">Please end 1v1 call and stop pushing stream first</string>
+    <string name="cross_toast_invalid_url">Invalid URL:</string>
+
+    <string name="cross_doc_title">doc</string>
+
+</resources>

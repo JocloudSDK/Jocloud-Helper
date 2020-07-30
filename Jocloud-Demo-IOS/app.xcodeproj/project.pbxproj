@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27205AC0249B1AD300A11AA4 /* CrossChannelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27205AB6249B1AD300A11AA4 /* CrossChannelController.m */; };
+		27205AC1249B1AD300A11AA4 /* CrossChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27205AB7249B1AD300A11AA4 /* CrossChannelView.m */; };
+		27205AC2249B1AD300A11AA4 /* HummerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27205AB8249B1AD300A11AA4 /* HummerManager.m */; };
+		27205AC3249B1AD300A11AA4 /* CrossLiveItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27205ABA249B1AD300A11AA4 /* CrossLiveItemView.m */; };
+		27205AC4249B1AD300A11AA4 /* CrossLiveUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27205ABF249B1AD300A11AA4 /* CrossLiveUserModel.m */; };
+		275B449824850ACE00EDF5D2 /* QuickStartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B449624850ACE00EDF5D2 /* QuickStartCell.m */; };
+		275B449924850ACE00EDF5D2 /* QuickStartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 275B449724850ACE00EDF5D2 /* QuickStartCell.xib */; };
+		275B44C4248601D400EDF5D2 /* OtherMoudleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B44C2248601D400EDF5D2 /* OtherMoudleCell.m */; };
+		275B44C5248601D400EDF5D2 /* OtherMoudleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 275B44C3248601D400EDF5D2 /* OtherMoudleCell.xib */; };
+		279F7DFE247FB3B90003BF7F /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279F7DFC247FB3B90003BF7F /* HomeController.m */; };
+		27D647A6248F9BE500DDB88C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27D647A8248F9BE500DDB88C /* InfoPlist.strings */; };
+		27EEE23E247E191800ABDE5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EEE23D247E191800ABDE5C /* AppDelegate.m */; };
+		27EEE241247E191800ABDE5C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EEE240247E191800ABDE5C /* SceneDelegate.m */; };
+		27EEE247247E191800ABDE5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27EEE245247E191800ABDE5C /* Main.storyboard */; };
+		27EEE249247E191A00ABDE5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27EEE248247E191A00ABDE5C /* Assets.xcassets */; };
+		27EEE24C247E191A00ABDE5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27EEE24A247E191A00ABDE5C /* LaunchScreen.storyboard */; };
+		27EEE24F247E191A00ABDE5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EEE24E247E191A00ABDE5C /* main.m */; };
+		5BC1BBD024B46D6700E397D7 /* VideoLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC1BBCD24B46D6600E397D7 /* VideoLiveViewController.xib */; };
+		5BC1BBD124B46D6700E397D7 /* VideoLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC1BBCE24B46D6600E397D7 /* VideoLiveViewController.m */; };
+		5BC1BBD624B46F0F00E397D7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC1BBD524B46F0F00E397D7 /* BaseViewController.m */; };
+		5BC1BBDA24B470C500E397D7 /* VideoLiveBroadcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC1BBD824B470C500E397D7 /* VideoLiveBroadcastViewController.m */; };
+		5BC1BBDF24B5728800E397D7 /* LiveFunctionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC1BBDE24B5728800E397D7 /* LiveFunctionView.m */; };
+		5BC1BBE124B572A900E397D7 /* LiveFunctionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC1BBE024B572A900E397D7 /* LiveFunctionView.xib */; };
+		5BC1BBE524B5773F00E397D7 /* LiveFunctionCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC1BBE324B5773F00E397D7 /* LiveFunctionCollectionViewCell.m */; };
+		5BC1BBE624B5773F00E397D7 /* LiveFunctionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC1BBE424B5773F00E397D7 /* LiveFunctionCollectionViewCell.xib */; };
+		5BC1BBEF24B5C83900E397D7 /* VideoLiveBroadcastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC1BBEE24B5C83900E397D7 /* VideoLiveBroadcastViewController.xib */; };
+		5BD3515B24C6DDA1000D4564 /* AudioToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD3515A24C6DDA1000D4564 /* AudioToolBarView.m */; };
+		5BED910224C15722000B2A22 /* JYLFunctionAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BED910124C15722000B2A22 /* JYLFunctionAlertView.m */; };
+		5BED910424C15735000B2A22 /* JYLFunctionAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BED910324C15735000B2A22 /* JYLFunctionAlertView.xib */; };
+		5BED910824C165C8000B2A22 /* JYLNormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BED910624C165C8000B2A22 /* JYLNormalTableViewCell.m */; };
+		5BED910924C165C8000B2A22 /* JYLNormalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BED910724C165C8000B2A22 /* JYLNormalTableViewCell.xib */; };
+		5BED910D24C165E3000B2A22 /* JYLButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BED910B24C165E3000B2A22 /* JYLButtonTableViewCell.m */; };
+		5BED910E24C165E3000B2A22 /* JYLButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BED910C24C165E3000B2A22 /* JYLButtonTableViewCell.xib */; };
+		5BFD987E24B7135B00E18897 /* AudioLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD987C24B7135B00E18897 /* AudioLiveViewController.m */; };
+		5BFD987F24B7135B00E18897 /* AudioLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BFD987D24B7135B00E18897 /* AudioLiveViewController.xib */; };
+		5BFD988324B84CBF00E18897 /* AudioLiveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD988124B84CBF00E18897 /* AudioLiveTableViewCell.m */; };
+		5BFD988424B84CBF00E18897 /* AudioLiveTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BFD988224B84CBF00E18897 /* AudioLiveTableViewCell.xib */; };
+		5BFD988824B84E4900E18897 /* JYLChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD988624B84E4900E18897 /* JYLChatRoomViewController.m */; };
+		5BFD988924B84E4900E18897 /* JYLChatRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BFD988724B84E4900E18897 /* JYLChatRoomViewController.xib */; };
+		5BFD989024B8540C00E18897 /* LivePublicTalkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BFD988C24B8540C00E18897 /* LivePublicTalkCell.xib */; };
+		5BFD989124B8540C00E18897 /* LivePublicTalkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD988D24B8540C00E18897 /* LivePublicTalkCell.m */; };
+		5BFD989524BC67B300E18897 /* LiveFunctionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD989424BC67B300E18897 /* LiveFunctionModel.m */; };
+		5BFD989824BDBCC000E18897 /* AuidoUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD989724BDBCC000E18897 /* AuidoUserModel.m */; };
+		5BFD98C324BEDF5200E18897 /* WhineCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD98C124BEDF5200E18897 /* WhineCollectionViewCell.m */; };
+		5BFD98C424BEDF5200E18897 /* WhineCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BFD98C224BEDF5200E18897 /* WhineCollectionViewCell.xib */; };
+		5BFD98C724BEE94500E18897 /* LiveWhineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD98C624BEE94500E18897 /* LiveWhineView.m */; };
+		5BFD98C924BEE96700E18897 /* LiveWhineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BFD98C824BEE96700E18897 /* LiveWhineView.xib */; };
+		5BFD98D624C02C5C00E18897 /* LivePublicTalkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD98D524C02C5C00E18897 /* LivePublicTalkView.m */; };
+		5BFD98D824C02C7D00E18897 /* LivePublicTalkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BFD98D724C02C7D00E18897 /* LivePublicTalkView.xib */; };
+		5BFD98DC24C0435500E18897 /* LiveUserListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD98D924C0435500E18897 /* LiveUserListView.m */; };
+		5BFD98DD24C0435500E18897 /* LiveUserListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BFD98DA24C0435500E18897 /* LiveUserListView.xib */; };
+		79EC4D5E24B9A57E0046A50F /* VideoLiveHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4D5C24B9A57D0046A50F /* VideoLiveHomeTableViewCell.m */; };
+		79EC4D5F24B9A57E0046A50F /* VideoLiveHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79EC4D5D24B9A57E0046A50F /* VideoLiveHomeTableViewCell.xib */; };
+		834BFBA6510371955794450B /* libPods-app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EABA52D4E0250885F20D9AD3 /* libPods-app.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07AF4B678A11AE70F829C196 /* Pods-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.debug.xcconfig"; path = "Target Support Files/Pods-app/Pods-app.debug.xcconfig"; sourceTree = "<group>"; };
+		27205AB6249B1AD300A11AA4 /* CrossChannelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossChannelController.m; sourceTree = "<group>"; };
+		27205AB7249B1AD300A11AA4 /* CrossChannelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossChannelView.m; sourceTree = "<group>"; };
+		27205AB8249B1AD300A11AA4 /* HummerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HummerManager.m; sourceTree = "<group>"; };
+		27205AB9249B1AD300A11AA4 /* CrossLiveUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossLiveUserModel.h; sourceTree = "<group>"; };
+		27205ABA249B1AD300A11AA4 /* CrossLiveItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossLiveItemView.m; sourceTree = "<group>"; };
+		27205ABB249B1AD300A11AA4 /* CrossChannelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossChannelController.h; sourceTree = "<group>"; };
+		27205ABC249B1AD300A11AA4 /* CrossChannelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossChannelView.h; sourceTree = "<group>"; };
+		27205ABD249B1AD300A11AA4 /* CrossLiveItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossLiveItemView.h; sourceTree = "<group>"; };
+		27205ABE249B1AD300A11AA4 /* HummerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HummerManager.h; sourceTree = "<group>"; };
+		27205ABF249B1AD300A11AA4 /* CrossLiveUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossLiveUserModel.m; sourceTree = "<group>"; };
+		275B449524850ACE00EDF5D2 /* QuickStartCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickStartCell.h; sourceTree = "<group>"; };
+		275B449624850ACE00EDF5D2 /* QuickStartCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickStartCell.m; sourceTree = "<group>"; };
+		275B449724850ACE00EDF5D2 /* QuickStartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickStartCell.xib; sourceTree = "<group>"; };
+		275B44C1248601D400EDF5D2 /* OtherMoudleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherMoudleCell.h; sourceTree = "<group>"; };
+		275B44C2248601D400EDF5D2 /* OtherMoudleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherMoudleCell.m; sourceTree = "<group>"; };
+		275B44C3248601D400EDF5D2 /* OtherMoudleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherMoudleCell.xib; sourceTree = "<group>"; };
+		279F7DFB247FB3B90003BF7F /* HomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		279F7DFC247FB3B90003BF7F /* HomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		27D647A2248F9BAD00DDB88C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		27D647A3248F9BAD00DDB88C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		27D647A7248F9BE500DDB88C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		27D647A9248F9BEB00DDB88C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27EEE239247E191800ABDE5C /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27EEE23C247E191800ABDE5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		27EEE23D247E191800ABDE5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		27EEE23F247E191800ABDE5C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		27EEE240247E191800ABDE5C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		27EEE246247E191800ABDE5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27EEE248247E191A00ABDE5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27EEE24B247E191A00ABDE5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27EEE24D247E191A00ABDE5C /* app-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "app-Info.plist"; sourceTree = "<group>"; };
+		27EEE24E247E191A00ABDE5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5BC1BBCD24B46D6600E397D7 /* VideoLiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoLiveViewController.xib; sourceTree = "<group>"; };
+		5BC1BBCE24B46D6600E397D7 /* VideoLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoLiveViewController.m; sourceTree = "<group>"; };
+		5BC1BBCF24B46D6600E397D7 /* VideoLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoLiveViewController.h; sourceTree = "<group>"; };
+		5BC1BBD424B46F0F00E397D7 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		5BC1BBD524B46F0F00E397D7 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		5BC1BBD724B470C500E397D7 /* VideoLiveBroadcastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoLiveBroadcastViewController.h; sourceTree = "<group>"; };
+		5BC1BBD824B470C500E397D7 /* VideoLiveBroadcastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoLiveBroadcastViewController.m; sourceTree = "<group>"; };
+		5BC1BBDD24B5728800E397D7 /* LiveFunctionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveFunctionView.h; sourceTree = "<group>"; };
+		5BC1BBDE24B5728800E397D7 /* LiveFunctionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveFunctionView.m; sourceTree = "<group>"; };
+		5BC1BBE024B572A900E397D7 /* LiveFunctionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveFunctionView.xib; sourceTree = "<group>"; };
+		5BC1BBE224B5773F00E397D7 /* LiveFunctionCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveFunctionCollectionViewCell.h; sourceTree = "<group>"; };
+		5BC1BBE324B5773F00E397D7 /* LiveFunctionCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveFunctionCollectionViewCell.m; sourceTree = "<group>"; };
+		5BC1BBE424B5773F00E397D7 /* LiveFunctionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveFunctionCollectionViewCell.xib; sourceTree = "<group>"; };
+		5BC1BBEE24B5C83900E397D7 /* VideoLiveBroadcastViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoLiveBroadcastViewController.xib; sourceTree = "<group>"; };
+		5BD3515924C6DDA1000D4564 /* AudioToolBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioToolBarView.h; sourceTree = "<group>"; };
+		5BD3515A24C6DDA1000D4564 /* AudioToolBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioToolBarView.m; sourceTree = "<group>"; };
+		5BED910024C15722000B2A22 /* JYLFunctionAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYLFunctionAlertView.h; sourceTree = "<group>"; };
+		5BED910124C15722000B2A22 /* JYLFunctionAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYLFunctionAlertView.m; sourceTree = "<group>"; };
+		5BED910324C15735000B2A22 /* JYLFunctionAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYLFunctionAlertView.xib; sourceTree = "<group>"; };
+		5BED910524C165C8000B2A22 /* JYLNormalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYLNormalTableViewCell.h; sourceTree = "<group>"; };
+		5BED910624C165C8000B2A22 /* JYLNormalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYLNormalTableViewCell.m; sourceTree = "<group>"; };
+		5BED910724C165C8000B2A22 /* JYLNormalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYLNormalTableViewCell.xib; sourceTree = "<group>"; };
+		5BED910A24C165E3000B2A22 /* JYLButtonTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYLButtonTableViewCell.h; sourceTree = "<group>"; };
+		5BED910B24C165E3000B2A22 /* JYLButtonTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYLButtonTableViewCell.m; sourceTree = "<group>"; };
+		5BED910C24C165E3000B2A22 /* JYLButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYLButtonTableViewCell.xib; sourceTree = "<group>"; };
+		5BFD987B24B7135B00E18897 /* AudioLiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioLiveViewController.h; sourceTree = "<group>"; };
+		5BFD987C24B7135B00E18897 /* AudioLiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioLiveViewController.m; sourceTree = "<group>"; };
+		5BFD987D24B7135B00E18897 /* AudioLiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioLiveViewController.xib; sourceTree = "<group>"; };
+		5BFD988024B84CBF00E18897 /* AudioLiveTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioLiveTableViewCell.h; sourceTree = "<group>"; };
+		5BFD988124B84CBF00E18897 /* AudioLiveTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioLiveTableViewCell.m; sourceTree = "<group>"; };
+		5BFD988224B84CBF00E18897 /* AudioLiveTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioLiveTableViewCell.xib; sourceTree = "<group>"; };
+		5BFD988524B84E4900E18897 /* JYLChatRoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYLChatRoomViewController.h; sourceTree = "<group>"; };
+		5BFD988624B84E4900E18897 /* JYLChatRoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYLChatRoomViewController.m; sourceTree = "<group>"; };
+		5BFD988724B84E4900E18897 /* JYLChatRoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYLChatRoomViewController.xib; sourceTree = "<group>"; };
+		5BFD988B24B8540C00E18897 /* LivePublicTalkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LivePublicTalkCell.h; sourceTree = "<group>"; };
+		5BFD988C24B8540C00E18897 /* LivePublicTalkCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LivePublicTalkCell.xib; sourceTree = "<group>"; };
+		5BFD988D24B8540C00E18897 /* LivePublicTalkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LivePublicTalkCell.m; sourceTree = "<group>"; };
+		5BFD989324BC67B300E18897 /* LiveFunctionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveFunctionModel.h; sourceTree = "<group>"; };
+		5BFD989424BC67B300E18897 /* LiveFunctionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveFunctionModel.m; sourceTree = "<group>"; };
+		5BFD989624BDBCC000E18897 /* AuidoUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuidoUserModel.h; sourceTree = "<group>"; };
+		5BFD989724BDBCC000E18897 /* AuidoUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuidoUserModel.m; sourceTree = "<group>"; };
+		5BFD98C024BEDF5200E18897 /* WhineCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhineCollectionViewCell.h; sourceTree = "<group>"; };
+		5BFD98C124BEDF5200E18897 /* WhineCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhineCollectionViewCell.m; sourceTree = "<group>"; };
+		5BFD98C224BEDF5200E18897 /* WhineCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhineCollectionViewCell.xib; sourceTree = "<group>"; };
+		5BFD98C524BEE94500E18897 /* LiveWhineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveWhineView.h; sourceTree = "<group>"; };
+		5BFD98C624BEE94500E18897 /* LiveWhineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveWhineView.m; sourceTree = "<group>"; };
+		5BFD98C824BEE96700E18897 /* LiveWhineView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveWhineView.xib; sourceTree = "<group>"; };
+		5BFD98D424C02C5C00E18897 /* LivePublicTalkView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LivePublicTalkView.h; sourceTree = "<group>"; };
+		5BFD98D524C02C5C00E18897 /* LivePublicTalkView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LivePublicTalkView.m; sourceTree = "<group>"; };
+		5BFD98D724C02C7D00E18897 /* LivePublicTalkView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LivePublicTalkView.xib; sourceTree = "<group>"; };
+		5BFD98D924C0435500E18897 /* LiveUserListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveUserListView.m; sourceTree = "<group>"; };
+		5BFD98DA24C0435500E18897 /* LiveUserListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveUserListView.xib; sourceTree = "<group>"; };
+		5BFD98DB24C0435500E18897 /* LiveUserListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveUserListView.h; sourceTree = "<group>"; };
+		79EC4D5B24B9A57D0046A50F /* VideoLiveHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoLiveHomeTableViewCell.h; sourceTree = "<group>"; };
+		79EC4D5C24B9A57D0046A50F /* VideoLiveHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoLiveHomeTableViewCell.m; sourceTree = "<group>"; };
+		79EC4D5D24B9A57E0046A50F /* VideoLiveHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoLiveHomeTableViewCell.xib; sourceTree = "<group>"; };
+		881BBC15D3745E0C6E2EB707 /* Pods-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.release.xcconfig"; path = "Target Support Files/Pods-app/Pods-app.release.xcconfig"; sourceTree = "<group>"; };
+		EABA52D4E0250885F20D9AD3 /* libPods-app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27EEE236247E191800ABDE5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834BFBA6510371955794450B /* libPods-app.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BA397C3EE289AD35F66671A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07AF4B678A11AE70F829C196 /* Pods-app.debug.xcconfig */,
+				881BBC15D3745E0C6E2EB707 /* Pods-app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		27205AB5249B1AD300A11AA4 /* video_crosschannel */ = {
+			isa = PBXGroup;
+			children = (
+				27205ABB249B1AD300A11AA4 /* CrossChannelController.h */,
+				27205AB6249B1AD300A11AA4 /* CrossChannelController.m */,
+				27205ABC249B1AD300A11AA4 /* CrossChannelView.h */,
+				27205AB7249B1AD300A11AA4 /* CrossChannelView.m */,
+				27205ABD249B1AD300A11AA4 /* CrossLiveItemView.h */,
+				27205ABA249B1AD300A11AA4 /* CrossLiveItemView.m */,
+				27205AB9249B1AD300A11AA4 /* CrossLiveUserModel.h */,
+				27205ABF249B1AD300A11AA4 /* CrossLiveUserModel.m */,
+				27205ABE249B1AD300A11AA4 /* HummerManager.h */,
+				27205AB8249B1AD300A11AA4 /* HummerManager.m */,
+			);
+			path = video_crosschannel;
+			sourceTree = "<group>";
+		};
+		279F7DFA247FB2DC0003BF7F /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				5BC1BBD224B46EBD00E397D7 /* VideoLive */,
+				27205AB5249B1AD300A11AA4 /* video_crosschannel */,
+				279F7DFB247FB3B90003BF7F /* HomeController.h */,
+				279F7DFC247FB3B90003BF7F /* HomeController.m */,
+				275B449524850ACE00EDF5D2 /* QuickStartCell.h */,
+				275B449624850ACE00EDF5D2 /* QuickStartCell.m */,
+				275B449724850ACE00EDF5D2 /* QuickStartCell.xib */,
+				275B44C1248601D400EDF5D2 /* OtherMoudleCell.h */,
+				275B44C2248601D400EDF5D2 /* OtherMoudleCell.m */,
+				275B44C3248601D400EDF5D2 /* OtherMoudleCell.xib */,
+				27D647A8248F9BE500DDB88C /* InfoPlist.strings */,
+				5BC1BBD424B46F0F00E397D7 /* BaseViewController.h */,
+				5BC1BBD524B46F0F00E397D7 /* BaseViewController.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		27EEE230247E191800ABDE5C = {
+			isa = PBXGroup;
+			children = (
+				27EEE23B247E191800ABDE5C /* app */,
+				27EEE23A247E191800ABDE5C /* Products */,
+				1BA397C3EE289AD35F66671A /* Pods */,
+				3E73E577AA7E253398605FE6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		27EEE23A247E191800ABDE5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27EEE239247E191800ABDE5C /* app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27EEE23B247E191800ABDE5C /* app */ = {
+			isa = PBXGroup;
+			children = (
+				279F7DFA247FB2DC0003BF7F /* Demo */,
+				27EEE23C247E191800ABDE5C /* AppDelegate.h */,
+				27EEE23D247E191800ABDE5C /* AppDelegate.m */,
+				27EEE23F247E191800ABDE5C /* SceneDelegate.h */,
+				27EEE240247E191800ABDE5C /* SceneDelegate.m */,
+				27EEE245247E191800ABDE5C /* Main.storyboard */,
+				27EEE248247E191A00ABDE5C /* Assets.xcassets */,
+				27EEE24A247E191A00ABDE5C /* LaunchScreen.storyboard */,
+				27EEE24D247E191A00ABDE5C /* app-Info.plist */,
+				27EEE24E247E191A00ABDE5C /* main.m */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		3E73E577AA7E253398605FE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EABA52D4E0250885F20D9AD3 /* libPods-app.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BC1BBD224B46EBD00E397D7 /* VideoLive */ = {
+			isa = PBXGroup;
+			children = (
+				5BFD989224BC678D00E18897 /* Model */,
+				5BC1BBDC24B5721800E397D7 /* View */,
+				5BC1BBD324B46ECB00E397D7 /* Controller */,
+			);
+			path = VideoLive;
+			sourceTree = "<group>";
+		};
+		5BC1BBD324B46ECB00E397D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BC1BBCF24B46D6600E397D7 /* VideoLiveViewController.h */,
+				5BC1BBCE24B46D6600E397D7 /* VideoLiveViewController.m */,
+				5BC1BBCD24B46D6600E397D7 /* VideoLiveViewController.xib */,
+				5BC1BBD724B470C500E397D7 /* VideoLiveBroadcastViewController.h */,
+				5BC1BBD824B470C500E397D7 /* VideoLiveBroadcastViewController.m */,
+				5BC1BBEE24B5C83900E397D7 /* VideoLiveBroadcastViewController.xib */,
+				5BFD987B24B7135B00E18897 /* AudioLiveViewController.h */,
+				5BFD987C24B7135B00E18897 /* AudioLiveViewController.m */,
+				5BFD987D24B7135B00E18897 /* AudioLiveViewController.xib */,
+				5BFD988524B84E4900E18897 /* JYLChatRoomViewController.h */,
+				5BFD988624B84E4900E18897 /* JYLChatRoomViewController.m */,
+				5BFD988724B84E4900E18897 /* JYLChatRoomViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BC1BBDC24B5721800E397D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5BD3515924C6DDA1000D4564 /* AudioToolBarView.h */,
+				5BD3515A24C6DDA1000D4564 /* AudioToolBarView.m */,
+				5BFD98DB24C0435500E18897 /* LiveUserListView.h */,
+				5BFD98D924C0435500E18897 /* LiveUserListView.m */,
+				5BFD98DA24C0435500E18897 /* LiveUserListView.xib */,
+				5BFD988B24B8540C00E18897 /* LivePublicTalkCell.h */,
+				5BFD988D24B8540C00E18897 /* LivePublicTalkCell.m */,
+				5BFD988C24B8540C00E18897 /* LivePublicTalkCell.xib */,
+				5BC1BBDD24B5728800E397D7 /* LiveFunctionView.h */,
+				5BC1BBDE24B5728800E397D7 /* LiveFunctionView.m */,
+				5BC1BBE024B572A900E397D7 /* LiveFunctionView.xib */,
+				5BC1BBE224B5773F00E397D7 /* LiveFunctionCollectionViewCell.h */,
+				5BC1BBE324B5773F00E397D7 /* LiveFunctionCollectionViewCell.m */,
+				5BC1BBE424B5773F00E397D7 /* LiveFunctionCollectionViewCell.xib */,
+				5BFD988024B84CBF00E18897 /* AudioLiveTableViewCell.h */,
+				5BFD988124B84CBF00E18897 /* AudioLiveTableViewCell.m */,
+				5BFD988224B84CBF00E18897 /* AudioLiveTableViewCell.xib */,
+				79EC4D5B24B9A57D0046A50F /* VideoLiveHomeTableViewCell.h */,
+				79EC4D5C24B9A57D0046A50F /* VideoLiveHomeTableViewCell.m */,
+				79EC4D5D24B9A57E0046A50F /* VideoLiveHomeTableViewCell.xib */,
+				5BFD98C024BEDF5200E18897 /* WhineCollectionViewCell.h */,
+				5BFD98C124BEDF5200E18897 /* WhineCollectionViewCell.m */,
+				5BFD98C224BEDF5200E18897 /* WhineCollectionViewCell.xib */,
+				5BFD98C524BEE94500E18897 /* LiveWhineView.h */,
+				5BFD98C624BEE94500E18897 /* LiveWhineView.m */,
+				5BFD98C824BEE96700E18897 /* LiveWhineView.xib */,
+				5BFD98D424C02C5C00E18897 /* LivePublicTalkView.h */,
+				5BFD98D524C02C5C00E18897 /* LivePublicTalkView.m */,
+				5BFD98D724C02C7D00E18897 /* LivePublicTalkView.xib */,
+				5BED910024C15722000B2A22 /* JYLFunctionAlertView.h */,
+				5BED910124C15722000B2A22 /* JYLFunctionAlertView.m */,
+				5BED910324C15735000B2A22 /* JYLFunctionAlertView.xib */,
+				5BED910524C165C8000B2A22 /* JYLNormalTableViewCell.h */,
+				5BED910624C165C8000B2A22 /* JYLNormalTableViewCell.m */,
+				5BED910724C165C8000B2A22 /* JYLNormalTableViewCell.xib */,
+				5BED910A24C165E3000B2A22 /* JYLButtonTableViewCell.h */,
+				5BED910B24C165E3000B2A22 /* JYLButtonTableViewCell.m */,
+				5BED910C24C165E3000B2A22 /* JYLButtonTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BFD989224BC678D00E18897 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BFD989324BC67B300E18897 /* LiveFunctionModel.h */,
+				5BFD989424BC67B300E18897 /* LiveFunctionModel.m */,
+				5BFD989624BDBCC000E18897 /* AuidoUserModel.h */,
+				5BFD989724BDBCC000E18897 /* AuidoUserModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27EEE238247E191800ABDE5C /* app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27EEE252247E191A00ABDE5C /* Build configuration list for PBXNativeTarget "app" */;
+			buildPhases = (
+				85947AAB0860A8C437841BEB /* [CP] Check Pods Manifest.lock */,
+				27EEE235247E191800ABDE5C /* Sources */,
+				27EEE236247E191800ABDE5C /* Frameworks */,
+				27EEE237247E191800ABDE5C /* Resources */,
+				B950DF168A0840EF9C1F0C62 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = app;
+			productName = app;
+			productReference = 27EEE239247E191800ABDE5C /* app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27EEE231247E191800ABDE5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = GasparChu;
+				TargetAttributes = {
+					27EEE238247E191800ABDE5C = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 27EEE234247E191800ABDE5C /* Build configuration list for PBXProject "app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 27EEE230247E191800ABDE5C;
+			productRefGroup = 27EEE23A247E191800ABDE5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27EEE238247E191800ABDE5C /* app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27EEE237247E191800ABDE5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275B44C5248601D400EDF5D2 /* OtherMoudleCell.xib in Resources */,
+				5BFD987F24B7135B00E18897 /* AudioLiveViewController.xib in Resources */,
+				79EC4D5F24B9A57E0046A50F /* VideoLiveHomeTableViewCell.xib in Resources */,
+				5BC1BBEF24B5C83900E397D7 /* VideoLiveBroadcastViewController.xib in Resources */,
+				5BFD98C924BEE96700E18897 /* LiveWhineView.xib in Resources */,
+				27D647A6248F9BE500DDB88C /* InfoPlist.strings in Resources */,
+				5BC1BBD024B46D6700E397D7 /* VideoLiveViewController.xib in Resources */,
+				5BED910E24C165E3000B2A22 /* JYLButtonTableViewCell.xib in Resources */,
+				5BFD98DD24C0435500E18897 /* LiveUserListView.xib in Resources */,
+				27EEE24C247E191A00ABDE5C /* LaunchScreen.storyboard in Resources */,
+				5BFD988424B84CBF00E18897 /* AudioLiveTableViewCell.xib in Resources */,
+				5BED910924C165C8000B2A22 /* JYLNormalTableViewCell.xib in Resources */,
+				5BED910424C15735000B2A22 /* JYLFunctionAlertView.xib in Resources */,
+				5BFD989024B8540C00E18897 /* LivePublicTalkCell.xib in Resources */,
+				5BFD988924B84E4900E18897 /* JYLChatRoomViewController.xib in Resources */,
+				5BC1BBE624B5773F00E397D7 /* LiveFunctionCollectionViewCell.xib in Resources */,
+				5BFD98C424BEDF5200E18897 /* WhineCollectionViewCell.xib in Resources */,
+				5BC1BBE124B572A900E397D7 /* LiveFunctionView.xib in Resources */,
+				5BFD98D824C02C7D00E18897 /* LivePublicTalkView.xib in Resources */,
+				275B449924850ACE00EDF5D2 /* QuickStartCell.xib in Resources */,
+				27EEE249247E191A00ABDE5C /* Assets.xcassets in Resources */,
+				27EEE247247E191800ABDE5C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85947AAB0860A8C437841BEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B950DF168A0840EF9C1F0C62 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-app/Pods-app-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-app/Pods-app-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-app/Pods-app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27EEE235247E191800ABDE5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BFD989124B8540C00E18897 /* LivePublicTalkCell.m in Sources */,
+				5BFD989524BC67B300E18897 /* LiveFunctionModel.m in Sources */,
+				5BC1BBE524B5773F00E397D7 /* LiveFunctionCollectionViewCell.m in Sources */,
+				5BC1BBDA24B470C500E397D7 /* VideoLiveBroadcastViewController.m in Sources */,
+				5BED910224C15722000B2A22 /* JYLFunctionAlertView.m in Sources */,
+				27EEE23E247E191800ABDE5C /* AppDelegate.m in Sources */,
+				27205AC0249B1AD300A11AA4 /* CrossChannelController.m in Sources */,
+				27205AC4249B1AD300A11AA4 /* CrossLiveUserModel.m in Sources */,
+				5BFD98DC24C0435500E18897 /* LiveUserListView.m in Sources */,
+				5BED910D24C165E3000B2A22 /* JYLButtonTableViewCell.m in Sources */,
+				27205AC3249B1AD300A11AA4 /* CrossLiveItemView.m in Sources */,
+				27205AC2249B1AD300A11AA4 /* HummerManager.m in Sources */,
+				5BFD987E24B7135B00E18897 /* AudioLiveViewController.m in Sources */,
+				27EEE24F247E191A00ABDE5C /* main.m in Sources */,
+				27205AC1249B1AD300A11AA4 /* CrossChannelView.m in Sources */,
+				275B44C4248601D400EDF5D2 /* OtherMoudleCell.m in Sources */,
+				5BFD989824BDBCC000E18897 /* AuidoUserModel.m in Sources */,
+				279F7DFE247FB3B90003BF7F /* HomeController.m in Sources */,
+				5BC1BBDF24B5728800E397D7 /* LiveFunctionView.m in Sources */,
+				5BED910824C165C8000B2A22 /* JYLNormalTableViewCell.m in Sources */,
+				5BFD98D624C02C5C00E18897 /* LivePublicTalkView.m in Sources */,
+				5BFD98C724BEE94500E18897 /* LiveWhineView.m in Sources */,
+				5BD3515B24C6DDA1000D4564 /* AudioToolBarView.m in Sources */,
+				5BC1BBD624B46F0F00E397D7 /* BaseViewController.m in Sources */,
+				27EEE241247E191800ABDE5C /* SceneDelegate.m in Sources */,
+				5BFD98C324BEDF5200E18897 /* WhineCollectionViewCell.m in Sources */,
+				5BC1BBD124B46D6700E397D7 /* VideoLiveViewController.m in Sources */,
+				5BFD988824B84E4900E18897 /* JYLChatRoomViewController.m in Sources */,
+				275B449824850ACE00EDF5D2 /* QuickStartCell.m in Sources */,
+				79EC4D5E24B9A57E0046A50F /* VideoLiveHomeTableViewCell.m in Sources */,
+				5BFD988324B84CBF00E18897 /* AudioLiveTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		27D647A8248F9BE500DDB88C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27D647A7248F9BE500DDB88C /* zh-Hans */,
+				27D647A9248F9BEB00DDB88C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		27EEE245247E191800ABDE5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27EEE246247E191800ABDE5C /* Base */,
+				27D647A2248F9BAD00DDB88C /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27EEE24A247E191A00ABDE5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27EEE24B247E191A00ABDE5C /* Base */,
+				27D647A3248F9BAD00DDB88C /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27EEE250247E191A00ABDE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		27EEE251247E191A00ABDE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27EEE253247E191A00ABDE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07AF4B678A11AE70F829C196 /* Pods-app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 60;
+				DEVELOPMENT_TEAM = U3KZGA3BL4;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "app/app-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AliyunOSSiOS\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaAsyncSocket\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManager\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SSZipArchive\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ZipArchive\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/baseui\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/common\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/feedback\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/interfaces\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/jly_logcat\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/jly_rtc\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/jly_rts\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/utils\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/video_crosschannel\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/video_samechannel\"",
+					"\"${PODS_ROOT}/argo/libs\"",
+					"\"${PODS_ROOT}/audiocodec/libs\"",
+					"\"${PODS_ROOT}/audiodsp/libs\"",
+					"\"${PODS_ROOT}/audioenginesdk/libs\"",
+					"\"${PODS_ROOT}/deviceinfokit/libs\"",
+					"\"${PODS_ROOT}/dwx265/libs\"",
+					"\"${PODS_ROOT}/ffmpeg/libs\"",
+					"\"${PODS_ROOT}/gslb/libs\"",
+					"\"${PODS_ROOT}/hdstatsdk/libs\"",
+					"\"${PODS_ROOT}/ittiamhevc/libs\"",
+					"\"${PODS_ROOT}/libyuv/libs\"",
+					"\"${PODS_ROOT}/thunder/libs\"",
+					"\"${PODS_ROOT}/transengine/libs\"",
+					"\"${PODS_ROOT}/yyaccesstranssdk/libs\"",
+					"\"${PODS_ROOT}/yyservicesdk/libs\"",
+					"\"${PODS_ROOT}/yyvideolib/libs\"",
+					"\"$(PODS_ROOT)/argo/libs\"",
+					"${PODS_ROOT}/audiocodec/libs",
+					"${PODS_ROOT}/audiodsp/libs",
+					"${PODS_ROOT}/audioenginesdk/libs",
+					"${PODS_ROOT}/dwx265/libs",
+					"${PODS_ROOT}/ffmpeg/libs",
+					"$(PODS_ROOT)/gslb/libs",
+					"\"$(PODS_ROOT)/hdstatsdk/libs\"",
+					"${PODS_ROOT}/ittiamhevc/libs",
+					"${PODS_ROOT}/libyuv/libs",
+					"$(PODS_ROOT)/openssl/lib/",
+					"$(PODS_ROOT)/opensslOSX/lib/",
+					"\"$(PODS_ROOT)/thunder/libs\"",
+					"\"$(PODS_ROOT)/transengine/libs\"",
+					"\"$(PODS_ROOT)/yyvideolib/libs\"",
+				);
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jocloud.rays;
+				PRODUCT_NAME = app;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27EEE254247E191A00ABDE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 881BBC15D3745E0C6E2EB707 /* Pods-app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 60;
+				DEVELOPMENT_TEAM = U3KZGA3BL4;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "app/app-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jocloud.rays;
+				PRODUCT_NAME = app;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27EEE234247E191800ABDE5C /* Build configuration list for PBXProject "app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27EEE250247E191A00ABDE5C /* Debug */,
+				27EEE251247E191A00ABDE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27EEE252247E191A00ABDE5C /* Build configuration list for PBXNativeTarget "app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27EEE253247E191A00ABDE5C /* Debug */,
+				27EEE254247E191A00ABDE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27EEE231247E191800ABDE5C /* Project object */;
+}

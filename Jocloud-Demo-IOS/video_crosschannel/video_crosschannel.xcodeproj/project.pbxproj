@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		279BB2BA247D07E000E54A39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BB2B9247D07E000E54A39 /* AppDelegate.m */; };
+		279BB2BD247D07E000E54A39 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BB2BC247D07E000E54A39 /* SceneDelegate.m */; };
+		279BB2C0247D07E000E54A39 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BB2BF247D07E000E54A39 /* ViewController.m */; };
+		279BB2C3247D07E000E54A39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279BB2C1247D07E000E54A39 /* Main.storyboard */; };
+		279BB2C5247D07E200E54A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279BB2C4247D07E200E54A39 /* Assets.xcassets */; };
+		279BB2C8247D07E200E54A39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279BB2C6247D07E200E54A39 /* LaunchScreen.storyboard */; };
+		279BB2CB247D07E200E54A39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BB2CA247D07E200E54A39 /* main.m */; };
+		279BB306247D175400E54A39 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BB304247D175400E54A39 /* Test.m */; };
+		27D647BE2490BAF600DDB88C /* video_crosschannel.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 27D647BD2490BAF600DDB88C /* video_crosschannel.podspec */; };
+		DB6837312497A46800746C54 /* CrossLiveItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6837292497A46800746C54 /* CrossLiveItemView.m */; };
+		DB6837322497A46800746C54 /* CrossLiveUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB68372A2497A46800746C54 /* CrossLiveUserModel.m */; };
+		DB6837332497A46800746C54 /* CrossChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB68372D2497A46800746C54 /* CrossChannelView.m */; };
+		DB6837342497A46800746C54 /* HummerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6837302497A46800746C54 /* HummerManager.m */; };
+		DBC7BF732493A427001F89D7 /* CrossChannelController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC7BF722493A427001F89D7 /* CrossChannelController.m */; };
+		F40A62CFACA65D52ED342C71 /* libPods-video_crosschannel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9AF3EA539F921F12A34850 /* libPods-video_crosschannel.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01415FD7A392744A8AFC4F08 /* Pods-video_crosschannel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-video_crosschannel.debug.xcconfig"; path = "Target Support Files/Pods-video_crosschannel/Pods-video_crosschannel.debug.xcconfig"; sourceTree = "<group>"; };
+		279BB2B5247D07E000E54A39 /* video_crosschannel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = video_crosschannel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		279BB2B8247D07E000E54A39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		279BB2B9247D07E000E54A39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		279BB2BB247D07E000E54A39 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		279BB2BC247D07E000E54A39 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		279BB2BE247D07E000E54A39 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		279BB2BF247D07E000E54A39 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		279BB2C2247D07E000E54A39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		279BB2C4247D07E200E54A39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		279BB2C7247D07E200E54A39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		279BB2C9247D07E200E54A39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		279BB2CA247D07E200E54A39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		279BB303247D175400E54A39 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		279BB304247D175400E54A39 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		27D647BD2490BAF600DDB88C /* video_crosschannel.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = video_crosschannel.podspec; sourceTree = "<group>"; };
+		3AC6FD9397D227CF2119CC62 /* Pods-video_crosschannel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-video_crosschannel.release.xcconfig"; path = "Target Support Files/Pods-video_crosschannel/Pods-video_crosschannel.release.xcconfig"; sourceTree = "<group>"; };
+		AA9AF3EA539F921F12A34850 /* libPods-video_crosschannel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-video_crosschannel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6837292497A46800746C54 /* CrossLiveItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossLiveItemView.m; sourceTree = "<group>"; };
+		DB68372A2497A46800746C54 /* CrossLiveUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossLiveUserModel.m; sourceTree = "<group>"; };
+		DB68372B2497A46800746C54 /* HummerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HummerManager.h; sourceTree = "<group>"; };
+		DB68372C2497A46800746C54 /* CrossLiveUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossLiveUserModel.h; sourceTree = "<group>"; };
+		DB68372D2497A46800746C54 /* CrossChannelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossChannelView.m; sourceTree = "<group>"; };
+		DB68372E2497A46800746C54 /* CrossChannelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossChannelView.h; sourceTree = "<group>"; };
+		DB68372F2497A46800746C54 /* CrossLiveItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossLiveItemView.h; sourceTree = "<group>"; };
+		DB6837302497A46800746C54 /* HummerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HummerManager.m; sourceTree = "<group>"; };
+		DBC7BF712493A427001F89D7 /* CrossChannelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrossChannelController.h; sourceTree = "<group>"; };
+		DBC7BF722493A427001F89D7 /* CrossChannelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrossChannelController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		279BB2B2247D07E000E54A39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F40A62CFACA65D52ED342C71 /* libPods-video_crosschannel.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		279BB2AC247D07E000E54A39 = {
+			isa = PBXGroup;
+			children = (
+				27D647BD2490BAF600DDB88C /* video_crosschannel.podspec */,
+				279BB2B7247D07E000E54A39 /* video_crosschannel */,
+				279BB2B6247D07E000E54A39 /* Products */,
+				91129FA2E140BB2BB1EDF9DB /* Pods */,
+				32153734C5F40CC02059DD50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		279BB2B6247D07E000E54A39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				279BB2B5247D07E000E54A39 /* video_crosschannel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		279BB2B7247D07E000E54A39 /* video_crosschannel */ = {
+			isa = PBXGroup;
+			children = (
+				DBC7BF702493A3FA001F89D7 /* Demo */,
+				279BB2B8247D07E000E54A39 /* AppDelegate.h */,
+				279BB2B9247D07E000E54A39 /* AppDelegate.m */,
+				279BB2BB247D07E000E54A39 /* SceneDelegate.h */,
+				279BB2BC247D07E000E54A39 /* SceneDelegate.m */,
+				279BB2BE247D07E000E54A39 /* ViewController.h */,
+				279BB2BF247D07E000E54A39 /* ViewController.m */,
+				279BB303247D175400E54A39 /* Test.h */,
+				279BB304247D175400E54A39 /* Test.m */,
+				279BB2C1247D07E000E54A39 /* Main.storyboard */,
+				279BB2C4247D07E200E54A39 /* Assets.xcassets */,
+				279BB2C6247D07E200E54A39 /* LaunchScreen.storyboard */,
+				279BB2C9247D07E200E54A39 /* Info.plist */,
+				279BB2CA247D07E200E54A39 /* main.m */,
+			);
+			path = video_crosschannel;
+			sourceTree = "<group>";
+		};
+		32153734C5F40CC02059DD50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA9AF3EA539F921F12A34850 /* libPods-video_crosschannel.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91129FA2E140BB2BB1EDF9DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01415FD7A392744A8AFC4F08 /* Pods-video_crosschannel.debug.xcconfig */,
+				3AC6FD9397D227CF2119CC62 /* Pods-video_crosschannel.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DBC7BF702493A3FA001F89D7 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				DB68372E2497A46800746C54 /* CrossChannelView.h */,
+				DB68372D2497A46800746C54 /* CrossChannelView.m */,
+				DB68372F2497A46800746C54 /* CrossLiveItemView.h */,
+				DB6837292497A46800746C54 /* CrossLiveItemView.m */,
+				DB68372C2497A46800746C54 /* CrossLiveUserModel.h */,
+				DB68372A2497A46800746C54 /* CrossLiveUserModel.m */,
+				DB68372B2497A46800746C54 /* HummerManager.h */,
+				DB6837302497A46800746C54 /* HummerManager.m */,
+				DBC7BF712493A427001F89D7 /* CrossChannelController.h */,
+				DBC7BF722493A427001F89D7 /* CrossChannelController.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		279BB2B4247D07E000E54A39 /* video_crosschannel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 279BB2CE247D07E200E54A39 /* Build configuration list for PBXNativeTarget "video_crosschannel" */;
+			buildPhases = (
+				3994D6B5E92A64BC60B88744 /* [CP] Check Pods Manifest.lock */,
+				279BB2B1247D07E000E54A39 /* Sources */,
+				279BB2B2247D07E000E54A39 /* Frameworks */,
+				279BB2B3247D07E000E54A39 /* Resources */,
+				4A5918F89AD3177373EA7217 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = video_crosschannel;
+			productName = video_crosschannel;
+			productReference = 279BB2B5247D07E000E54A39 /* video_crosschannel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		279BB2AD247D07E000E54A39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = GasparChu;
+				TargetAttributes = {
+					279BB2B4247D07E000E54A39 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 279BB2B0247D07E000E54A39 /* Build configuration list for PBXProject "video_crosschannel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 279BB2AC247D07E000E54A39;
+			productRefGroup = 279BB2B6247D07E000E54A39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				279BB2B4247D07E000E54A39 /* video_crosschannel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		279BB2B3247D07E000E54A39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279BB2C8247D07E200E54A39 /* LaunchScreen.storyboard in Resources */,
+				279BB2C5247D07E200E54A39 /* Assets.xcassets in Resources */,
+				279BB2C3247D07E000E54A39 /* Main.storyboard in Resources */,
+				27D647BE2490BAF600DDB88C /* video_crosschannel.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3994D6B5E92A64BC60B88744 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-video_crosschannel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A5918F89AD3177373EA7217 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-video_crosschannel/Pods-video_crosschannel-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-video_crosschannel/Pods-video_crosschannel-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-video_crosschannel/Pods-video_crosschannel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		279BB2B1247D07E000E54A39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279BB306247D175400E54A39 /* Test.m in Sources */,
+				DB6837322497A46800746C54 /* CrossLiveUserModel.m in Sources */,
+				279BB2C0247D07E000E54A39 /* ViewController.m in Sources */,
+				DBC7BF732493A427001F89D7 /* CrossChannelController.m in Sources */,
+				DB6837332497A46800746C54 /* CrossChannelView.m in Sources */,
+				279BB2BA247D07E000E54A39 /* AppDelegate.m in Sources */,
+				DB6837312497A46800746C54 /* CrossLiveItemView.m in Sources */,
+				279BB2CB247D07E200E54A39 /* main.m in Sources */,
+				279BB2BD247D07E000E54A39 /* SceneDelegate.m in Sources */,
+				DB6837342497A46800746C54 /* HummerManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		279BB2C1247D07E000E54A39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				279BB2C2247D07E000E54A39 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		279BB2C6247D07E200E54A39 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				279BB2C7247D07E200E54A39 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		279BB2CC247D07E200E54A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		279BB2CD247D07E200E54A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		279BB2CF247D07E200E54A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01415FD7A392744A8AFC4F08 /* Pods-video_crosschannel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = video_crosschannel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jly.crosschannel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		279BB2D0247D07E200E54A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AC6FD9397D227CF2119CC62 /* Pods-video_crosschannel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = video_crosschannel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jly.crosschannel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		279BB2B0247D07E000E54A39 /* Build configuration list for PBXProject "video_crosschannel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				279BB2CC247D07E200E54A39 /* Debug */,
+				279BB2CD247D07E200E54A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		279BB2CE247D07E200E54A39 /* Build configuration list for PBXNativeTarget "video_crosschannel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				279BB2CF247D07E200E54A39 /* Debug */,
+				279BB2D0247D07E200E54A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 279BB2AD247D07E000E54A39 /* Project object */;
+}

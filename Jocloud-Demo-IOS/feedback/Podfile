@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+# 本地仓库
+def LocalPod()
+  pod 'baseui',                 :path => '../baseui'
+  pod 'utils',                  :path => '../utils'
+  pod 'common',                 :path => '../common'
+end
+
+# 本地模块仓库
+def ModulePod()
+  pod 'jly_logcat',             :path => '../jly_logcat'
+end
+
+# 三方仓库
+def ThirdPod()
+  pod 'Masonry'
+  pod 'AFNetworking', '~> 3.2.1'
+  pod 'SSZipArchive', '~>1.8.1'
+end
+
+target 'feedback' do
+  LocalPod()
+  ModulePod()
+  ThirdPod()
+end

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="JYLButtonTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="JYLButtonTableViewCell" id="KGk-i7-Jjw" customClass="JYLButtonTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndj-H3-3Rf">
+                        <rect key="frame" x="20" y="13.5" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWn-yC-hMk">
+                        <rect key="frame" x="187" y="0.0" width="46" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="bR3-ba-sea"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="Button"/>
+                        <state key="selected">
+                            <color key="titleColor" red="0.28235294117647058" green="0.46666666666666667" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="leftButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ndq-ng-gM2"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xf2-MR-W2k">
+                        <rect key="frame" x="254" y="0.0" width="46" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="gD1-uA-rzK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="Button"/>
+                        <state key="selected">
+                            <color key="titleColor" red="0.28235294119999998" green="0.46666666670000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="rightButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MFh-6Z-qGg"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwT-hW-Mna">
+                        <rect key="frame" x="243" y="11" width="1" height="22"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="Vt1-bW-xFo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="UWn-yC-hMk" secondAttribute="bottom" id="DFR-pv-geg"/>
+                    <constraint firstItem="xf2-MR-W2k" firstAttribute="height" secondItem="dwT-hW-Mna" secondAttribute="height" multiplier="2:1" id="DKa-N2-aC6"/>
+                    <constraint firstItem="ndj-H3-3Rf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="U1Z-wa-hFa"/>
+                    <constraint firstItem="ndj-H3-3Rf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Uu3-w2-ctq"/>
+                    <constraint firstItem="xf2-MR-W2k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Y5Q-Cj-Yxf"/>
+                    <constraint firstAttribute="trailing" secondItem="xf2-MR-W2k" secondAttribute="trailing" constant="20" id="iOd-Pi-hfE"/>
+                    <constraint firstAttribute="bottom" secondItem="xf2-MR-W2k" secondAttribute="bottom" id="rs3-fA-XBj"/>
+                    <constraint firstItem="dwT-hW-Mna" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sse-PV-neV"/>
+                    <constraint firstItem="UWn-yC-hMk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tVe-dy-43W"/>
+                    <constraint firstItem="dwT-hW-Mna" firstAttribute="leading" secondItem="UWn-yC-hMk" secondAttribute="trailing" constant="10" id="y9V-gA-hdj"/>
+                    <constraint firstItem="xf2-MR-W2k" firstAttribute="leading" secondItem="dwT-hW-Mna" secondAttribute="trailing" constant="10" id="yph-vL-iEj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="leftButton" destination="UWn-yC-hMk" id="b0k-AS-cgQ"/>
+                <outlet property="rightButton" destination="xf2-MR-W2k" id="mDm-jT-fAO"/>
+                <outlet property="titleLabel" destination="ndj-H3-3Rf" id="asA-EG-Obm"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="152.67857142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">聚联云</string>
+
+    <string name="main_title_tips">实时音视频专家</string>
+
+    <string name="main_q_start_tips">快速开始</string>
+
+    <string name="main_base_fun_tips">使用媒体和消息SDK的基础功能快速实现视频互动</string>
+    <string name="main_video_tips">实时视频进阶功能</string>
+    <string name="main_video_sub_tips">横竖屏开播与缩放，屏幕共享，次要媒体信息等更多功能</string>
+    <string name="main_audio_tips">实时音频进阶功能</string>
+    <string name="main_audio_sub_tips">变声，伴奏，混响，录制，实时返听等更多功能</string>
+    <string name="main_msg_tips">实时消息服务</string>
+    <string name="main_msg_sub_tips">公屏消息，信令消息，聊天室管理等功能</string>
+    <string name="main_mix_video_tips">混画推流服务</string>
+    <string name="main_mix_video_sub_tips">推流，拉流，混画布局等功能</string>
+    <string name="main_cr_channel_tips">跨房间连麦</string>
+    <string name="main_sa_channel_tips">同房间多人连麦</string>
+    <string name="main_features_not_implemented">功能尚未实现</string>
+
+</resources>

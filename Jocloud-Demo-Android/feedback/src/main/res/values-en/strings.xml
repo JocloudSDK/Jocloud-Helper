@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //反馈
+    <string name="text_feedback_title">Feedback</string>
+    <string name="text_feedback_content_title">Description</string>
+    <string name="text_feedback_content_hint">Mandatory</string>
+    <string name="text_feedback_content_toast">Please enter description</string>
+    <string name="text_feedback_mobile_title">Contact</string>
+    <string name="text_feedback_mobile_hint">Optional</string>
+    <string name="text_feedback_submit">Submit</string>
+    <string name="text_feedback_submit_succeed">Feedback submitted</string>
+    <string name="text_feedback_submit_faild">Feedback failed</string>
+    <string name="text_feedback_submitting">Submitting</string>
+
+</resources>

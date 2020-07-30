@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:keepScreenOn="true"
+    tools:context=".UI.VideoSameChannelActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_mutil_video"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/bg_grey"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@id/rv_mutil_video"
+        app:layout_constraintEnd_toEndOf="@id/rv_mutil_video"
+        app:layout_constraintStart_toStartOf="@id/rv_mutil_video"
+        app:layout_constraintTop_toTopOf="@id/rv_mutil_video" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@id/rv_mutil_video"
+        app:layout_constraintEnd_toEndOf="@id/rv_mutil_video"
+        app:layout_constraintStart_toStartOf="@id/rv_mutil_video"
+        app:layout_constraintTop_toTopOf="@id/rv_mutil_video" />
+
+    <ImageView
+        android:id="@+id/iv_preview_default1"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_preview_default"
+        app:layout_constraintBottom_toBottomOf="@id/line1"
+        app:layout_constraintLeft_toLeftOf="@id/rv_mutil_video"
+        app:layout_constraintRight_toRightOf="@id/line2"
+        app:layout_constraintTop_toTopOf="@id/rv_mutil_video" />
+
+    <ImageView
+        android:id="@+id/iv_preview_default2"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_preview_default"
+        app:layout_constraintBottom_toBottomOf="@id/line1"
+        app:layout_constraintLeft_toLeftOf="@id/line2"
+        app:layout_constraintRight_toRightOf="@id/rv_mutil_video"
+        app:layout_constraintTop_toTopOf="@id/rv_mutil_video" />
+
+    <ImageView
+        android:id="@+id/iv_preview_default3"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_preview_default"
+        app:layout_constraintBottom_toBottomOf="@id/rv_mutil_video"
+        app:layout_constraintLeft_toLeftOf="@id/rv_mutil_video"
+        app:layout_constraintRight_toRightOf="@id/line2"
+        app:layout_constraintTop_toTopOf="@id/line1" />
+
+    <ImageView
+        android:id="@+id/iv_preview_default4"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_preview_default"
+        app:layout_constraintBottom_toBottomOf="@id/rv_mutil_video"
+        app:layout_constraintLeft_toLeftOf="@id/line2"
+        app:layout_constraintRight_toRightOf="@id/rv_mutil_video"
+        app:layout_constraintTop_toTopOf="@id/line1" />
+
+
+    <TextView
+        android:id="@+id/tv_key_uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/text_uid"
+        android:textColor="@color/color_858585"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/rv_mutil_video"
+        app:layout_constraintTop_toBottomOf="@id/rv_mutil_video" />
+
+    <EditText
+        android:id="@+id/et_value_uid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_et_value_uid"
+        android:hint="@string/text_hint_et_uid"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="7dp"
+        android:textColor="@drawable/edit_txt_color"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/et_value_room_id"
+        app:layout_constraintStart_toStartOf="@id/tv_key_uid"
+        app:layout_constraintTop_toBottomOf="@id/tv_key_uid" />
+
+
+    <TextView
+        android:id="@+id/tv_key_room_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_room_id"
+        android:textColor="@color/color_858585"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/et_value_room_id"
+        app:layout_constraintTop_toTopOf="@id/tv_key_uid" />
+
+
+    <EditText
+        android:id="@+id/et_value_room_id"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_et_value_room_id"
+        android:hint="@string/text_hint_et_room_id"
+        android:inputType="number"
+        android:maxLength="16"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="7dp"
+        android:textColor="@drawable/edit_txt_color"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/tv_start_live"
+        app:layout_constraintStart_toEndOf="@id/et_value_uid"
+        app:layout_constraintTop_toBottomOf="@id/tv_key_room_id" />
+
+
+    <ImageView
+        android:id="@+id/iv_clear_local_rid"
+        android:layout_width="24dp"
+        android:layout_height="18dp"
+        android:paddingEnd="6dp"
+        android:paddingRight="6dp"
+        android:paddingLeft="6dp"
+        android:src="@drawable/ic_same_clean"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/et_value_room_id"
+        app:layout_constraintEnd_toEndOf="@+id/et_value_room_id"
+        app:layout_constraintTop_toTopOf="@+id/et_value_room_id" />
+
+    <ImageView
+        android:id="@+id/iv_clear_local_uid"
+        android:layout_width="24dp"
+        android:layout_height="18dp"
+        android:paddingEnd="6dp"
+        android:paddingRight="6dp"
+        android:paddingLeft="6dp"
+        android:src="@drawable/ic_same_clean"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/et_value_uid"
+        app:layout_constraintEnd_toEndOf="@+id/et_value_uid"
+        app:layout_constraintTop_toTopOf="@+id/et_value_uid" />
+
+    <TextView
+        android:id="@+id/tv_start_live"
+        android:layout_width="75dp"
+        android:layout_height="32dp"
+        android:background="@drawable/blue_btn_selector"
+        android:gravity="center"
+        android:text="@string/text_start_publish"
+        android:textColor="@drawable/blue_button_txt_color"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/rv_mutil_video"
+        app:layout_constraintStart_toEndOf="@id/et_value_room_id"
+        app:layout_constraintTop_toTopOf="@id/et_value_room_id" />
+
+    <!--<ScrollView
+        android:id="@+id/sc_log"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_slv_log"
+        app:layout_constraintTop_toBottomOf="@id/tv_start_publish"
+        app:layout_constraintBottom_toTopOf="@id/bt_switch_camera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/room_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_858585"
+            android:textSize="14sp"/>
+
+    </ScrollView>-->
+
+    <TextView
+        android:id="@+id/room_status"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"
+        android:textColor="@color/color_666"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/bt_switch_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_start_live" />
+
+    <Button
+        android:id="@+id/bt_switch_camera"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="12dp"
+        android:alpha=".5"
+        android:background="@drawable/toolbar_btn_switch_camera"
+        android:contentDescription="@string/text_description_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_camera"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:alpha=".5"
+        android:background="@drawable/toolbar_btn_camera_enable"
+        android:contentDescription="@string/text_description_default"
+        app:layout_constraintBottom_toBottomOf="@id/bt_switch_camera"
+        app:layout_constraintStart_toEndOf="@id/bt_switch_camera" />
+
+    <Button
+        android:id="@+id/bt_microphone"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:alpha=".5"
+        android:background="@drawable/toolbar_btn_microphone_enable"
+        android:contentDescription="@string/text_description_default"
+        app:layout_constraintBottom_toBottomOf="@id/bt_camera"
+        app:layout_constraintStart_toEndOf="@id/bt_camera" />
+
+    <Button
+        android:id="@+id/bt_log"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/toolbar_btn_log"
+        android:contentDescription="@string/text_description_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/bt_interface"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/toolbar_btn_api"
+        android:contentDescription="@string/text_description_default"
+        app:layout_constraintBottom_toBottomOf="@id/bt_log"
+        app:layout_constraintEnd_toStartOf="@id/bt_log" />
+
+    <Button
+        android:id="@+id/bt_document"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/toolbar_btn_document"
+        android:contentDescription="@string/text_description_default"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/bt_log"
+        app:layout_constraintEnd_toStartOf="@id/bt_interface" />
+
+    <Button
+        android:id="@+id/bt_feedback"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/toolbar_btn_feedback"
+        android:contentDescription="@string/text_description_default"
+        app:layout_constraintBottom_toBottomOf="@id/bt_log"
+        app:layout_constraintEnd_toStartOf="@id/bt_interface" />
+
+    <Button
+        android:id="@+id/bt_setting"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/img_setting"
+        android:contentDescription="@string/text_description_default"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/bt_log"
+        app:layout_constraintEnd_toStartOf="@id/bt_feedback" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

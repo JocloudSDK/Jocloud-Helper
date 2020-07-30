@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aivacom.api.samechannel.UI.SquareFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/father"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <com.aivacom.api.samechannel.UI.LocalUserView
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</com.aivacom.api.samechannel.UI.SquareFrameLayout>
+

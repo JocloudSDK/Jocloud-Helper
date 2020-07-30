@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="text_same_channel_mutil_video">Multi-User Video Call</string>
+    <string name="text_uid">UID</string>
+    <string name="text_room_id">Room ID</string>
+    <string name="text_start_publish">Go Live</string>
+    <string name="text_stop_publish">End</string>
+    <string name="text_hint_et_uid">Up to 6 digits</string>
+    <string name="text_hint_et_room_id">Up to 8 digits</string>
+    <string name="text_input_correct_uid">Please enter the correct uid</string>
+    <string name="text_only_number">Only supports pure numbers</string>
+    <string name="text_local_preview">Preview/</string>
+    <string name="text_start_publish_success">Go live successfully</string>
+    <string name="text_end_live_success">End live successfully	</string>
+
+</resources>

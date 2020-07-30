@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+# 本地仓库
+def LocalPod()
+  pod 'common',                 :path => '../common'
+end
+
+# 本地模块仓库
+def ModulePod()
+  
+end
+
+# 三方仓库
+def ThirdPod()
+  pod 'CocoaLumberjack'
+end
+
+target 'jly_logcat' do
+  LocalPod()
+  ModulePod()
+  ThirdPod()
+end

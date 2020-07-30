@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/et_cross_stream_url"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/cross_input_bg"
+        android:hint="@string/cross_stream_hint"
+        android:gravity="left|center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:paddingLeft="10dp"
+        android:paddingRight="22dp"
+        android:singleLine="true"
+        android:textColor="#272E44"
+        android:textColorHint="#CBCBCB"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cross_stream_url" />
+
+    <ImageView
+        android:id="@+id/iv_clear_stream_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:src="@mipmap/ic_cross_clean"
+        app:layout_constraintBottom_toBottomOf="@+id/et_cross_stream_url"
+        app:layout_constraintEnd_toEndOf="@+id/et_cross_stream_url"
+        app:layout_constraintTop_toTopOf="@+id/et_cross_stream_url" />
+
+    <TextView
+        android:id="@+id/tv_cross_stream_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/cross_stream_url"
+        android:textColor="#858585"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cross_push_stream"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/blue_btn_selector"
+        android:enabled="false"
+        android:gravity="center_horizontal"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:text="@string/cross_push_stream"
+        android:textColor="@drawable/blue_button_txt_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_cross_stream_url"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.67" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

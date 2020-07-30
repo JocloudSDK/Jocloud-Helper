@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50121653" />
+
+    <com.thunder.livesdk.video.ThunderPreviewView
+        android:id="@+id/preView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/defaultPreviewView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#F3F4F8">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/cross_default_video_icon"/>
+
+    </RelativeLayout>
+
+    <com.thunder.livesdk.video.ThunderPlayerView
+        android:id="@+id/playView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/defaultPlayView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#F3F4F8">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/cross_default_video_icon"/>
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/alphaview_preview"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:background="@drawable/alpha_bg"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintStart_toStartOf="@+id/preView"
+        app:layout_constraintTop_toTopOf="@+id/preView" />
+
+    <View
+        android:id="@+id/alphaview_playview"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:background="@drawable/alpha_bg"
+        app:layout_constraintEnd_toEndOf="@+id/playView"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="@+id/playView" />
+
+    <ImageView
+        android:id="@+id/iv_cross_self_net"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="3dp"
+        android:src="@mipmap/ic_cross_net0"
+        app:layout_constraintBottom_toBottomOf="@+id/alphaview_preview"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="@+id/preView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:text="@string/cross_local_preview_txt"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/alphaview_preview"
+        app:layout_constraintStart_toStartOf="@+id/alphaview_preview"
+        app:layout_constraintTop_toTopOf="@+id/preView" />
+
+    <ImageView
+        android:id="@+id/iv_cross_other_net"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="3dp"
+        android:src="@mipmap/ic_cross_net0"
+        app:layout_constraintBottom_toBottomOf="@+id/alphaview_playview"
+        app:layout_constraintEnd_toEndOf="@+id/playView"
+        app:layout_constraintTop_toTopOf="@+id/playView" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:text="@string/cross_remote_subcribe_txt"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/alphaview_playview"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="@+id/playView" />
+
+    <LinearLayout
+        android:id="@+id/ll_cross_date"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:background="@drawable/alpha_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/preView"
+        app:layout_constraintEnd_toEndOf="@+id/playView"
+        app:layout_constraintStart_toStartOf="@+id/preView">
+
+        <TextView
+            android:id="@+id/tv_cross_up_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cross_up_bitrate"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_cross_down_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/cross_down_bitrate"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //反馈
+    <string name="text_feedback_title">反馈</string>
+    <string name="text_feedback_content_title">请输入反馈内容</string>
+    <string name="text_feedback_content_hint">请勿留空</string>
+    <string name="text_feedback_content_toast">请输入反馈内容</string>
+    <string name="text_feedback_mobile_title">联系方式</string>
+    <string name="text_feedback_mobile_hint">选填</string>
+    <string name="text_feedback_submit">提交反馈</string>
+    <string name="text_feedback_submit_succeed">反馈成功</string>
+    <string name="text_feedback_submit_faild">反馈失败</string>
+    <string name="text_feedback_submitting">正在提交反馈</string>
+
+</resources>

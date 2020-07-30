@@ -1,0 +1,61 @@
+<resources>
+    //title
+    <string name="cross_channel">跨房间连麦</string>
+
+    //video
+    <string name="cross_local_preview_txt">本地预览</string>
+    <string name="cross_remote_subcribe_txt">远端订阅</string>
+    <string name="cross_up_bitrate">上行码率：%1d kbps  音频：%2d kbps  视频：%3d kbps</string>
+    <string name="cross_down_bitrate">下行码率：%1d kbps  音频：%2d kbps  视频：%3d kbps</string>
+
+    //local
+    <string name="cross_local_uid">本地UID</string>
+    <string name="cross_local_roomid">本地Room ID</string>
+    <string name="cross_local_start_push">开播</string>
+    <string name="cross_local_stop_push">关播</string>
+    <string name="cross_local_uid_hint">最多6位数字</string>
+    <string name="cross_local_roomid_hint">最多8位数字</string>
+
+    //remote
+    <string name="cross_remote_uid">远端UID</string>
+    <string name="cross_remote_roomid">远端Room ID</string>
+    <string name="cross_remote_subscribe">连麦</string>
+    <string name="cross_remote_unsubscribe">取消连麦</string>
+    <string name="cross_remote_uid_hint">最多6位数字</string>
+    <string name="cross_remote_roomid_hint">最多8位数字</string>
+
+    //Push
+    <string name="cross_stream_url">推流地址</string>
+    <string name="cross_stream_hint">rtmp://</string>
+    <string name="cross_push_stream">推流</string>
+    <string name="cross_stop_push_stream">取消推流</string>
+
+    //toast
+    <string name="cross_toast_live_succeed">开播成功</string>
+    <string name="cross_toast_joinroom_faild">进入房间失败</string>
+    <string name="cross_toast_end_live_succeed">关播成功</string>
+    <string name="cross_toast_subcribe_succeed">已成功连麦</string>
+    <string name="cross_toast_subcribe_timeout">申请超时</string>
+    <string name="cross_refuse">连麦申请被拒</string>
+    <string name="cross_call_end">连麦已结束</string>
+    <string name="cross_call_ended_abnormally">连麦已断开</string><!--异常情况下断开连麦-->
+    <string name="cross_push_succeed">推流成功</string>
+    <string name="cross_push_faild">推流失败，请检查推流地址或服务</string>
+    <string name="cross_push_stoped">推流已停止</string>
+    <string name="confirm_invite_one2one_call">%1d &#160;想与你连麦</string>
+    <string name="confirm_refuse_one2one_call">拒绝</string>
+    <string name="confirm_agree_one2one_call">接受</string>
+    <string name="confirm_logout_yes">Yes</string>
+    <string name="confirm_logout_no">No</string>
+    <string name="cross_loading">正在加载中</string>
+    <string name="cross_waitting_remote">正在等待远端用户操作&#160; </string>
+    <string name="cross_toast_busy">远端用户在连麦中，请稍后再试</string>
+
+    <string name="cross_toast_cant_same_room">请输入不同Room ID</string>
+    <string name="cross_toast_end_live">请先关闭直播</string>
+    <string name="cross_toast_end_1v1call">请先取消连麦和停止推流</string>
+    <string name="cross_toast_invalid_url">URL非法，请输入有效的链接:</string>
+
+    <string name="cross_doc_title">doc</string>
+
+</resources>

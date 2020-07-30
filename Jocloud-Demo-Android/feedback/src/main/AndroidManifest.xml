@@ -1,0 +1,10 @@
+<manifest package="com.aivacom.api.feedback"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity android:name="com.aivacom.api.feedback.view.FeedBackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+    </application>
+
+</manifest>

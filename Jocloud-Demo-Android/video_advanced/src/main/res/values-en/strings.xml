@@ -1,0 +1,52 @@
+<resources>
+    <string name="advanced_main_title">Video Publishing</string>
+
+    <!--主页-->
+    <string name="advanced_homepage_anchorhint">- Broadcaster -</string>
+    <string name="advanced_homepage_createroom">Create A Room</string>
+    <string name="advanced_homepage_audiencehint">- Viewer -</string>
+    <string name="advanced_homepage_joinroom">Join</string>
+    <string name="advanced_homepage_hint1">This demo shows the functions as below:</string>
+    <string name="advanced_homepage_hint2">- Portrail/Landscape Orientation</string>
+    <string name="advanced_homepage_hint3">- Render Mode</string>
+    <string name="advanced_homepage_hint4">- Mirror</string>
+    <string name="advanced_homepage_hint5">- Camera On/Off</string>
+    <string name="advanced_homepage_hint6">- Video Quality</string>
+    <string name="advanced_homepage_hint7">- Front/Rear Camera</string>
+
+    <string name="text_hint_et_room_id">Up to 8 digits</string>
+    <string name="text_toast_network_error">Network error</string>
+
+    <!--主播-->
+    <string name="advanced_room_id">Room ID：%s</string>
+    <string name="advanced_user_id">Broadcaster：%s</string>
+    <string name="advanced_local_id">Local：%s</string>
+    <string name="advanced_close_mic">Mute</string>
+    <string name="advanced_open_mic">Unmute</string>
+    <string name="advanced_gear">Quality</string>
+    <string name="advanced_mirror">Mirror</string>
+    <string name="advanced_render">Render</string>
+    <string name="advanced_landscape">Landscape</string>
+    <string name="advanced_portrait">Portrail</string>
+    <string name="advanced_open_camera">Cam On</string>
+    <string name="advanced_close_camera">Cam Off</string>
+    <string name="advanced_front_camera">Front Cam</string>
+    <string name="advanced_bfront_camera">Rear Cam</string>
+
+    <!--pop fill mode-->
+    <string name="fill_mode_fill">Fill</string>
+    <string name="fill_mode_clip">Clip To Bound</string>
+    <string name="fill_mode_fit">Aspect Fit</string>
+
+    <!--pop transcodeing mode-->
+    <string name="transcodeing_mode_fluency">320*240    15fps   300k</string>
+    <string name="transcodeing_mode_normal">640*368    24fps   550k</string>
+    <string name="transcodeing_mode_highqulity">960*544    24fps   1000k</string>
+    <string name="transcodeing_mode_superqulity">1280*720    24fps   1500k</string>
+
+    <!--pop mirror mode-->
+    <string name="mirror_preview">Preview：</string>
+    <string name="mirror_push">Publish：</string>
+    <string name="mirror_mode_onmirror">On</string>
+    <string name="mirror_mode_offmirror">Off</string>
+</resources>

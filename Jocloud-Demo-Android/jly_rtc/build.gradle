@@ -39,7 +39,8 @@ dependencies {
     implementation project(':jly_logcat')
 
     if (isThunderBolt) {
-        api "com.rtc.thunder:thunderbolt:2.9.10"
+        //todo 2.9.10 的视频库外网marven还没有，有了在升级
+        api "com.rtc.thunder:thunderbolt:2.8.6"
     } else {
         api "com.rtc.thunder:thunder:2.8.0"
     }

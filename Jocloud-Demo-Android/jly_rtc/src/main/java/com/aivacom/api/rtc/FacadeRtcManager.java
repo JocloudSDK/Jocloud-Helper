@@ -381,6 +381,8 @@ public class FacadeRtcManager {
         int result = 0;
         if (isJoinRoom.getValue()) {
             thunderLogD("leaveRoom");
+            thunderEngine.setLocalVideoCanvas(null);
+            thunderEngine.setRemoteVideoCanvas(null);
             result = thunderEngine.leaveRoom();
         }
         Log.i(TAG,
@@ -496,6 +498,61 @@ public class FacadeRtcManager {
         }
     }
 
+    public void setVideoCaptureOrientation(int orientation) {
+        if (thunderEngine != null) {
+            thunderLogD("setVideoCaptureOrientation");
+            thunderEngine.setVideoCaptureOrientation(orientation);
+        }
+    }
+
+    public void setLocalCanvasScaleMode(int mode) {
+        if (thunderEngine != null) {
+            thunderLogD("setLocalCanvasScaleMode");
+            thunderEngine.setLocalCanvasScaleMode(mode);
+        }
+    }
+
+    public void setRemoteCanvasScaleMode(String uid, int mode) {
+        if (thunderEngine != null) {
+            thunderLogD("setRemoteCanvasScaleMode");
+            thunderEngine.setRemoteCanvasScaleMode(uid, mode);
+        }
+    }
+
+    public void startPreview(ThunderPreviewView mPreviewContainer, String uid){
+        if (thunderEngine!=null) {
+            //Set local view display mode
+            ThunderVideoCanvas mPreviewView = new ThunderVideoCanvas(mPreviewContainer,
+                    ThunderRtcConstant.ThunderVideoViewScaleMode.THUNDERVIDEOVIEW_SCALE_MODE_ASPECT_FIT,
+                    uid);
+            thunderLogD("startPush setLocalVideoCanvas");
+            thunderEngine.setLocalVideoCanvas(mPreviewView);
+            //设置视频模式
+            thunderLogD("startPush setLocalCanvasScaleMode");
+            thunderEngine.setLocalCanvasScaleMode(
+                    ThunderRtcConstant.ThunderVideoRenderMode.THUNDER_RENDER_MODE_CLIP_TO_BOUNDS);
+            //开启预览
+            //enable video preview
+            thunderLogD("startPush startVideoPreview");
+            thunderEngine.startVideoPreview();
+        }
+    }
+
+    public void setPreview(ThunderPreviewView mPreviewContainer, String uid){
+        if (thunderEngine!=null) {
+            //Set local view display mode
+            ThunderVideoCanvas mPreviewView = new ThunderVideoCanvas(mPreviewContainer,
+                    ThunderRtcConstant.ThunderVideoViewScaleMode.THUNDERVIDEOVIEW_SCALE_MODE_ASPECT_FIT,
+                    uid);
+            thunderLogD("startPush setLocalVideoCanvas");
+            thunderEngine.setLocalVideoCanvas(mPreviewView);
+            //设置视频模式
+            thunderLogD("startPush setLocalCanvasScaleMode");
+            thunderEngine.setLocalCanvasScaleMode(
+                    ThunderRtcConstant.ThunderVideoRenderMode.THUNDER_RENDER_MODE_CLIP_TO_BOUNDS);
+        }
+    }
+
 
     private List<ThunderEventHandler> myThunderEventHandlers = new CopyOnWriteArrayList<>();
 
@@ -520,7 +577,7 @@ public class FacadeRtcManager {
     private ThunderEventHandler mThunderEventHandler = new ThunderEventHandler() {
 
         /**
-         * sdk error message callback
+         * SDK error message callback
          */
         @Override
         public void onError(int error) {
@@ -690,6 +747,14 @@ public class FacadeRtcManager {
 
             if (FacadeRtcManager.getInstance().getObserver() != null) {
                 FacadeRtcManager.getInstance().getObserver().onRoomStats(stats);
+            }
+        }
+
+        @Override
+        public void onLocalVideoStats(LocalVideoStats stats) {
+            super.onLocalVideoStats(stats);
+            if (FacadeRtcManager.getInstance().getObserver() != null) {
+                FacadeRtcManager.getInstance().getObserver().onLocalVideoStats(stats);
             }
         }
 
@@ -972,7 +1037,7 @@ public class FacadeRtcManager {
 
 
     /**
-     * Set sdk media mode
+     * Set SDK media mode
      * 设置sdk媒体模式
      *
      * @param mode mode
@@ -1060,6 +1125,114 @@ public class FacadeRtcManager {
         int result = thunderEngine.enableCaptureVolumeIndication(500, 0, 0, 0);
         Log.i(TAG, "enableCaptureVolumeIndication result=" + result);
         return result;
+    }
+
+    /**
+     * Set audio mode
+     * 设置音频模式
+     *
+     * @param profile      Audio type {@link ThunderRtcConstant.AudioConfig}
+     * @param commutMode   Interactive mode {@link ThunderRtcConstant.CommutMode}
+     * @param scenarioMode Scenario mode{@link ThunderRtcConstant.ScenarioMode}
+     */
+    public int setAudioConfig(int profile, int commutMode, int scenarioMode) {
+        if (thunderEngine == null) {
+            Log.i(TAG, "setAudioConfig 未初始化");
+            return ERROR_UN_INI;
+        }
+
+        thunderLogD("setAudioConfig");
+        Log.d(TAG, "setAudioConfig profile=" + profile + " commutMode=" + commutMode + " " +
+                "scenarioMode=" + scenarioMode);
+        int result = thunderEngine.setAudioConfig(profile, commutMode, scenarioMode);
+        Log.d(TAG, "setAudioConfig result=" + result);
+        return result;
+    }
+
+    /**
+     * Turn on or off ear monitor
+     * 打开关闭耳返
+     *
+     * @return 0:success,{@link ThunderRtcConstant.ThunderRet}
+     */
+    public int setEnableInEarMonitor(boolean enabled) {
+        if (thunderEngine == null) {
+            Log.d(TAG, "setEnableInEarMonitor 未初始化");
+            return 0;
+        }
+
+        thunderLogD("setEnableInEarMonitor enabled=" + enabled);
+        Log.d(TAG, "setEnableInEarMonitor enabled=" + enabled);
+        int result = thunderEngine.setEnableInEarMonitor(enabled);
+        Log.d(TAG, "setEnableInEarMonitor enabled=" + enabled + " result=" + result);
+        return result;
+    }
+
+    /**
+     * enable speaker
+     * 设置是否外放
+     *
+     * @return 0:success,{@link ThunderRtcConstant.ThunderRet}
+     */
+    public int enableLoudspeaker(boolean enabled) {
+        if (thunderEngine == null) {
+            Log.d(TAG, "enableLoudspeaker 未初始化");
+            return 0;
+        }
+
+        thunderLogD("enableLoudspeaker enabled=" + enabled);
+        Log.d(TAG, "enableLoudspeaker enabled=" + enabled);
+        int result = thunderEngine.enableLoudspeaker(enabled);
+        Log.d(TAG, "enableLoudspeaker enabled=" + enabled + " result=" + result);
+        return result;
+    }
+
+    /**
+     * Whether speakers is playing
+     * 是否外放
+     *
+     * @return 0:success,{@link ThunderRtcConstant.ThunderRet}
+     */
+    public boolean isLoudspeakerEnabled() {
+        if (thunderEngine == null) {
+            Log.d(TAG, "isLoudspeakerEnabled 未初始化");
+            return false;
+        }
+
+        thunderLogD("isLoudspeakerEnabled");
+        boolean enabled = thunderEngine.isLoudspeakerEnabled();
+        Log.d(TAG, "isLoudspeakerEnabled enabled=" + enabled);
+        return enabled;
+    }
+
+    /**
+     * Set different sound modes
+     * 设置不同的音效模式
+     *
+     * @param mode {@link ThunderRtcConstant.SoundEffectMode}
+     */
+    public void setSoundEffect(int mode) {
+        if (thunderEngine == null) {
+            Log.d(TAG, "setSoundEffect 未初始化");
+            return;
+        }
+        thunderLogD("setSoundEffect mode " + mode);
+        thunderEngine.setSoundEffect(mode);
+    }
+
+    /**
+     * Set voice change mode
+     * 设置变声模式
+     *
+     * @param mode {@link ThunderRtcConstant.VoiceChangerMode}
+     */
+    public void setVoiceChanger(int mode) {
+        if (thunderEngine == null) {
+            Log.d(TAG, "setVoiceChanger 未初始化");
+            return;
+        }
+        thunderLogD("setVoiceChanger mode " + mode);
+        thunderEngine.setVoiceChanger(mode);
     }
 
     /**
@@ -1470,8 +1643,9 @@ public class FacadeRtcManager {
     /**
      * Set remote view
      * 设置远程视图
+     *
      * @param remoteView view
-     * @param uid user id
+     * @param uid        user id
      */
     public void setRemotePlayerView(View remoteView, @NonNull String uid) {
         if (thunderEngine == null) {
@@ -1587,6 +1761,23 @@ public class FacadeRtcManager {
         return result;
     }
 
+    /**
+     * 设置镜像模式
+     *
+     * @param mirrorMode 镜像模式
+     * @return
+     */
+    public int setLocalVideoMirrorMode(int mirrorMode) {
+        if (thunderEngine == null) {
+            Log.i(TAG, "switchLocalVidioStreamStop 未初始化");
+            return ERROR_UN_INI;
+        }
+
+        int result = thunderEngine.setLocalVideoMirrorMode(mirrorMode);
+
+        return result;
+    }
+
 
     public IThunderLogCallback getThunderLogCallback() {
         return thunderLogCallback;
@@ -1644,6 +1835,7 @@ public class FacadeRtcManager {
 
         public void onRoomStats(ThunderNotification.RoomStats stats) {
         }
+        public void onLocalVideoStats(ThunderEventHandler.LocalVideoStats stats) {}
     }
 
     public JoinThunderRoomObserver getJoinThunderRoomObserver() {
@@ -1663,7 +1855,7 @@ public class FacadeRtcManager {
 
     /**
      * log function
-     * */
+     */
     private void thunderLogD(String info) {
         thunderLogD(info, false);
     }

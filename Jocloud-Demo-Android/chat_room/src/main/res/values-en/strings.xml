@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="chat_room_title">Chat Room</string>
+    <string name="text_uid">Local UID</string>
+    <string name="text_room_id">Room ID</string>
+    <string name="text_join_room">Join</string>
+    <string name="text_leave_room">Exit</string>
+    <string name="room_member_count">Online Users:%d</string>
+    <string name="go_chat">Hey~</string>
+    <string name="send">send</string>
+    <string name="system_message">[SysMsg]&#160;</string>
+    <string name="user_join_room"> joined</string>
+    <string name="user_leave_room"> left</string>
+    <string name="room_users">Online Users</string>
+    <string name="toast_failed_join">Failed to join room</string>
+
+    <string name="text_hint_et_uid">Up to 6 digits</string>
+    <string name="text_hint_et_room_id">Up to 8 digits</string>
+    <string name="member_me">%s(me)</string>
+    <string name="send_failed">send failed</string>
+    <string name="timeout_leave_room">Timed out. Logged out from the room</string>
+</resources>

@@ -32,11 +32,11 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-    implementation "com.yy.sdk.crashreport:crashreport:2.3.4.1"
     api "tv.athena:feedback:1.2.27"
-    implementation "tv.athena:filetransfer:2.2.14"
-    implementation "tv.athena:klog:2.2.14"
-    implementation "tv.athena:http:2.2.14"
+    implementation "tv.athena:filetransfer:${athena_version}"
+    implementation "tv.athena:klog:${athena_version}"
+    implementation "tv.athena:crash:${athena_version}"
+    implementation "tv.athena:http:${athena_version}"
 
     implementation project(':utils')
     implementation project(':baseui')

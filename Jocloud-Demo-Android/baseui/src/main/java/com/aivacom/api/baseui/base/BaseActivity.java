@@ -25,6 +25,7 @@ import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.aivacom.api.baseui.R;
+import com.aivacom.api.baseui.widget.dialog.puredialog.ConfirmDialog;
 import com.aivacom.api.baseui.widget.dialog.puredialog.LoadingDialog;
 import com.aivacom.api.utils.LangUtil;
 
@@ -39,6 +40,8 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
     public Context mContext;
 
     private LoadingDialog dialog;
+
+    private ConfirmDialog confirmDialog;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -106,24 +109,29 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
     }
 
     public void showDialogProgress() {
-        LoadingDialog.Builder builder = new LoadingDialog.Builder(this)
-                .setMessage(getResources().getString(R.string.loading_progress))
-                .setCancelable(false);
-        dialog = builder.create();
-        dialog.show();
+        if (dialog == null) {
+            LoadingDialog.Builder builder = new LoadingDialog.Builder(this)
+                    .setMessage(getResources().getString(R.string.loading_progress))
+                    .setCancelable(false);
+            dialog = builder.create();
+            dialog.show();
+        }
     }
 
     public void showDialogProgress(String message) {
-        LoadingDialog.Builder builder = new LoadingDialog.Builder(this)
-                .setMessage(message)
-                .setCancelable(false);
-        dialog = builder.create();
-        dialog.show();
+        if (dialog == null) {
+            LoadingDialog.Builder builder = new LoadingDialog.Builder(this)
+                    .setMessage(message)
+                    .setCancelable(false);
+            dialog = builder.create();
+            dialog.show();
+        }
     }
 
-    public void dissMissDialogProgress() {
+    public void dismissDialogProgress() {
         if (dialog != null) {
             dialog.dismiss();
+            dialog = null;
         }
     }
 
@@ -203,6 +211,25 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         }
         lastClick = System.currentTimeMillis();
         return false;
+    }
+
+    public void showQuitConfirmDialog() {
+        if (confirmDialog != null && confirmDialog.isShowing()) {
+            return;
+        }
+        confirmDialog = new ConfirmDialog(this, new ConfirmDialog.OnConfirmCallback() {
+            @Override
+            public void onSure() {
+                finish();
+            }
+
+            @Override
+            public void onCancel() {
+                confirmDialog.dismiss();
+            }
+        });
+        confirmDialog.setDesc(getResources().getString(R.string.confirm_logout_scenario));
+        confirmDialog.show();
     }
 
 }

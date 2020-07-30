@@ -84,7 +84,7 @@ public class FeedBackActivity extends BaseActivity {
                             @Override
                             public void run() {
                                 showToast(R.string.text_feedback_submit_faild);
-                                dissMissDialogProgress();
+                                dismissDialogProgress();
                             }
                         });
                     }
@@ -95,7 +95,7 @@ public class FeedBackActivity extends BaseActivity {
                             @Override
                             public void run() {
                                 showToast(R.string.text_feedback_submit_succeed);
-                                dissMissDialogProgress();
+                                dismissDialogProgress();
                                 finish();
                             }
                         });

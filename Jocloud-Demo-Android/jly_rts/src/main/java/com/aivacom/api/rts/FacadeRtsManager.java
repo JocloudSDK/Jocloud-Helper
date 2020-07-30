@@ -13,6 +13,7 @@ import com.hummer.rts.PeerService;
 import com.hummer.rts.RoomService;
 
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by zhouwen on 2020/5/28.
@@ -34,6 +35,7 @@ public class FacadeRtsManager {
 
     /**
      * return version code of HMR
+     *
      * @return version
      */
     public String getVersion() {
@@ -41,7 +43,7 @@ public class FacadeRtsManager {
     }
 
     /**
-     * init rts sdk
+     * init rts SDK
      * 初始化RTS SDK
      *
      * @param appContext context
@@ -78,20 +80,33 @@ public class FacadeRtsManager {
      * @param region region
      * @param token  token
      */
-    public void login(long uid, String region, String token) {
+    public void login(long uid, String region, String token, final LoginCallBack loginCallBack) {
         logD("login uid " + uid + " region " + region + " token " + token);
         HMR.login(uid, region, token, new HMR.Completion() {
             @Override
             public void onSuccess(RequestId requestId) {
                 logD("login onSuccess requestId " + requestId);
+                if (loginCallBack != null) {
+                    loginCallBack.onSuccess(requestId);
+                }
+
             }
 
             @Override
             public void onFailed(RequestId requestId, Error err) {
                 logE("login onFailed requestId " + requestId + " err " + err);
+                if (loginCallBack != null) {
+                    loginCallBack.onFailed(requestId, err);
+                }
             }
 
         });
+    }
+
+    public interface LoginCallBack {
+        void onSuccess(RequestId requestId);
+
+        void onFailed(RequestId requestId, Error err);
     }
 
     /**
@@ -194,18 +209,24 @@ public class FacadeRtsManager {
      *
      * @param roomId room id
      */
-    public void join(RoomId roomId) {
+    public void join(RoomId roomId, final HMR.Completion completion) {
         logD("join roomId " + roomId);
         HMR.getService(RoomService.class)
                 .join(roomId, new HashMap<String, String>(0), null, new HMR.Completion() {
                     @Override
                     public void onSuccess(RequestId requestId) {
                         logD("join onSuccess requestId " + requestId);
+                        if (completion != null) {
+                            completion.onSuccess(requestId);
+                        }
                     }
 
                     @Override
                     public void onFailed(RequestId requestId, Error err) {
                         logE("join onFailed requestId " + requestId + " err " + err);
+                        if (completion != null) {
+                            completion.onFailed(requestId, err);
+                        }
                     }
                 });
     }
@@ -216,21 +237,51 @@ public class FacadeRtsManager {
      *
      * @param roomId room id
      */
-    public void leave(RoomId roomId) {
+    public void leave(RoomId roomId, final HMR.Completion completion) {
         logD("leave roomId " + roomId);
         HMR.getService(RoomService.class).leave(roomId, new HMR.Completion() {
             @Override
             public void onSuccess(RequestId requestId) {
                 logD("leave onSuccess requestId " + requestId);
+                if (completion != null) {
+                    completion.onSuccess(requestId);
+                }
             }
 
             @Override
             public void onFailed(RequestId requestId, Error err) {
                 logE("leave onFailed requestId " + requestId + " err " + err);
-
+                if (completion != null) {
+                    completion.onFailed(requestId, err);
+                }
             }
         });
     }
+
+    public void queryMembers(RoomId roomId, HMR.CompletionArg<List<Long>> completion) {
+        HMR.getService(RoomService.class).queryMembers(roomId, completion);
+    }
+
+    public void addRoomEventListener(RoomService.RoomEventListener listener) {
+        HMR.getService(RoomService.class).addRoomEventListener(listener);
+    }
+
+    public void removeRoomEventListener(RoomService.RoomEventListener listener) {
+        HMR.getService(RoomService.class).removeRoomEventListener(listener);
+    }
+
+    public void addMemberEventListener(RoomService.MemberEventListener listener) {
+        HMR.getService(RoomService.class).addMemberEventListener(listener);
+    }
+
+    public void removeMemberEventListener(RoomService.MemberEventListener listener) {
+        HMR.getService(RoomService.class).removeMemberEventListener(listener);
+    }
+
+    public void sendMessage(RoomId roomId, Message message, MessagingOptions options, HMR.Completion completion) {
+        HMR.getService(RoomService.class).sendMessage(roomId, message, options, completion);
+    }
+
 
     private static final String HMR_LOG_TAG = "HMR";
 

@@ -10,7 +10,6 @@ public class Constant {
     public static final int STATUS_NORMAL = 2; //APP正常态
 
     public static long mAppId = 1711983884;
-    public static String uid;
 
     public static final String FEEDBACK_CRASHLOGID = "Aivacom-Android";
 
@@ -71,9 +70,11 @@ public class Constant {
     // public static boolean isStopRemoteVideo = true; //远端视频流
     // public static boolean isStopRemoteAudio = true; //远端音频流
 
-    public static String CROSS_DOC_URL =
-            "https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction" +
-                    "/integration_and_start/integration_and_start_android.html";
-    public static String CROSS_API_URL =
-            "https://github.com/Aivacom/JLYLiveChat/blob/master/JLYLiveChat-android/README.md";
+    public static String API_URL_PRE = "https://github.com/Aivacom/Jocloud-Demo/tree/master/Jocloud-Demo-android/";
+
+    public static String CROSS_API_URL = API_URL_PRE + "video_crosschannel";
+    public static String VIDEO_ADVANCED_API_URL = API_URL_PRE + "video_advanced";
+    public static String CHAT_ROOM_API_URL = API_URL_PRE + "chat_room";
+    public static String SAME_API_URL = API_URL_PRE + "video_samechannel";
+    public static String AUDIO_API_URL = API_URL_PRE + "audio";
 }

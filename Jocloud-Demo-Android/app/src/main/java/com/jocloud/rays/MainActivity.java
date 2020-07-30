@@ -15,7 +15,10 @@ import com.aivacom.api.feedback.view.FeedBackActivity;
 import com.aivacom.api.samechannel.UI.VideoSameChannelActivity;
 import com.aivacom.api.utils.CustomVersionUtil;
 import com.aivacom.api.utils.LangUtil;
+import com.jocloud.audio.UI.AudioActivity;
+import com.jocloud.chatroom.UI.ChatRoomActivity;
 import com.jocloud.rays.bean.AdvanceSceneInfo;
+import com.yy.video_advanced.VideoAdvancedActivity;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -27,14 +30,17 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private RecyclerView mRvList;
     private ArrayList<AdvanceSceneInfo> itemList = new ArrayList<>();
     private MainListAdapter mRvBaseAdapter;
-//    private FloatWindowManager mFloatWindowManager;
+    //    private FloatWindowManager mFloatWindowManager;
     private AdvanceSceneInfo mAdvanceSceneInfo;
     private int[] icons = {R.mipmap.home_real_video_icon, R.mipmap.home_real_audio_icon,
             R.mipmap.home_real_msg_icon, R.mipmap.home_mix_video_icon};
     private int[] titles = {R.string.main_video_tips, R.string.main_audio_tips, R.string.main_msg_tips,
             R.string.main_mix_video_tips};
+    private int[] types = {AdvanceSceneInfo.TYPE_VIDEO, AdvanceSceneInfo.TYPE_AUDIO, AdvanceSceneInfo.TYPE_CHAT_ROOM,
+            AdvanceSceneInfo.TYPE_STREAM_PUSHING};
     private int[] subTitles = {R.string.main_video_sub_tips, R.string.main_audio_sub_tips,
             R.string.main_msg_sub_tips, R.string.main_mix_video_sub_tips};
+    private boolean[] enables = {true, true, true, false};
 
     private TextView tvAcVideo;
     private TextView tvSaVideo;
@@ -99,22 +105,18 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         mRvBaseAdapter.setRecycleViewListener(new MainListAdapter.OnRecycleItemViewListener() {
             @Override
             public void onItemView(int position) {
-                sLogger.info("chowen#RecycleItemView.onItemView position=" + position);
-                handlerRV(position);
+                int type = mRvBaseAdapter.getDataList().get(position).type;
+                if (type == AdvanceSceneInfo.TYPE_VIDEO) {
+                    go2AdvancedActivity();
+                } else if (type == AdvanceSceneInfo.TYPE_AUDIO) {
+                    startActivity(new Intent(MainActivity.this, AudioActivity.class));
+                } else if (type == AdvanceSceneInfo.TYPE_CHAT_ROOM) {
+                    startActivity(new Intent(MainActivity.this, ChatRoomActivity.class));
+                } else {
+                    showToast(R.string.main_features_not_implemented);
+                }
             }
         });
-    }
-
-    private void handlerRV(int position) {
-        showToast(R.string.main_features_not_implemented);
-//        switch (position) {
-//            case FEATURE_SAME_CHANNEL:
-//                go2SameChannel();
-//                break;
-//            case FEATURE_CROSS_CHANNEL:
-//                go2CrossChannel();
-//                break;
-//        }
     }
 
     @Override
@@ -143,13 +145,15 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             mAdvanceSceneInfo = new AdvanceSceneInfo();
             mAdvanceSceneInfo.icon = icons[i];
             mAdvanceSceneInfo.itemTitle = titles[i];
+            mAdvanceSceneInfo.type = types[i];
             mAdvanceSceneInfo.itemSubTitle = subTitles[i];
+            mAdvanceSceneInfo.enable = enables[i];
             itemList.add(mAdvanceSceneInfo);
         }
 
         mRvList.setLayoutManager(new LinearLayoutManager(this));
 
-        mRvBaseAdapter = new MainListAdapter(this, R.layout.item_view);
+        mRvBaseAdapter = new MainListAdapter(this);
         mRvBaseAdapter.setDataList(itemList);
         mRvList.setAdapter(mRvBaseAdapter);
 
@@ -165,6 +169,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private void go2SameChannel() {
         Intent intent = new Intent(MainActivity.this, VideoSameChannelActivity.class);
+        startActivity(intent);
+    }
+
+    private void go2AdvancedActivity() {
+        Intent intent = new Intent(MainActivity.this, VideoAdvancedActivity.class);
         startActivity(intent);
     }
 

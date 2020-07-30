@@ -355,7 +355,7 @@ public class CrossChannelActivity extends BaseActivity {
             showToast(getResources().getString(R.string.cross_toast_end_live));
             return;
         }
-        showConfirmDialog();
+        showQuitConfirmDialog();
     }
 
     public void onClick(View v) {
@@ -407,7 +407,7 @@ public class CrossChannelActivity extends BaseActivity {
                     .joinRoom(null, Constant.mLocalRoomId, Constant.mLocalUid);
             if (joinroomResult == 0) {
                 FacadeRtsManager.getIns()
-                        .login(Long.parseLong(Constant.mLocalUid), Constant.CROSS_REGION, null);
+                        .login(Long.parseLong(Constant.mLocalUid), Constant.CROSS_REGION, null, null);
             } else {
                 //joinroom faild
                 slog("UID=" + Constant.mLocalUid + " failed to join roomID=" +
@@ -541,7 +541,7 @@ public class CrossChannelActivity extends BaseActivity {
     private void pushStream() {
         Uri uri = Uri.parse(Constant.customPushUrl);
         if (uri == null || TextUtils.isEmpty(uri.getScheme()) || TextUtils.isEmpty(uri.getHost())) {
-            dissMissDialogProgress();
+            dismissDialogProgress();
             Toast.makeText(this, getResources().getString(R.string.cross_toast_invalid_url) +
                             Constant.customPushUrl,
                     Toast.LENGTH_SHORT)
@@ -667,7 +667,7 @@ public class CrossChannelActivity extends BaseActivity {
                 new HMR.Completion() {
                     @Override
                     public void onSuccess(RequestId requestId) {
-                        dissMissDialogProgress();
+                        dismissDialogProgress();
                         showWaitingDialog();
                         slog("Invitation to UID=" + Constant.mRemoteUid + ", roomID=" +
                                 Constant.mRemoteRoomId + " is sent", false);
@@ -675,7 +675,7 @@ public class CrossChannelActivity extends BaseActivity {
 
                     @Override
                     public void onFailed(RequestId requestId, Error err) {
-                        dissMissDialogProgress();
+                        dismissDialogProgress();
                         showToast("onFailed" + err.code + " - " + err.desc);
                         slog(" Failed to send invitation to UID" + Constant.mRemoteUid +
                                 ", roomID=" + Constant.mRemoteRoomId, true);
@@ -694,14 +694,14 @@ public class CrossChannelActivity extends BaseActivity {
                 new HMR.Completion() {
                     @Override
                     public void onSuccess(RequestId requestId) {
-                        dissMissDialogProgress();
+                        dismissDialogProgress();
                         slog("Invitation from UID=" + uid + ", roomID=" +
                                 roomid + " is rejected by system", false);
                     }
 
                     @Override
                     public void onFailed(RequestId requestId, Error err) {
-                        dissMissDialogProgress();
+                        dismissDialogProgress();
                         showToast("onFailed" + err.code + " - " + err.desc);
                     }
                 });
@@ -802,25 +802,6 @@ public class CrossChannelActivity extends BaseActivity {
         confirmDialog.show();
     }
 
-    private void showConfirmDialog() {
-        if (confirmDialog != null && confirmDialog.isShowing()) {
-            return;
-        }
-        confirmDialog = new ConfirmDialog(this, new ConfirmDialog.OnConfirmCallback() {
-            @Override
-            public void onSure() {
-                finish();
-            }
-
-            @Override
-            public void onCancel() {
-                confirmDialog.dismiss();
-            }
-        });
-        confirmDialog.setDesc(getResources().getString(R.string.confirm_logout_scenario));
-        confirmDialog.show();
-    }
-
     /**
      * dialog of inviting someone
      * 邀请等待
@@ -904,7 +885,7 @@ public class CrossChannelActivity extends BaseActivity {
         @Override
         public void onJoinRoomSuccess(String room, String uid, int elapsed) {
             if (uid.equals(Constant.mLocalUid)) {
-                dissMissDialogProgress();
+                dismissDialogProgress();
                 FacadeRtcManager.getInstance()
                         .startPush(previewView, etLocalUid.getText().toString(),
                                 ThunderRtcConstant.ThunderPublishVideoMode.THUNDERPUBLISH_VIDEO_MODE_NORMAL);
@@ -926,14 +907,14 @@ public class CrossChannelActivity extends BaseActivity {
         @Override
         public void onLeaveRoom(ThunderEventHandler.RoomStats status) {
             super.onLeaveRoom(status);
-            dissMissDialogProgress();
+            dismissDialogProgress();
             slog("UID=" + Constant.mLocalUid + " has left the room", false);
         }
 
         @Override
         public void onPublishStreamToCDNStatus(String url, int errorCode) {
             super.onPublishStreamToCDNStatus(url, errorCode);
-            dissMissDialogProgress();
+            dismissDialogProgress();
             if (errorCode == THUNDER_PUBLISH_CDN_ERR_SUCCESS) {
                 Constant.isPushMixStream = true;
                 tvPushStream.setText(R.string.cross_stop_push_stream);

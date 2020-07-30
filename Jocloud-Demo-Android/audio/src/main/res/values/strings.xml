@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="audio_title">音频开播进阶用法</string>
+    <string name="text_uid">本地UID</string>
+    <string name="text_room_id">ROOM ID</string>
+    <string name="text_start_live">开播</string>
+    <string name="text_leave_live">关播</string>
+    <string name="speaker">扬声器</string>
+    <string name="receiver">听筒</string>
+    <string name="turn_off_mic">闭麦</string>
+    <string name="turn_on_mic">开麦</string>
+    <string name="turn_on_ear_monitor">开耳返</string>
+    <string name="turn_off_ear_monitor">关耳返</string>
+    <string name="voice_changer">变声</string>
+    <string name="me">我</string>
+    <string name="room_member">房间人员</string>
+
+    <string name="voice_close">关闭模式</string>
+    <string name="voice_ethereal">空灵</string>
+    <string name="voice_uncle">大叔</string>
+    <string name="voice_heavy_metal">重金属</string>
+    <string name="voice_thriller">惊悚</string>
+    <string name="voice_power_current">强电流</string>
+    <string name="voice_die_fat">死肥仔</string>
+    <string name="voice_cold">感冒</string>
+    <string name="voice_lu_ban">鲁班</string>
+    <string name="voice_bad_boy">熊孩子</string>
+    <string name="voice_heavy_machinery">重机械</string>
+    <string name="voice_lorie">萝莉</string>
+    <string name="voice_war_craft">魔兽农民</string>
+    <string name="voice_trapped_beast">困兽</string>
+
+    <string name="toast_live_succeed">开播成功</string>
+    <string name="toast_live_failed">开播失败</string>
+
+    <string name="text_hint_et_uid">最多6位数字</string>
+    <string name="text_hint_et_room_id">最多8位数字</string>
+
+    <string name="cancel">取消</string>
+
+    <string-array name="mode">
+        <item>语音编码 单声道 16KHz 18kbps</item>
+        <item>音乐编码 双声道 44.1KHz 24kbps EAAC+</item>
+        <item>音乐编码 单声道 48KHz 40kbps</item>
+        <item>音乐编码 双声道 44.1KHz 128kbps AAC LC</item>
+        <item>音乐编码 双声道 44.1KHz 192kbps AAC LC_192K</item>
+    </string-array>
+
+</resources>

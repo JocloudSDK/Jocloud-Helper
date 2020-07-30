@@ -31,8 +31,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-    //    //开发时使用api库，便于解耦
-    api "tv.athena:klog-api:2.2.7"
-    //    //实现库只在编译时添加
-    runtimeOnly "tv.athena:klog:2.2.7"
+    api "tv.athena:klog-api:${athena_version}"
+    api 'com.google.code.gson:gson:2.8.5'
 }

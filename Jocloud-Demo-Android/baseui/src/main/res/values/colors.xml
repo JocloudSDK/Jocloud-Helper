@@ -6,13 +6,19 @@
 
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
+    <color name="bg_grey">#EDEFF5</color>
 
     <color name="blue_font">#6485F9</color>
     <color name="color_0041FF">#0041FF</color>
+    <color name="color_300041FF">#4D0041FF</color>
     <color name="color_0334C3">#0334C3</color>
     <color name="color_D3D5DA">#D3D5DA</color>
     <color name="color_CBCBCB">#CBCBCB</color>
     <color name="color_333">#333333</color>
     <color name="color_666">#666666</color>
+    <color name="color_1C1C1C">#1C1C1C</color>
+    <color name="color_30F3F4F8">#4DF3F4F8</color>
+    <color name="color_F3F4F8">#FFF3F4F8</color>
+    <color name="color_858585">#858585</color>
 
 </resources>

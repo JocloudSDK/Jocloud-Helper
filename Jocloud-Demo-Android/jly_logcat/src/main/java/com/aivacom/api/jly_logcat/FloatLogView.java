@@ -58,13 +58,6 @@ public class FloatLogView extends RelativeLayout implements ILog {
                 resetAddLogRunnable();
             }
         });
-
-        mRVBaseAdapter.setRecycleViewListener(new FloatLogAdapter.OnRecycleItemViewListener() {
-            @Override
-            public void onItemView(int position) {
-                // TODO: 2020/5/25 log点击 
-            }
-        });
     }
 
     private void updateDataList(ArrayList<LogData> itemLogs) {

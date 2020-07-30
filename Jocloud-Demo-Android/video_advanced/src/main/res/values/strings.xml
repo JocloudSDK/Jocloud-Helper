@@ -1,0 +1,53 @@
+<resources>
+    <string name="advanced_main_title">视频开播进阶用法</string>
+
+    <!--主页-->
+    <string name="advanced_homepage_anchorhint">- 开播进入 -</string>
+    <string name="advanced_homepage_createroom">创建房间</string>
+    <string name="advanced_homepage_audiencehint">- 观看进入 -</string>
+    <string name="advanced_homepage_joinroom">加入房间</string>
+    <string name="advanced_homepage_hint1">本Demo演示以下视频开播进阶用法：</string>
+    <string name="advanced_homepage_hint2">- 横竖屏开播</string>
+    <string name="advanced_homepage_hint3">- 渲染模式</string>
+    <string name="advanced_homepage_hint4">- 镜像</string>
+    <string name="advanced_homepage_hint5">- 开关</string>
+    <string name="advanced_homepage_hint6">- 档位</string>
+    <string name="advanced_homepage_hint7">- 前后摄像头切换</string>
+
+    <string name="text_hint_et_room_id">最多8位数字</string>
+    <string name="text_toast_network_error">网络异常</string>
+
+    <!--主播-->
+    <string name="advanced_room_id">Room ID：%s</string>
+    <string name="advanced_user_id">主播 UID：%s</string>
+    <string name="advanced_local_id">本地 UID：%s</string>
+    <string name="advanced_close_mic">闭麦</string>
+    <string name="advanced_open_mic">开麦</string>
+    <string name="advanced_gear">档位</string>
+    <string name="advanced_mirror">镜像</string>
+    <string name="advanced_render">渲染模式</string>
+    <string name="advanced_landscape">横屏</string>
+    <string name="advanced_portrait">竖屏</string>
+    <string name="advanced_open_camera">开摄像头</string>
+    <string name="advanced_close_camera">关摄像头</string>
+    <string name="advanced_front_camera">前摄像头</string>
+    <string name="advanced_bfront_camera">后摄像头</string>
+
+    <!--pop fill mode-->
+    <string name="fill_mode_fill">拉伸铺满窗口</string>
+    <string name="fill_mode_clip">裁剪铺满窗口</string>
+    <string name="fill_mode_fit">适应窗口，比例不适应的，留黑边</string>
+
+    <!--pop transcodeing mode-->
+    <string name="transcodeing_mode_fluency">流畅  320*240    15fps   300k</string>
+    <string name="transcodeing_mode_normal">标清  640*368    24fps   550k</string>
+    <string name="transcodeing_mode_highqulity">高清  960*544    24fps   1000k</string>
+    <string name="transcodeing_mode_superqulity">超清  1280*720    24fps   1500k</string>
+    
+    <!--pop mirror mode-->
+    <string name="mirror_preview">预览：</string>
+    <string name="mirror_push">推流：</string>
+    <string name="mirror_mode_onmirror">镜像</string>
+    <string name="mirror_mode_offmirror">不镜像</string>
+
+</resources>

@@ -10,8 +10,8 @@ import com.aivacom.api.rtc.FacadeRtcManager;
 import com.aivacom.api.rts.FacadeRtsManager;
 import com.aivacom.api.utils.AppContextUtil;
 import com.aivacom.api.utils.Constant;
-import com.aivacom.api.utils.LangUtil;
 import com.aivacom.api.utils.CustomVersionUtil;
+import com.aivacom.api.utils.LangUtil;
 
 /**
  * Created by zhouwen on 2020/5/9.
@@ -24,7 +24,6 @@ public class AivacomApplication extends Application {
         LangUtil.initLang(this);
         MultiDex.install(this);
         initRtcSDk();
-        // todo 用于debug, 开源需要去掉内部依赖系统
         FeedBackManager.getInstance().init(this);
 
         setVersionString();

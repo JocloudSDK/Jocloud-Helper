@@ -23,8 +23,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.aivacom.api.baseui.WebViewActivity;
 import com.aivacom.api.baseui.base.BaseActivity;
-import com.aivacom.api.baseui.widget.dialog.puredialog.ConfirmDialog;
-import com.aivacom.api.feedback.FeedBackManager;
 import com.aivacom.api.feedback.view.FeedBackActivity;
 import com.aivacom.api.jly_logcat.FloatLogActivity;
 import com.aivacom.api.rtc.FacadeRtcManager;
@@ -42,7 +40,6 @@ import com.thunder.livesdk.ThunderVideoEncoderConfiguration;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -61,7 +58,6 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
     private Button btSwitchCamera;
     private Button btCamera;
     private Button btMicrophone;
-    private ConfirmDialog confirmDialog;
     private List<View> ivPreviewList = new ArrayList<>();
 
     private RoomAdapter roomAdapter;
@@ -87,7 +83,7 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
     }
 
     /**
-     * thunder sdk event callback
+     * thunder SDK event callback
      * see https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Android/v2.8
      * .0/notification.html
      */
@@ -95,7 +91,7 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
         @Override
         public void onJoinRoomSuccess(String room, String uid, int elapsed) {
             super.onJoinRoomSuccess(room, uid, elapsed);
-            dissMissDialogProgress();
+            dismissDialogProgress();
             addMessageToLogView("Stream is publishing by UID=" + uid);
             onJoinRoomStatus();
             startPlay();
@@ -104,7 +100,7 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
         @Override
         public void onLeaveRoom(ThunderEventHandler.RoomStats status) {
             super.onLeaveRoom(status);
-            dissMissDialogProgress();
+            dismissDialogProgress();
 
             onUnJoinRoomStatus();
         }
@@ -112,7 +108,7 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
         @Override
         public void onConnectionLost() {
             super.onConnectionLost();
-            dissMissDialogProgress();
+            dismissDialogProgress();
             showToast(getString(R.string.network_error));
         }
 
@@ -122,43 +118,31 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
 
             UserInfo userInfo = roomAdapter.getUserInfo(uid);
             addMessageToLogView("UID=" + uid + " turned " + (stop ? "off" : "on") + " microphone");
-            if (stop) {
-                if (userInfo != null) {
-                    userInfo.setAudioStreamStopped(true);
-                    userInfo.setMuteAudio(true);
 
-                    localUserMap.put(userInfo.getUid(), userInfo);
-                    if (userInfo.isVideoStreamStopped()) {
-                        onRemoteLeaveRoom(userInfo);
-                    } else {
-                        int index = roomAdapter.indexOf(userInfo);
-                        if (index != -1 && index < 4) {
-                            rvVideoView.getChildAt(index).findViewById(R.id.ivMicrophone).
-                                    setBackgroundResource(R.drawable.player_btn_microphone_disable);
-                            roomAdapter.updateItemWithoutNotify(index, userInfo);
-                        }
-                    }
+            if (userInfo != null) {
+                userInfo.setAudioStreamStopped(stop);
+                userInfo.setMuteAudio(stop);
+                localUserMap.put(userInfo.getUid(), userInfo);
+                if (stop && userInfo.isVideoStreamStopped()) {
+                    onRemoteLeaveRoom(userInfo);
+                    return;
                 }
-            } else {
-                if (userInfo != null) {
-                    userInfo.setAudioStreamStopped(false);
-                    userInfo.setMuteAudio(false);
-                    localUserMap.put(userInfo.getUid(), userInfo);
-
-                    int index = roomAdapter.indexOf(userInfo);
-                    if (index != -1 && index < 4) {
-                        rvVideoView.getChildAt(index).findViewById(R.id.ivMicrophone).
-                                setBackgroundResource(R.drawable.player_btn_microphone);
-                        roomAdapter.updateItemWithoutNotify(index, userInfo);
-                    }
-
-                } else {
-                    userInfo = new UserInfo(uid);
-                    userInfo.setAudioStreamStopped(false);
-                    userInfo.setMuteAudio(false);
-
-                    onRemoteJoinRoom(userInfo, false);
+                int index = roomAdapter.getDataList().indexOf(userInfo);
+                if (index != -1 && index < 4) {
+                    rvVideoView.getChildAt(index).findViewById(R.id.ivMicrophone).
+                            setBackgroundResource(stop ? R.drawable.player_btn_microphone_disable :
+                                    R.drawable.player_btn_microphone);
+                    roomAdapter.updateItemWithoutNotify(index, userInfo);
                 }
+
+            } else if (!stop) {
+                userInfo = new UserInfo(uid);
+                userInfo.setAudioStreamStopped(false);
+                userInfo.setMuteAudio(false);
+                onRemoteJoinRoom(userInfo, false);
+
+                FacadeRtcManager.getInstance().stopRemoteVideoStream(uid, false);
+                FacadeRtcManager.getInstance().stopRemoteAudioStream(uid, false);
             }
         }
 
@@ -168,36 +152,28 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
 
             UserInfo userInfo = roomAdapter.getUserInfo(uid);
             addMessageToLogView("UID=" + uid + " turned " + (stop ? "off" : "on") + " camera");
-            if (stop) {
-                if (userInfo != null) {
-                    userInfo.setVideoStreamStopped(true);
-                    userInfo.setMuteVideo(true);
 
-                    localUserMap.put(userInfo.getUid(), userInfo);
-                    if (userInfo.isAudioStreamStopped()) {
-                        onRemoteLeaveRoom(userInfo);
-                    } else {
-                        int index = roomAdapter.indexOf(userInfo);
-                        if (index != -1 && index < 4) {
-                            roomAdapter.updateItem(index, userInfo);
-                        }
-                    }
+            if (userInfo != null) {
+                userInfo.setVideoStreamStopped(stop);
+                userInfo.setMuteVideo(stop);
+
+                localUserMap.put(userInfo.getUid(), userInfo);
+                if (stop && userInfo.isAudioStreamStopped()) {
+                    onRemoteLeaveRoom(userInfo);
+                    return;
                 }
-            } else {
-                if (userInfo != null) {
-                    userInfo.setVideoStreamStopped(false);
-                    userInfo.setMuteVideo(false);
-                    localUserMap.put(userInfo.getUid(), userInfo);
-                    int index = roomAdapter.indexOf(userInfo);
-                    if (index != -1 && index < 4) {
-                        roomAdapter.updateItem(index, userInfo);
-                    }
-                } else {
-                    userInfo = new UserInfo(uid);
-                    userInfo.setVideoStreamStopped(false);
-                    userInfo.setMuteVideo(false);
-                    onRemoteJoinRoom(userInfo, true);
+                int index = roomAdapter.getDataList().indexOf(userInfo);
+                if (index != -1 && index < 4) {
+                    roomAdapter.updateItemData(index, userInfo);
                 }
+            } else if (!stop) {
+                userInfo = new UserInfo(uid);
+                userInfo.setVideoStreamStopped(false);
+                userInfo.setMuteVideo(false);
+                onRemoteJoinRoom(userInfo, true);
+
+                FacadeRtcManager.getInstance().stopRemoteVideoStream(uid, false);
+                FacadeRtcManager.getInstance().stopRemoteAudioStream(uid, false);
             }
         }
     };
@@ -240,9 +216,9 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
         findViewById(R.id.bt_log).setOnClickListener(this);
         findViewById(R.id.bt_setting).setOnClickListener(this);
 
-        roomAdapter = new RoomAdapter(new LinkedList<>(), VideoSameChannelActivity.this);
+        roomAdapter = new RoomAdapter(VideoSameChannelActivity.this);
         roomAdapter.setOnItemClickListener((view, position) -> {
-            UserInfo userInfo = roomAdapter.getItem(position);
+            UserInfo userInfo = roomAdapter.getDataList().get(position);
             if (userInfo == null || TextUtils.isEmpty(userInfo.getUid())) {
                 return;
             }
@@ -422,7 +398,7 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
     @Override
     protected void onClickBack() {
         if (isLiving()) {
-            showConfirmDialog();
+            showQuitConfirmDialog();
         } else {
             super.onClickBack();
         }
@@ -454,7 +430,7 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
             startActivity(new Intent(VideoSameChannelActivity.this, FeedBackActivity.class));
         } else if (id == R.id.bt_interface) {
             Intent intent = new Intent(this, WebViewActivity.class);
-            intent.putExtra(WebViewActivity.URL, Constant.CROSS_API_URL);
+            intent.putExtra(WebViewActivity.URL, Constant.SAME_API_URL);
             startActivity(intent);
         } else if (id == R.id.bt_log) {
             startActivity(new Intent(VideoSameChannelActivity.this, FloatLogActivity.class));
@@ -481,7 +457,7 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
      * handle click enable or disable video streaming
      */
     private void handleClickBtnCamera() {
-        UserInfo userInfo = roomAdapter.getItem(0);
+        UserInfo userInfo = roomAdapter.getDataList().get(0);
         if (userInfo == null) {
             return;
         }
@@ -493,7 +469,7 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
      * handle click enable or disable audio streaming
      */
     private void handleClickBtnMicrophone() {
-        UserInfo userInfo = roomAdapter.getItem(0);
+        UserInfo userInfo = roomAdapter.getDataList().get(0);
         if (userInfo == null) {
             return;
         }
@@ -518,8 +494,6 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
      * 加入房间
      */
     private void joinRoom() {
-        FeedBackManager.getInstance().setCrashConfigAndInfo(Constant.mLocalUid, null);
-
         setHideIvClearRoomId(false);
         setHideIvClearUid(false);
         if (NetworkUtil.isNetworkAvailable(this)) {
@@ -528,7 +502,7 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
                     .joinRoom("token".getBytes(), Constant.mLocalRoomId, Constant.mLocalUid);
 
             if (result != 0) {
-                dissMissDialogProgress();
+                dismissDialogProgress();
                 showToast(getString(R.string.error_join_room, result));
             }
         } else {
@@ -543,7 +517,7 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
     private void leaveRoom(boolean quiet) {
         //还原操作
         localUserMap.clear();
-        dissMissDialogProgress();
+        dismissDialogProgress();
 
         addMessageToLogView("Stream is stopped by UID=" + FacadeRtcManager.getInstance().getUid());
         exitFullScreen();
@@ -588,7 +562,7 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
         isFullScreen = false;
         VideoSameChannelActivity.this.userInfo = null;
 
-        for (UserInfo userInfo : roomAdapter.getData()) {
+        for (UserInfo userInfo : roomAdapter.getDataList()) {
             for (OnRemoteListener listener : mRemoteListeners) {
                 String uid = userInfo.getUid();
                 if (!TextUtils.isEmpty(uid)) {
@@ -645,7 +619,7 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
         userInfo.setAudioStreamStopped(false);
         userInfo.setVideoStreamStopped(false);
 //        roomAdapter.updateItem(0, userInfo);
-        roomAdapter.addItem(userInfo);
+        roomAdapter.addItemData(userInfo);
         for (OnRemoteListener listener : mRemoteListeners) {
             listener.onJoinRoom(userInfo.getUid());
         }
@@ -691,7 +665,7 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
             exitFullScreen();
 
             //处理个别手机surfaceview会重合问题，所以恢复的时候就还原设置
-            List<UserInfo> lists = roomAdapter.getData();
+            List<UserInfo> lists = roomAdapter.getDataList();
             for (UserInfo data : lists) {
                 if (!TextUtils.isEmpty(data.getUid()) && !TextUtils.equals(data.getUid(),
                         userInfo.getUid()) && !data.isMuteVideo()) {
@@ -715,7 +689,7 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
             isFullScreen = true;
 
             //处理个别手机surfaceview会重合问题，所以全屏的时候就关闭其他
-            List<UserInfo> lists = roomAdapter.getData();
+            List<UserInfo> lists = roomAdapter.getDataList();
             for (UserInfo data : lists) {
                 if (!TextUtils.isEmpty(data.getUid()) && !TextUtils.equals(data.getUid(), userInfo.getUid())) {
                     //关闭其他视频流
@@ -867,7 +841,7 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
         if (roomAdapter.getItemCount() >= 4) {
             roomAdapter.addItemWithoutNotify(userInfo);
         } else {
-            roomAdapter.addItem(userInfo);
+            roomAdapter.addItemData(userInfo);
         }
 
         for (OnRemoteListener listener : mRemoteListeners) {
@@ -901,10 +875,10 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
         FacadeRtcManager.getInstance()
                 .stopRemoteVideoStream(userInfo.getUid(), false);
 
-        int index = roomAdapter.indexOf(userInfo);
+        int index = roomAdapter.getDataList().indexOf(userInfo);
         if (index != -1) {
             if (index < 4) {
-                roomAdapter.deleteItem(userInfo);
+                roomAdapter.deleteItem(index);
                 if (roomAdapter.getItemCount() >= 4) {
                     rvVideoView.setLayoutManager(new WrapGridLayoutManager(this, 2));
                 }
@@ -926,25 +900,6 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
             tvRoomStatus.scrollTo(0, 0);
         }
 
-    }
-
-    private void showConfirmDialog() {
-        if (confirmDialog != null && confirmDialog.isShowing()) {
-            return;
-        }
-        confirmDialog = new ConfirmDialog(this, new ConfirmDialog.OnConfirmCallback() {
-            @Override
-            public void onSure() {
-                finish();
-            }
-
-            @Override
-            public void onCancel() {
-                confirmDialog.dismiss();
-            }
-        });
-        confirmDialog.setDesc(getResources().getString(R.string.confirm_logout_scenario));
-        confirmDialog.show();
     }
 
     private void hideAllIvPreview() {

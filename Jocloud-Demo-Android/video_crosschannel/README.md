@@ -1,6 +1,6 @@
 # Use ThunderBolt and RTS SDK to implement anchor PK Line Up
 
-*Chinese Version： [中文](README.zh.md)*
+[中文](README.zh.md) | [English](README.md)
 
 ## 1.Overview
 This demo describes how to implement anchor face-offs via Thunderbolt and Hummer SDK. Thunderbolt SDK offers media functions, including broadcasting, stream pushing, and subscription; Hummer SDK offers signaling interaction functions, including inviting/ accepting/rejecting/cancelling co-hosting.

@@ -1,6 +1,6 @@
 # 使用 Thunderbolt 和 Hummer SDK 实现主播PK连麦
 
-*English Version： [English](README.md)*
+[中文](README.zh.md) | [English](README.md)
 
 ## 1.概览
 该Demo演示了如何结合使用Thunderbolt SDK和RTS SDK实现主播PK连麦。Thunderbolt SDK实现媒体功能，包括开播，推流和订阅；RTS SDK实现两个用户的信令交互，包括邀请连麦、同意连麦、拒绝连麦、取消连麦。

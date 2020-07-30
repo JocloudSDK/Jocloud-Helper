@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="audio_title">Audio Publishing</string>
+    <string name="text_uid">Local UID</string>
+    <string name="text_room_id">ROOM ID</string>
+    <string name="text_start_live">Go Live</string>
+    <string name="text_leave_live">End</string>
+    <string name="speaker">扬声器</string>
+    <string name="receiver">听筒</string>
+    <string name="turn_off_mic">闭麦</string>
+    <string name="turn_on_mic">开麦</string>
+    <string name="turn_on_ear_monitor">开耳返</string>
+    <string name="turn_off_ear_monitor">关耳返</string>
+    <string name="voice_changer">变声</string>
+    <string name="me">Me</string>
+    <string name="room_member">Online Users</string>
+
+    <string name="voice_close">关闭模式</string>
+    <string name="voice_ethereal">Ethereal</string>
+    <string name="voice_uncle">Uncle</string>
+    <string name="voice_heavy_metal">HeavyMetal</string>
+    <string name="voice_thriller">Thriller</string>
+    <string name="voice_power_current">PowerCurrent</string>
+    <string name="voice_die_fat">DieFat</string>
+    <string name="voice_cold">Cold</string>
+    <string name="voice_lu_ban">Luban</string>
+    <string name="voice_bad_boy">BadBoy</string>
+    <string name="voice_heavy_machinery">HeavyMachinery</string>
+    <string name="voice_lorie">Lorie</string>
+    <string name="voice_war_craft">Warcraft</string>
+    <string name="voice_trapped_beast">TrappedBeast</string>
+
+    <string name="toast_live_succeed">Go live successfully</string>
+    <string name="toast_live_failed">Failed to join room, unable to publish.</string>
+
+    <string name="text_hint_et_uid">Up to 6 digits</string>
+    <string name="text_hint_et_room_id">Up to 8 digits</string>
+
+    <string name="cancel">Cancel</string>
+    <string-array name="mode">
+        <item>Speech Mono 16KHz 18kbps</item>
+        <item>Music Stereo 44.1KHz 24kbps EAAC+</item>
+        <item>Music Mono 48KHz 40kbps</item>
+        <item>Music Stereo 44.1KHz 128kbps AAC LC</item>
+        <item>Music Stereo 44.1KHz 192kbps AAC LC_192K</item>
+    </string-array>
+
+</resources>

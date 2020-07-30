@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="chat_room_title">聊天室</string>
+    <string name="text_uid">本地UID</string>
+    <string name="text_room_id">Room ID</string>
+    <string name="text_join_room">加入房间</string>
+    <string name="text_leave_room">退出房间</string>
+    <string name="room_member_count">房间人数：%d</string>
+    <string name="go_chat">聊两句</string>
+    <string name="send">发送</string>
+    <string name="system_message">【系统消息】</string>
+    <string name="user_join_room">进入房间</string>
+    <string name="user_leave_room">离开房间</string>
+    <string name="room_users">房间人员</string>
+    <string name="toast_failed_join">加入房间失败</string>
+
+    <string name="text_hint_et_uid">最多6位数字</string>
+    <string name="text_hint_et_room_id">最多8位数字</string>
+    <string name="member_me">%s（我）</string>
+    <string name="send_failed">发送失败</string>
+    <string name="timeout_leave_room">断线超时，已退出房间</string>
+</resources>

@@ -11,7 +11,7 @@ android {
         minSdkVersion rootProject.ext.defaultConfig.minSdkVersion
         targetSdkVersion rootProject.ext.defaultConfig.targetSdkVersion
         versionCode Integer.valueOf(System.env.BUILD_NUMBER ?: "1")
-        versionName "1.0.0"
+        versionName "1.1.0"
 
         multiDexEnabled true
 
@@ -65,6 +65,9 @@ dependencies {
 
     implementation project(':video_crosschannel')
     implementation project(':video_samechannel')
+    implementation project(':video_advanced')
+    implementation project(':chat_room')
+    implementation project(':audio')
 
     implementation project(':jly_rtc')
     implementation project(':jly_rts')

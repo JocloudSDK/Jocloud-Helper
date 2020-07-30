@@ -4,22 +4,22 @@ import android.content.Context;
 import android.text.TextUtils;
 import android.widget.ImageView;
 
+import com.aivacom.api.baseui.adapter.rvadapter.RVBaseAdapter;
+import com.aivacom.api.baseui.adapter.rvadapter.RVViewHolder;
 import com.aivacom.api.rtc.FacadeRtcManager;
 import com.aivacom.api.samechannel.R;
-import com.aivacom.api.samechannel.bean.UserInfo;
-import com.aivacom.api.samechannel.UI.VideoSameChannelActivity;
-import com.aivacom.api.samechannel.UI.RemoteUserView;
 import com.aivacom.api.samechannel.UI.LocalUserView;
+import com.aivacom.api.samechannel.UI.RemoteUserView;
+import com.aivacom.api.samechannel.UI.VideoSameChannelActivity;
+import com.aivacom.api.samechannel.bean.UserInfo;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Video View Adapter
  * 视频视图适配器
  */
-public class RoomAdapter extends BaseAdapter<UserInfo> {
+public class RoomAdapter extends RVBaseAdapter<UserInfo> {
 
     private static final String TAG = "RoomAdapter";
     private static final int TYPE_PREVIEW = 1;
@@ -27,15 +27,14 @@ public class RoomAdapter extends BaseAdapter<UserInfo> {
 
     private Context context;
 
-    private Map<String, UserInfo> maps = new HashMap<>();
 
-    public RoomAdapter(List<UserInfo> dataList, Context context) {
-        super(dataList);
+    public RoomAdapter(Context context) {
+        super(context);
         this.context = context;
     }
 
     @Override
-    public int getLayoutId(int viewType) {
+    protected int getLayoutId(int viewType) {
         int layoutId = 0;
         switch (viewType) {
             case TYPE_PREVIEW:
@@ -50,26 +49,20 @@ public class RoomAdapter extends BaseAdapter<UserInfo> {
     }
 
     @Override
-    public int getItemViewType(int position) {
-        if (position == 0) {
-            return TYPE_PREVIEW;
-        }
-        return TYPE_PLAY_VIEW;
-    }
+    protected void bindItemView(@NotNull RVViewHolder<UserInfo> holder, UserInfo data, int position) {
 
-    @Override
-    public void onBindViewHolder(VH holder, UserInfo data, int position) {
         VideoSameChannelActivity act = ((VideoSameChannelActivity) context);
         act.hideIvPreviewByPosition(position);
         if (TextUtils.equals(data.getUid(), FacadeRtcManager.getInstance().getUid())) {
-            LocalUserView view = holder.getView(R.id.myview);
+            LocalUserView view = holder.getChildView(R.id.myview);
+
             view.joinRoom(data.getUid());
         } else {
-            RemoteUserView view = holder.getView(R.id.myview);
+            RemoteUserView view = holder.getChildView(R.id.myview);
             view.joinRoom(data.getUid());
 
             act.userInfo = data;
-            ImageView ivCamera = holder.getView(R.id.ivCamera);
+            ImageView ivCamera = holder.getChildView(R.id.ivCamera);
             if (data.isMuteVideo()) {
                 ivCamera.setBackgroundResource(R.drawable.player_btn_camera_disable);
             } else {
@@ -77,7 +70,7 @@ public class RoomAdapter extends BaseAdapter<UserInfo> {
             }
             ivCamera.setOnClickListener(v -> act.handleVideo(view, data));
 
-            ImageView ivMicrophone = holder.getView(R.id.ivMicrophone);
+            ImageView ivMicrophone = holder.getChildView(R.id.ivMicrophone);
             if (data.isMuteAudio()) {
                 ivMicrophone.setBackgroundResource(R.drawable.player_btn_microphone_disable);
             } else {
@@ -87,45 +80,40 @@ public class RoomAdapter extends BaseAdapter<UserInfo> {
         }
     }
 
-    public UserInfo getUserInfo(String targetUID) {
-        return maps.get(targetUID);
+
+    @Override
+    public int getItemViewType(int position) {
+        if (position == 0) {
+            return TYPE_PREVIEW;
+        }
+        return TYPE_PLAY_VIEW;
+    }
+
+    public UserInfo getUserInfo(String targetUid) {
+        UserInfo result = null;
+        for (UserInfo userInfo : getDataList()) {
+            if (result == null && userInfo.getUid().equals(targetUid)) {
+                result = userInfo;
+            }
+        }
+        return result;
     }
 
     public void updateItemWithoutNotify(int position, UserInfo data) {
-        mDatas.set(position, data);
+        getDataList().set(position, data);
     }
 
-    @Override
-    public void addItem(int position, UserInfo data) {
-        super.addItem(position, data);
-        maps.put(data.getUid(), data);
-    }
-
-    @Override
-    public void addItem(UserInfo data) {
-        super.addItem(data);
-        maps.put(data.getUid(), data);
-    }
 
     public void addItemWithoutNotify(UserInfo data) {
-        mDatas.add(data);
-        maps.put(data.getUid(), data);
-    }
-
-    @Override
-    public void deleteItem(UserInfo data) {
-        super.deleteItem(data);
-        maps.remove(data.getUid());
+        getDataList().add(data);
     }
 
     public void deleteItemWithoutNotify(UserInfo data) {
-        mDatas.remove(data);
-        maps.remove(data.getUid());
+        getDataList().remove(data);
     }
 
-    @Override
     public void clear() {
-        super.clear();
-        maps.clear();
+        getDataList().clear();
+        notifyDataSetChanged();
     }
 }

@@ -63,9 +63,36 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|stateHidden"/>
 
+        <activity android:name="com.jocloud.audio.UI.AudioActivity"
+            android:theme="@style/myAppTheme"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity android:name="com.jocloud.chatroom.UI.ChatRoomActivity"
+            android:theme="@style/myAppTheme"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
         <activity android:name="com.aivacom.api.baseui.WebViewActivity"
             android:theme="@style/myAppTheme"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity android:name="com.yy.video_advanced.VideoAdvancedActivity"
+            android:theme="@style/myAppTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity android:name="com.yy.video_advanced.UI.AnchorActivity"
+            android:theme="@style/myAppTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|locale"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.yy.video_advanced.UI.AudienceActivity"
+            android:theme="@style/myAppTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|locale"
             android:windowSoftInputMode="adjustPan|stateHidden"/>
 
     </application>

@@ -1,5 +1,5 @@
 ## 同房间多人连麦
-*English Version: [English](README.md)*
+[中文](README.zh.md) | [English](README.md)
 
 该Demo演示了如何快速集成聚联云SDK，实现同房间多人连麦。包含了以下功能：
 - 加入/离开房间

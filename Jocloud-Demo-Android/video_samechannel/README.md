@@ -1,5 +1,5 @@
 ## Multi-User Video Call
-*中文版本: [简体中文](README.zh.md)*
+[中文](README.zh.md) | [English](README.md)
 
 Demo of the scene with multiple people in the same room, you can connect with 4 people in the same room, enter the UID and RoomId to start broadcasting (adding room), start broadcasting (adding room), close broadcasting (exiting room), remote enter/exit room, open /Off wheat, turn on/off camera, select front/rear camera, record log information, zoom in/restore a certain view, etc. Applicable scenarios: conference, multi-player mic, multi-player game voice chat, etc. Attached:[This demo describes how to implement multi-person co-hosting in a room using Jocloud SDK. With this sample, you can:
 - Join/exit a room
@@ -18,7 +18,7 @@ Demo of the scene with multiple people in the same room, you can connect with 4 
 
 ## API Details 
 
-(1) Init ThunderSDK
+(1) Initialize the ThunderSDK
 ```
     thunderEngine = ThunderEngine.createEngine(context, appId, sceneId, handler);
 ```

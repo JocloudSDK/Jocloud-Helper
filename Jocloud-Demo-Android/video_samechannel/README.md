@@ -9,9 +9,9 @@ Demo of the scene with multiple people in the same room, you can connect with 4 
 - Log information
 - Zoom in or restore the view
 
-> Integrate SDK to APP, please refer to: [SDK Integration Method](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/integration_and_start/integration_and_start_ios.html)
+> Integrate SDK to APP, please refer to: [SDK Integration Method](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/integration_and_start/integration_and_start_ios.html)
 
-> API development manual, refer to: [iOS API](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/iOS/v2.8.0/category.html)
+> API development manual, refer to: [iOS API](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/iOS/v2.8.0/category.html)
 
 ### API Calling Flow
 ![avatar](same_channel.png)
@@ -38,7 +38,7 @@ Demo of the scene with multiple people in the same room, you can connect with 4 
 ```
 
 (3) Join room. The token needs to be obtained from the business server by referring to the documentation
-.[How to get token](https://docs.aivacom.com/cloud/cn/platform/restful_api/http_auth/http_auth.html)
+.[How to get token](https://docs.jocloud.com/cloud/cn/platform/restful_api/http_auth/http_auth.html)
 ```
     thunderEngine.joinRoom(token, roomId, uid);
 

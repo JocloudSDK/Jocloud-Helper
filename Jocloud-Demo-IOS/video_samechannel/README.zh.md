@@ -9,9 +9,9 @@
 - 记录日志信息
 - 放大/还原视图
 
-> 集成SDK到APP，请参考：[SDK集成方法](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/integration_and_start/integration_and_start_ios.html)
+> 集成SDK到APP，请参考：[SDK集成方法](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/integration_and_start/integration_and_start_ios.html)
 
-> API开发手册，请访问： [Android API](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/iOS/v2.8.0/category.html)
+> API开发手册，请访问： [Android API](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/iOS/v2.8.0/category.html)
 
 ### API调用流程图
 ![avatar](same_channel.png)
@@ -36,7 +36,7 @@
 ```
 
 （3）加入房间
-            从业务服务器获取[token接入方法](https://docs.aivacom.com/cloud/cn/platform/restful_api/http_auth/http_auth.html)
+            从业务服务器获取[token接入方法](https://docs.jocloud.com/cloud/cn/platform/restful_api/http_auth/http_auth.html)
 ```objc
     [self.thunderEngine joinRoom:token roomName:roomName uid:uid];
 ```

@@ -1,30 +1,31 @@
-*[简体中文](README.zh.md) | [English](README.md)*
-## 1.概览
-该Demo示例主要演示了如何快速集成聚联云音视频SDK和实时消息SDK，实现同房间连麦、跨房间连麦。
+# Android Samples for Jocloud Advanced Audio And Video Features
+[中文](README.zh.md) | [English](README.md)
+## 1 概览
+该Demo示例主要演示了如何快速集成聚联云音视频SDK和实时消息SDK
+- 实现同房间连麦
+- 跨房间连麦
+- 视频开播进阶功能
+- 音频开播
+- 聊天室
 
-实现逻辑详见本工程module: video_samechannel、video_crosschannel。
+实现逻辑详见本工程module: video_samechannel,  video_crosschannel, video_advanced, audio, chat_room
 
-## 2.快速接入
+## 2 快速开始
 ### 2.1 前提条件
-在开始开发之前您必须满足如下条件：
 - Android Studio 3.0 或以上版本
-
 - Android SDK API 等级 16 或以上
-
 - 支持 Android 4.1 或以上版本的移动设备
+- 有效的聚联云账号和有效的APPID，[注册聚联云账号](https://jocloud.com/cn/reg)、[APPID申请](https://docs.jocloud.com/cloud/cn/platform/other
+/user_auth.html#e9a1b9e79bae-e4b88e-app-id)
 
-### 2.2 创建聚联云账号并获取AppID
-- 有效的聚联云账号(有效的APPID)，详见[APPID申请](https://docs.aivacom.com/cloud/cn/platform/other/user_auth.html#e9a1b9e79bae-e4b88e-app-id)
+### 2.2 运行示例程序
+- 使用Android Studio打开工程后同步
+- 修改com.aivacom.api.utils.Constant.java 下的mAppId,填入申请的APPID
+- 编译代码安装到手机上
 
-### 2.3 准备开发环境
-#### 2.3.1 创建项目
-- 打开 Android Studio，点击 Start a new Android Studio project。
 
-- 在 Choose your project 界面，选择 Phone and Tablet > Empty Activity，然后点击 Next。
-
-- 在 Configure your project 界面，依次填入Android 项目名称,包的名称,存储路径等。
-
-#### 2.3.2 集成 SDK
+## 3 FAQ
+1. 集成 SDK
 - 1.修改项目外层build.gradle 文件，添加仓库路径（两处）
 ```js
 buildscript {
@@ -56,8 +57,7 @@ dependencies {
     .....
 }
 ```
-- 3.在使用到SDK的Module中添加SDK要求的权限：
-
+- 3.添加SDK要求的权限
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -94,17 +94,8 @@ dependencies {
 -keep class com.yy.yyvideoplayer.** { *; }
 -keep class com.yy.android.medialibrary.audiocodec.** { *; }
 ```
-- 5.点击Sync，同步项目，完成集成。
 
-### 2.4 编译运行Demo
-- 方法一：使用 Android Studio 打开该Demo，连上Android设备，编译并运行。
-
-- 方法二：使用 Gradle 直接编译运行。
-
-## 4.联系我们
-- 完整的 API 文档见[开发者中心](https://docs.aivacom.com/cn)。
-- 相关Demo下载，请访问：[SDK及Demo下载](https://docs.aivacom.com/download)。
-- 如果有售前咨询问题, 可以拨打电话:020-82120482 或 联系邮箱:marketing@aivacom.com。
-
-
-
+## 4 联系我们
+- 完整的 API 文档见[开发者中心](https://docs.jocloud.com/cn)。
+- 相关Demo下载，请访问：[SDK及Demo下载](https://docs.jocloud.com/download)。
+- 如果有售前咨询问题, 可以拨打电话:020-82120482 或 联系邮箱:marketing@jocloud.com。

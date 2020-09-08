@@ -9,7 +9,7 @@ public class Constant {
     public static final int STATUS_FORCE_KILLED = -1; //应用在后台被强杀
     public static final int STATUS_NORMAL = 2; //APP正常态
 
-    public static long mAppId = 1711983884;
+    public static long mAppId = ;
 
     public static final String FEEDBACK_CRASHLOGID = "Aivacom-Android";
 

@@ -71,7 +71,7 @@ public class Constant {
     // public static boolean isStopRemoteVideo = true; //远端视频流
     // public static boolean isStopRemoteAudio = true; //远端音频流
 
-    public static String API_URL_PRE = "https://github.com/JocloudSDK/Jocloud-Demo/tree/master/Jocloud-Demo-android/";
+    public static String API_URL_PRE = "https://github.com/JocloudSDK/Jocloud-Demo/tree/master/Jocloud-Demo-Android/";
 
     public static String CROSS_API_URL = API_URL_PRE + "video_crosschannel";
     public static String VIDEO_ADVANCED_API_URL = API_URL_PRE + "video_advanced";

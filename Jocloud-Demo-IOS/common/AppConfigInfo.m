@@ -7,7 +7,8 @@
 
 #import "AppConfigInfo.h"
 
-NSString * const kAppId = @"";
+// add your appid here
+NSString * const kAppId = ;
 
 NSString * const kFeedbackAppId = @"AivacomAdvanceScene-iOS";
 NSString * const kFeedbackUrl = @"https://imobfeedback.yy.com/userFeedback";

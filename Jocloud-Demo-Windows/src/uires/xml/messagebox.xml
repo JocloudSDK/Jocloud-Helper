@@ -1,0 +1,43 @@
+<SOUI title="mesagebox" width="-1" height="-1" appwin="0" minSize="312,148" resize="0" translucent="1" trCtx="messagebox">
+
+  <buttonText trCtx="dlg_main">
+    <ok>OK</ok>
+    <cancel>Cancel</cancel>
+    <abort>中止</abort>
+    <retry>重试</retry>
+    <yes>确定</yes>
+    <no>取消</no>
+    <ignore>忽略</ignore>
+  </buttonText>
+
+  <root skin="skin_msg_bg" layout="vbox" >
+    
+    <caption size="-2,29" visible="0">
+      <img pos="8,9,@16,@20" />
+      <text pos="30,9,@100,@20" class="font_titlename" name="msgtitle">prompt</text>
+      <imgbtn id="2" skin="_skin.sys.btn.close"    pos="-45,0" tip="close"/>
+    </caption> 
+
+    <window  size="-2,-1" layout="hbox" interval="5" padding="10,10,10,10">
+
+      <window  size="-1,-1" layout="hbox" gravity="center" interval="5" padding="0,25,10,15">
+        <text name="msgtext" size="300,-1" weight="1" colorText="#292929" multilines="1" align="center" valign="top" maxWidth="300"/>
+      </window>
+
+    </window>
+    <tabctrl size="-2,50" name="btnSwitch"  gravity="bottom" tabHeight="0">
+      <page>
+        <imgbtn pos="|-35,10,|28,-10" name="button1st" >button1</imgbtn>
+      </page>
+      <page>
+        <button pos="|-100,10,|-10,-10" name="button1st" class="normalbtn">button1</button>
+        <button pos="|10,10,|100,-10" name="button2nd" class="normalbtn">button2</button>
+      </page>
+      <page>
+        <button pos="|-140,10,|-50,-10" name="button1st" class="normalbtn">button1</button>
+        <button pos="|-45,10,|45,-10" name="button2nd" class="normalbtn">button2</button>
+        <button pos="|50,10,|140,-10" name="button3rd" class="normalbtn">button3</button>
+      </page>
+    </tabctrl>
+  </root>
+</SOUI>

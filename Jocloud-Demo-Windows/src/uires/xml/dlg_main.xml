@@ -1,0 +1,135 @@
+﻿<SOUI name="mainWindow" title="@string/title" colorBkgnd="@color/wnd_bg" bigIcon="icon_logo:32" smallIcon="icon_logo:16" margin="5,5,5,5" resizable="0" wndType="appMain"
+width="-1" height="-1"  colorBorder="@color/font_text_color_gray3" maxWidth="1349"
+appWnd="1" trCtx="dlg_main">
+
+
+  <style>
+    <!--局部style对象-->
+    <class name="window_border" margin-x="1" margin-y="1" colorBorder="@color/window_border_color"/>
+    <class name="window_canvas_state_bg_border" margin-x="1" margin-y="1" colorBorder="@color/canvas_state_bg_border"/>
+    <class name="btn_border" margin-x="1" margin-y="1" colorBorder="@color/window_border_color" focusable="0" />
+    <class name="font_canvas_uid" font="size:13,weight:400" colorText="@color/white"/>
+  </style>
+
+  <root cache="1" colorBkgnd="@color/white">
+    <caption pos="0,0,-0,44" show="1" font="size:14,weight:400">
+      <icon pos="10,15" src="icon_logo:16"/>
+      <text name="txt_title" pos="29,16" text="@string/title"/>
+      <imgbtn name="btn_close" skin="_skin.sys.btn.close" pos="-45,12" tip="close" animate="1"/>
+      <!--<imgbtn name="btn_max" skin="_skin.sys.btn.maximize" pos="-83,12" animate="1" />-->
+      <!--<imgbtn name="btn_restore" skin="_skin.sys.btn.restore" pos="-83,12" show="0" animate="1" />-->
+      <imgbtn name="btn_min" skin="_skin.sys.btn.minimize" pos="-83,12" animate="1" />
+    </caption>
+
+    <window pos="0,[5,1349,768" layout="hbox" name="theAppMainWindow"  size="-1,-1" colorBkgnd="@color/wnd_bg">
+
+      <window pos="0,[5,332,-1" layout="vbox" size="332,-1" name="main_window_left_memu" colorBkgnd="@color/wnd_bg">
+        <window pos="0,[2,332,-0" >
+          <img pos="[1,[0,@330,@128" skin="skin_left_banner" />
+          <window pos="{-1,[0,@329,@143">
+            <text pos="[14,[8,-0,@22" text="left_quick_text" font="size:16,weight:700" />
+            <text pos="{0,[8,-0,@17" text="left_quick_description" font="size:12,weight:300" colorText="@color/font_text_color_gray" colorBorder="@color/white"/>
+
+            <window pos="0],[5,@329,@40"  >
+              <button pos="0],[0,-0,@40" name="btn_left_quick_different_room" skin="skin_btn_quick_normal"  data="101">
+                <text pos="[14,[10,@73,@20" font="size:14,weight:400" text="left_quick_different_room_text" colorText="@color/font_text_quick"/>
+                <img pos="[208,{0,@22,@22" name="img_quick_different_room" skin="skin_global_btn_into" iconIndex="0"/>
+              </button>
+
+            </window>
+            <img pos="5],[0,@329,@5"  skin="skin_line_normal" iconIndex="0"/>
+            <window pos="0],[0,@329,@40" colorBkgnd="@color/white" >
+              <button pos="0],[0,-0,@40" name="btn_left_quick_same_room" skin="skin_btn_quick_normal"   data="102">
+                <text pos="[14,[10,@73,@20" font="size:14,weight:400" text="left_quick_same_room_text" colorText="@color/font_text_quick"/>
+                <img pos="[208,{0,@22,@22" name="img_quick_same_room" skin="skin_global_btn_into" iconIndex="0"/>
+              </button>
+            </window>
+          </window>
+
+          <img pos="5],[2,@329,@5"  skin="skin_line_normal" iconIndex="0"/>
+          <window pos="{-1,[8,@329,@68" >
+            <button pos="0],[0,-0,@68" name="btn_left_video_advance" data="103" skin="skin_btn_quick_normal" alpha="140">
+              <img pos="[9,[7,@54,@54" skin="skin_left_video_advance" colorBorder="@color/window_border_color"/>
+              <text pos="[12,8],-0,@20" font="size:14,weight:400" colorText="@color/font_text_color_gray3" text="left_video_advance_text"/>
+              <text pos="{0,[5,@200,@34" font="size:12,weight:300" colorText="@color/font_text_color_gray3" multiLines="1"  text="left_video_advance_description"/>
+            </button>
+          </window>
+
+          <img pos="5],[0,@329,@5"  skin="skin_line_normal" iconIndex="0"/>
+          <window pos="{-1,[0,@329,@68" >
+            <button pos="0],[0,-0,@68" name="btn_left_audio_advance" data="104" skin="skin_btn_quick_normal" alpha="140">
+              <img pos="[9,[7,@54,@54" skin="skin_left_audio_advance" />
+              <text pos="[12,8],-0,@20" font="size:14,weight:400" colorText="@color/font_text_color_gray3" text="left_audio_advance_text"/>
+              <text pos="{0,[5,@200,@34" font="size:12,weight:300" colorText="@color/font_text_color_gray3" multiLines="1"  text="left_audio_advance_description"/>
+            </button>
+          </window>
+
+          <img pos="5],[0,@329,@5"  skin="skin_line_normal" iconIndex="0"/>
+          <window pos="{-1,[0,@329,@68" >
+            <button pos="0],[0,-0,@68" name="btn_left_rts" data="105" skin="skin_btn_quick_normal" alpha="140">
+              <img pos="[9,[7,@54,@54" skin="skin_left_rts" />
+              <text pos="[12,8],-0,@20" font="size:14,weight:400" colorText="@color/font_text_color_gray3" text="left_rts_text"/>
+              <text pos="{0,[5,@200,@34" font="size:12,weight:300" colorText="@color/font_text_color_gray3" multiLines="1" wordBreak="0" text="left_rts_description"/>
+            </button>
+          </window>
+
+          <img pos="5],[0,@329,@5"  skin="skin_line_normal" iconIndex="0"/>
+          <window pos="{-1,[0,@329,@68" >
+            <button pos="0],[0,-0,@68" name="btn_left_mix_picture" data="106" skin="skin_btn_quick_normal" alpha="140">
+              <img pos="[9,[7,@54,@54" skin="skin_left_mix_picture" />
+              <text pos="[12,8],-0,@20" font="size:14,weight:400" text="left_mix_picture_text" colorText="@color/font_text_color_gray3"/>
+              <text pos="{0,[5,@200,@34" font="size:12,weight:300" colorText="@color/font_text_color_gray3" multiLines="1" wordBreak="0" text="left_mix_picture_description"/>
+            </button>
+          </window>
+
+          <img pos="5],[0,@329,@5"  skin="skin_line_normal" iconIndex="0"/>
+          <window pos="{-1,[0,@329,@40" >
+            <button pos="0],[0,-0,@40" name="btn_left_doc" skin="skin_btn_quick_normal">
+              <text pos="14],[10,@60,@20" font="size:14,weight:400" text="left_doc_text"/>
+              <text pos="[4,{0,@200,@20" font="size:12,weight:300" colorText="@color/font_text_color_gray" multiLines="1" wordBreak="0" text="left_doc_description"/>
+            </button>
+          </window>
+
+          <img pos="5],[0,@329,@5"  skin="skin_line_normal" iconIndex="0"/>
+          <window pos="{-1,[0,@329,@40" >
+            <button pos="0],[0,-0,@40" name="btn_left_switch_language" skin="skin_btn_quick_normal">
+              <text pos="[14,[10,@56,@20" font="size:14,weight:400" text="left_switch_language_text" />
+              <img pos="[228,{0,@22,@22" name="img_left_switch_language" skin="skin_left_switch_language" iconIndex="0"/>
+            </button>
+          </window>
+
+          <!--<window pos="{-1,[0,@329,@69" >
+            <text pos="30],[10,@160,@16" name ="build_number" font="size:11,weight:400" colorText="@color/font_text_color_gray3" text="left_version"/>
+            <text pos="[5,{0,@131,@16" font="size:11,weight:400" colorText="@color/font_text_color_gray3" text="left_thunder_rts_version"/>
+            <text pos="|-126,[0,@260,@16" font="size:11,weight:400" colorText="@color/font_text_color_gray3" text="left_app_description"/>
+          </window>-->
+          <window pos="{-1,[15,@329,@69" layout="vbox" gravity="center" >
+            <text pos="30],[10,@160,@16" name ="build_number" padding="5,5,5,5" font="size:11,weight:400" colorText="@color/font_text_color_gray3" text="left_version"/>
+            <text pos="|-126,[0,@260,@16" font="size:11,weight:400" colorText="@color/font_text_color_gray3" text="left_app_description"/>
+          </window>
+        </window>
+      </window>
+
+
+      <window extend_left="10" size="1000,768" name="main_window_right_dlg" display="0" visible="0" colorBkgnd="@color/wnd_bg">
+        <window pos="[5,{0,-0,-0" colorBkgnd="@color/wnd_bg">
+          <tabctrl pos="[5,{15,-314},-10"  colorBkgnd="@color/white" name="tab_ctrls" font="style:StrokeAndFill,blurStyle:solid,blurRadius:3" tabHeight="0">
+            <page title="page_null">
+              <!--<include src="layout:page_setting"/>-->
+            </page>
+            <page title="page_quick_different_room">
+              <include src="layout:page_quick_different_room"/>
+            </page>
+            <page title="page_quick_same_room">
+              <include src="layout:page_quick_same_room"/>
+            </page>
+          </tabctrl>
+          <window pos="[10,{0,-15,-10" colorBkgnd="@color/white">
+            <text pos="[5,{0" size="-1,-1" name="MessageInfo_text" font="size:14,weight:400" wordBreak="1" multiLines="1" colorText="@color/font_text_color_gray" maxWidth="300"/>
+          </window>
+        </window>
+      </window>
+    </window>
+
+  </root>
+</SOUI>

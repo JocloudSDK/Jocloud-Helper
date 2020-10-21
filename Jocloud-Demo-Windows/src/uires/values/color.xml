@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<color>
+  <red value="rgb(255,0,0)"/>
+  <green value="rgb(0,255,0)"/>
+  <blue value="rgb(0,0,255)"/>
+  <white value="rgb(255,255,255)"/>
+  <Black value="rgb(0,0,0)"/>
+  <gray value="#808080"/>
+  <font_text_quick value="#0041FF"/>
+  <wnd_bg value="rgba(246,247,250)"/>
+  <font_text_color_gray value="rgba(122,122,122)" />
+  <font_text_color_gray2 value="rgba(28,28,28)" />
+  <font_text_color_gray3 value="rgba(203,203,203)" />
+  <font_text_color_gray4 value="rgba(133,133,133)" />
+  <font_text_color_bule value="rgba(0,65,255)" />
+  <window_border_color value="rgba(211,213,218)" />
+  <edit_text_color value="rgba(39,46,68)" />
+  <canvas_state_bg value="rgba(243,244,248)"/>
+  <canvas_state_bg_border value="rgba(228,231,240)"/>
+</color> 
+ 

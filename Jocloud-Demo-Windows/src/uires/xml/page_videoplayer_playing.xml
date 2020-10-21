@@ -1,0 +1,16 @@
+﻿<include>
+	<window pos="0, 0,-0,-0" colorBorder="@color/red">
+		<popuprealwnd pos="0,0,-0,-0" name="videoplayer_playing_realwnd_playing" popup="1" id="1002"  wndclass="VideoPlayingWnd" wndname="objVideoPlayingWnd"/>
+	</window>
+<!--	<window pos="0,-40,-0,-20" show="1" font="adding:0"  colorBkgnd="#00ff00">
+		<sliderbar name="videoplayer_playing_pro_pos" pos="0,0,-0,-0" alpha="200" width="100" value="20" min="0" max="100"/>
+	</window>
+	<window pos="0,-20,-0,-0" show="1" font="adding:0"  colorBkgnd="#00ff00">
+		<button name="videoplayer_playing_btn_close" pos="1,0,@40,@20" >预览</button>
+		<button name="videoplayer_playing_btn_back" pos="[1,0,@40,@20" >后退</button>
+		<button name="videoplayer_playing_btn_stop" show="0" pos="[1,0,@40,@20" >暂停</button>
+		<button name="videoplayer_playing_btn_Cont" show="1" pos="[-40,0,@40,@20" >播放</button>
+		<button name="videoplayer_playing_btn_pre" pos="[1,0,@40,@20" >前进</button>
+	</window>
+	-->
+</include>

@@ -1,0 +1,82 @@
+﻿<resource>
+  <UIDEF>
+    <file name="XML_INIT" path="uidef\init.xml"/>
+  </UIDEF>
+  <LAYOUT>
+    <file name="dlg_main" path="xml\dlg_main.xml"/>
+		<file name="page_null" path="xml\page_null.xml" />
+		<file name="page_quick_different_room" path="xml\page_quick_different_room.xml" />
+		<file name="page_quick_same_room" path="xml\page_quick_same_room.xml" />
+		<file name="page_setting" path="xml\page_setting.xml" />
+    <file name="dlg_realWnd" path="xml\RealDlg.xml" />
+    <file name="dlg_localRealWnd" path="xml\LocalRealDlg.xml" />
+    <file name="dlg_popupDlg" path="xml\popupDlg.xml" />
+    <file name="XML_VIDEOPlAYING_WND" path="xml\dlg_VideoPlayer_Playing.xml" />
+    <file name="xml_messagebox" path="xml\messagebox.xml" />
+    
+  </LAYOUT>
+  
+  <values>
+  	<file name="string" path="values\string.xml"/>
+  	<file name="color" path="values\color.xml"/>
+  	<file name="skin" path="values\skin.xml"/>
+  </values>
+
+  <IMG>
+    <file name="png_btn_catetory" path="image\btn_catetory.png"/>
+    <file name="png_icons" path="image\icons.png"/>
+    <file name="png_small_icons" path="image\small_icons.png" />
+    <file name="png_tab_left" path="image\tab_left.png" />
+    <file name="png_left_banner" path="image\left_banner.png" />
+    <file name="png_left_video_advance" path="image\left_video_advance.png" />
+    <file name="png_left_audio_advance" path="image\left_audio_advance.png" />
+    <file name="png_left_rts" path="image\left_rts.png" />
+    <file name="png_left_mix_picture" path="image\left_mix_picture.png" />
+    <file name="png_left_switch_language" path="image\chiness.png" />
+    <file name="png_left_switch_en_language" path="image\en.png" />
+    <file name="png_global_btn_clear" path="image\global_btn_clear.png" />
+    <file name="png_main_btn" path="image\main_btn.png" />
+    <file name="png_combox_dropbtn" path="image\combox_dropbtn.png" />
+    <file name="png_normal_camera_btn" path="image\normal_camera_btn.png" />
+    <file name="png_audio_btn_open" path="image\btn_mic_open_main.png" />
+    <file name="png_normal_audio_btn" path="image\normal_audio_btn.png" />
+    
+    <file name="png_btn_api_normal" path="image\btn_api_normal.png" />
+    <file name="png_btn_camera_open_main" path="image\btn_camera_open_main.png" />
+    <file name="png_btn_doc_normal" path="image\btn_doc_normal.png" />
+    <file name="png_btn_feedback_normal" path="image\btn_feedback_normal.png" />
+    <file name="png_btn_log_normal" path="image\btn_log_normal.png" />
+    <file name="png_btn_quit_normal" path="image\btn_quit_normal.png" />
+    <file name="png_canvas_default" path="image\canvas_default.png" />
+    <file name="png_btn_camera_close" path="image\btn_camera_close.png" />
+    <file name="png_btn_mic_close" path="image\btn_mic_close.png" />
+    <file name="png_btn_mic_open" path="image\btn_mic_open.png" />
+    
+    <file name="png_btn_into" path="image\btn_into.png" />
+    <file name="png_btn_quick_normal" path="image\png_btn_quick_normal.png" />
+    <file name="png_line_normal" path="image\png_line_normal.png" />
+    <file name="png_btn_camera_open" path="image\btn_camera_open.png" />
+
+    <file name="png_close_camera_btn_same" path="image\close_camera_btn.png" />
+    <file name="png_close_audio_btn_same" path="image\close_audio_btn.png" />
+
+    <file name="png_signal_good_default" path="image\png_signal_good_default.png" />
+    <file name="png_signal_ordinary_default" path="image\png_signal_ordinary_default.png" />
+    <file name="png_signal_bad_default" path="image\png_signal_bad_default.png" />
+    <file name="png_not_signal" path="image\png_not_signal.png" />
+
+    <file name="msg_bg" path="image\msg_bg.png"/>
+    <file name="ok_btn" path="image\ok_btn.png"/>
+    <file name="title_logo" path="image\title_logo.png"/>
+    <file name="_logo" path="image\_logo.png"/>
+    <file name="png_main_btn_normal" path="image\main_btn_normal.png"/>
+    
+  </IMG>
+  <ICON>
+    <file name="icon_logo"  path="image\logo.ico"/>
+  </ICON>
+  <translator>
+    <file name="lang_cn"  path="translator\lang_cn.xml"/>
+    <file name="lang_en"  path="translator\lang_en.xml"/>
+  </translator>
+</resource>

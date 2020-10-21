@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<include>
+  <window pos="[0,{0,-0,-0">
+
+    <window pos="[9,[10,-10,-326}" >
+
+      <window pos="24,26,-24,-26" >
+
+        <realwnd pos="|0,[0,-0,-0" offset="-1,-0"  name="diff_room_canvas_0" wndclass="SLocalRealWnd" class="window_canvas_state_bg_border">
+          <img pos="|0,|0,@49,@48" offset="-0.5,-0.5" skin="skin_canvas_default" name="diff_room_canvas_default_0" />
+          <window pos="0,0,-0,-0" name="diff_room_canvas_state_0" >
+            <window pos="0,0,-0,30" name="diff_room_canvas_state_top_0">
+              <!--<window pos="0,0,-0,30" colorBkgnd="@color/canvas_state_bg" />-->
+              <text pos="10,0,-0,30" name="diff_room_canvas_state_uid_0" class="font_canvas_uid" text="diff_room_canvas_local_text"/>
+            </window>
+            <window pos="0,-35,-0,@35" name="diff_room_canvas_state_bottom_0">
+              <button pos="-35,0,@28,@28" name="diff_room_btn_canvas_mic_0" skin="skin_btn_mic_close" focusable="0" />
+              <button pos="-69,0,@28,@28" name="diff_room_btn_canvas_camera_0" skin="skin_btn_camera_close" focusable="0" />
+            </window>
+          </window>
+        </realwnd>
+
+        <window pos="[0,{0,-0,-0" colorBkgnd="@color/Black">
+        <realwnd pos="0,0,-0,-0"  name="diff_room_canvas_1" wndclass="SLocalRealWnd" colorBkgnd="@color/canvas_state_bg" class="window_canvas_state_bg_border" >
+          <img pos="|0,|0,@49,@48" offset="-0.5,-0.5" skin="skin_canvas_default" name="diff_room_canvas_default_1" />
+          <window pos="0,0,-0,-0" name="diff_room_canvas_state_1" >
+            <window pos="0,0,-0,30" name="diff_room_canvas_state_top_1">
+              <!--<window pos="0,0,-0,30" colorBkgnd="@color/canvas_state_bg" />-->
+              <text pos="10,0,-0,30" name="diff_room_canvas_state_uid_1" class="font_canvas_uid" text="1"/>
+            </window>
+            <window pos="0,-35,-0,@35" name="diff_room_canvas_state_bottom_1">
+              <button pos="-35,0,@28,@28" name="diff_room_btn_canvas_mic_1" skin="skin_btn_mic_close" focusable="0" />
+              <!-- focusable 是去掉虚框-->
+              <button pos="-69,0,@28,@28" name="diff_room_btn_canvas_camera_1" skin="skin_btn_camera_close" focusable="0" />
+              <!-- focusable 是去掉虚框-->
+            </window>
+          </window>
+        </realwnd>
+        </window>
+        
+      </window>
+    </window>
+
+    <window pos="{0,[0,-10,@120"  >
+      <window pos="[20,{0,-1,-1" >
+        <window pos="[0,{0,@150,-1" name="same_room_control_left">
+
+          <text pos="[0,[0,@71,@16" text="same_room_uid_text" font="size:11,weight:400" colorText="@color/font_text_color_gray4" />
+          <window pos="{0,[5,@150,@32" class="window_border">
+            <edit pos="{0,{0,@100,@32" name="diff_room_edit_uid" maxBuf="6" inset="5,0,5,0" cueText="uid_edit_hint" cueColor="@color/font_text_color_gray3" font="size:12,bold:1" colorText="@color/edit_text_color"></edit>
+            <button pos="-25,10,@12,@12" name="diff_room_btn_clear_uid" skin="skin_global_btn_clear" focusable="0" />
+            <!-- focusable 是去掉虚框-->
+          </window>
+
+          <text pos="{0,[10,@71,@16" text="target_room_uid_text" font="size:11,weight:400" colorText="@color/font_text_color_gray4" />
+          <window pos="{0,[5,@150,@32" class="window_border">
+            <edit pos="{0,{0,@100,@32" name="diff_room_target_edit_uid" maxBuf="6" inset="5,0,5,0" cueText="uid_edit_hint" cueColor="@color/font_text_color_gray3" font="size:12,bold:1" colorText="@color/edit_text_color"></edit>
+            <button pos="-25,10,@12,@12" name="diff_room_btn_target_clear_uid" skin="skin_global_btn_clear" focusable="0" />
+            <!-- focusable 是去掉虚框-->
+          </window>
+
+        </window>
+
+        <window pos="[24,{0,@150,-1" name="same_room_control_center">
+          <text pos="[0,[0,@80,@16" text="same_room_roomid_text" font="size:11,weight:400" colorText="@color/font_text_color_gray4" />
+          <window pos="{0,[5,@150,@32" class="window_border">
+            <edit pos="{0,{0,@100,@32" name="diff_room_edit_roomid"  maxBuf="8" inset="5,0,5,0" cueText="roomid_edit_hint" cueColor="@color/font_text_color_gray3" font="size:12,bold:1" colorText="@color/edit_text_color" ></edit>
+            <button pos="-25,10,@12,@12" name="diff_room_btn_clear_roomid" skin="skin_global_btn_clear" focusable="0" />
+            <!-- focusable 是去掉虚框-->
+          </window>
+
+          <text pos="{0,[10,@85,@16" text="target_room_roomid_text" font="size:11,weight:400" colorText="@color/font_text_color_gray4" />
+          <window pos="{0,[5,@150,@32" class="window_border">
+            <edit pos="{0,{0,@100,@32" name="diff_room_target_edit_roomid" maxBuf="8" inset="5,0,5,0" cueText="roomid_edit_hint" cueColor="@color/font_text_color_gray3" font="size:12,bold:1" colorText="@color/edit_text_color" ></edit>
+            <button pos="-25,10,@12,@12" name="diff_room_btn_target_clear_roomid" skin="skin_global_btn_clear" focusable="0" />
+            <!-- focusable 是去掉虚框-->
+          </window>
+        </window>
+        <window pos="[27,{0,@100,-1" name="diff_room_control_right">
+          <window pos="{0,[21,@90,@32">
+            <button pos="0,0,-1,@32" name="diff_room_btn_start" skin="skin_png_main_btn" focusable="0" text="same_room_btn_start_text" colorText="@color/white" />
+            <!-- focusable 是去掉虚框-->
+          </window>
+
+          <window pos="{0,[31,@90,@32">
+            <button pos="0,0,-1,@32" name="diff_room_btn_connect_mic" skin="skin_main_btn_normal" focusable="0" text="same_room_btn_connectmic_text" colorText="@color/white" />
+          </window>
+
+        </window>
+
+
+        <window pos="[24,{0,@136,-1" name="diff_room_control_right" >
+          <text pos="{0,[0,@100,@16" text="same_room_camera_select_text" font="size:11,weight:400" colorText="@color/font_text_color_gray4" />
+          <combobox name="diff_room_cbx_camera" class="window_border" pos="{0,[5,-1,@32" btnSkin="skin_combox_dropbtn" dropDown="1" dropHeight="300" dotted="0" animateTime="200" curSel="0" focusable="0">
+            <liststyle class="cls_edit" itemSkin="skin_tab_left" itemHeight="30" colorText="#000000" colorSelText="#FFFFFF" colorItemBkgnd="#FFFFFF" colorItemSelBkgnd="#000088" />
+            <editstyle inset="5,0,5,0" margin="0" colorText="#000000" align="left" colorBkgnd="#FFFFFF" />
+          </combobox>
+
+          <text pos="{0,[10,@100,@16" text="same_room_audio_input_select_text" font="size:11,weight:400" colorText="@color/font_text_color_gray4" />
+          <combobox name="diff_room_cbx_audio_input" class="window_border" pos="{0,[5,-1,@32" btnSkin="skin_combox_dropbtn" dropDown="1" dropHeight="300"  dotted="0" animateTime="200" curSel="0" focusable="0">
+            <liststyle class="cls_edit" itemSkin="skin_tab_left" itemHeight="30" colorText="#000000" colorSelText="#FFFFFF" colorItemBkgnd="#FFFFFF" colorItemSelBkgnd="#000088" />
+            <editstyle inset="5,0,5,0" margin="0" colorText="#000000" align="left" colorBkgnd="#FFFFFF" />
+          </combobox>
+
+        </window>
+      </window>
+
+    </window>
+
+    <window pos="{20,[2,-1,@80" >
+      <text pos="{0,[5,-1,@16" text="left_quick_different_rtmp_text" font="size:11,weight:400" colorText="@color/font_text_color_gray4" />
+      <window pos="{0,[5,@325,@32" class="window_border" >
+        <edit pos="{0,{0,-25,@32" inset="5,0,5,0" name="diff_room_target_edit_rtmp" cueText="rtmp://" cueColor="@color/font_text_color_gray3" font="size:12,bold:0" colorText="@color/edit_text_color">rtmp://aliyun-live.upstream.yy.com/live/test</edit>
+        <button pos="-25,10,@12,@12" name="diff_room_btn_target_clear_rtmp" skin="skin_global_btn_clear" focusable="0" />
+        <!-- focusable 是去掉虚框-->
+      </window>
+
+      <window pos="[27,{0,@95,@32">
+        <button pos="0,0,-1,@32" name="diff_room_btn_rtmp" skin="skin_main_btn_normal" focusable="0" text="diff_room_btn_rtmp_text" colorText="@color/white" />
+      </window>
+
+      <window pos="[30,7,@136,-1" layout="vbox" >
+        <text size="-1,16" text="same_room_audio_out_select_text" font="size:11,weight:400" colorText="@color/font_text_color_gray4" />
+        <combobox  size="136,32" name="diff_room_cbx_audio_output" class="window_border" btnSkin="skin_combox_dropbtn" dropDown="1" dropHeight="300" dotted="0" animateTime="200" curSel="0" focusable="0">
+          <liststyle class="cls_edit" itemSkin="skin_tab_left" itemHeight="30" colorText="#000000" colorSelText="#FFFFFF" colorItemBkgnd="#FFFFFF" colorItemSelBkgnd="#000088" />
+          <editstyle inset="5,0,5,0" margin="0" colorText="#000000" align="left" colorBkgnd="#FFFFFF" />
+        </combobox>
+
+      </window>
+
+
+    </window>
+
+    <window pos="35,-50,-10,@36" >
+      <button pos="47,0,@36,@36" display="0" visible="0" name="diff_room_btn_camera" skin="skin_btn_camera_normal" />
+      <button pos="0,0,@36,@36" name="diff_room_btn_mic" skin="skin_btn_audio_normal"/>
+      <button pos="350,0,@36,@36" name="diff_room_btn_feedback" visible="0" display="0" skin="skin_btn_feedback_normal"/>
+      <button pos="398,0,@36,@36" name="diff_room_btn_doc" visible="0" display="0" skin="skin_btn_doc_normal" />
+      <button pos="524,0,@36,@36" name="diff_room_btn_api" skin="skin_btn_api_normal" />
+      <!-- btn_border 图片会模糊-->
+      <button pos="474,0,@36,@36" name="diff_room_btn_log" visible="0" display="0" skin="skin_btn_log_normal" class="btn_border" />
+      <button pos="570,0,@36,@36" name="diff_room_btn_quit" skin="skin_btn_quit_normal" />
+    </window>
+  </window>
+</include>

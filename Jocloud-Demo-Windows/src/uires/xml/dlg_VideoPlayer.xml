@@ -1,0 +1,14 @@
+﻿<SOUI name="gulutv_tools_video_player" resizable="0" appWnd="0" translucent="1">
+  <root skin="_skin.sys.wnd.black.bkgnd2" cache="1">
+	  <caption pos="0,0,-0,-0" show="1" font="adding:0"  colorBkgnd="#ffffff">
+		<tabctrl name="videoplayer_tab_maintab" pos="0,0,-0,-0" show="1" tabPos="0" curSel="0" focusable="0"  tabInterSize="0" animateSteps="0" tabHeight="0" >
+			<page title="page_videoplayer_brower">
+				<include src="LAYOUT:PAGE_VIDEOPLAYER_BROWER"/>
+			</page>
+			<page title="page_videoplayer_playing">
+				<include src="LAYOUT:PAGE_VIDEOPLAYER_PLAYING"/>
+			</page>
+		</tabctrl>
+	  </caption>
+  </root>
+</SOUI>

@@ -1,0 +1,768 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ccd51486-4350-42e4-bac6-4bc07531ff9f}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{1235d3a2-9378-413b-aa90-65fb8ea92acb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest</Extensions>
+    </Filter>
+    <Filter Include="SoUI Resource">
+      <UniqueIdentifier>{72aa93cd-e615-4577-bcb4-c776e62ee199}</UniqueIdentifier>
+      <Extensions>idx;xml;png;gif;jpg;ico;lua;bmp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{9a36cf6c-200d-4e78-b541-dfa7fda90de7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\ui">
+      <UniqueIdentifier>{1a5f9cd2-9a42-4216-9d48-f76c6fa2449d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\ui\controls.extend">
+      <UniqueIdentifier>{06a39c5e-c5c7-4070-8af5-d933d6d574b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\ui\controls.extend\dlghelp">
+      <UniqueIdentifier>{297703f9-36aa-4362-910d-949d41145a3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\ui\controls.extend\gif">
+      <UniqueIdentifier>{410cc3e2-a733-4134-a556-14322883ae29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\ui\controls.extend\image3d">
+      <UniqueIdentifier>{a31bb852-3b57-4698-a6b6-ae99436f5238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\ui\controls.extend\propgrid">
+      <UniqueIdentifier>{cf3f96cb-bacf-4a4e-ab5b-ef819b8d1f0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\ui\controls.extend\SMcListViewEx">
+      <UniqueIdentifier>{c9c62ca4-fa04-42a2-b265-60167ff8aa78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\ui\controls.extend\smiley">
+      <UniqueIdentifier>{e187b341-e7b1-428e-b4de-61508a3c5ce3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\ui\controls.extend\trayicon">
+      <UniqueIdentifier>{ef9a5e68-818f-4b5e-86ee-2a0332852a8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\ui\controls.extend\propgrid\propitem">
+      <UniqueIdentifier>{39d9ca18-7e6e-47ef-bd87-5b2bba2f39a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene">
+      <UniqueIdentifier>{36bf1df7-342b-4d03-82a3-4debd8305644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\video_same_room">
+      <UniqueIdentifier>{5ee90cee-71c9-4e11-9c85-536b065deb2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\video_same_room\ui">
+      <UniqueIdentifier>{2158842b-1a47-4690-bc64-b4ec8576d984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\video_same_room\login">
+      <UniqueIdentifier>{f63a5c5f-893c-4c77-8912-0e82bd8b536f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\null_page">
+      <UniqueIdentifier>{40e4ce14-5f78-4140-bec2-ec0aa3f13005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\null_page\ui">
+      <UniqueIdentifier>{f0482196-a0af-487c-8400-7d384d9c3d4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\setting_page">
+      <UniqueIdentifier>{abb32603-92bb-47fe-bf77-eca7114ae4e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\setting_page\ui">
+      <UniqueIdentifier>{50597bce-e70a-4245-ab8d-bba9e19ea24f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\config">
+      <UniqueIdentifier>{55832cf8-b552-4813-b036-ec03deceafd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\string">
+      <UniqueIdentifier>{02792893-2732-4f7c-b856-6b1e1e6250ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\main">
+      <UniqueIdentifier>{a0398275-6b5e-4423-b55a-8ac9723beec1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\main\ui">
+      <UniqueIdentifier>{eb36314d-8c35-47e7-a16e-d798b306448b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\main\logic">
+      <UniqueIdentifier>{1d4efeb8-0c61-4592-9c35-23d744fd6e3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\thread">
+      <UniqueIdentifier>{7c6ea31a-b42f-4d3d-b962-fa6e03a1bf8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\http">
+      <UniqueIdentifier>{5da2aedc-3a58-483d-90c3-73b14e485389}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\log">
+      <UniqueIdentifier>{f88a432f-ac86-4d95-bacc-ffb4e476db28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\json">
+      <UniqueIdentifier>{9e897f55-6a08-4bfd-9b6c-62314db0b83f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\left_page">
+      <UniqueIdentifier>{996b0ad0-eedb-4a0b-ac1a-fd3b88f15fd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\left_page\ui">
+      <UniqueIdentifier>{71dc451b-4c23-4a20-9251-a852aa757735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\right_page">
+      <UniqueIdentifier>{1eabb7c9-ecd7-4054-bdd0-9338f545ccf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\right_page\ui">
+      <UniqueIdentifier>{a569828c-2f61-45e6-b41a-b2e8fd84fd29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\crash">
+      <UniqueIdentifier>{78f59c74-347a-4b24-bfb3-c0c4d469c514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\utils">
+      <UniqueIdentifier>{24afbf50-69d0-4af8-ab8e-2f0a8d751b6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\different_room_page">
+      <UniqueIdentifier>{e289a49f-d8df-4ca3-a68f-6018111f4dfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\different_room_page\ui">
+      <UniqueIdentifier>{7a8843f8-33cd-43ab-9de9-c3677fc641f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\same_room_page">
+      <UniqueIdentifier>{be7529f3-db5e-487a-ae7b-37538390fc6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\same_room_page\ui">
+      <UniqueIdentifier>{0f6dc020-b9ae-4f8a-a03f-7be87d11bae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\interface">
+      <UniqueIdentifier>{d0fe9c27-8ae9-4d9a-9a6b-f5c9f875a4ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\interface\thunder">
+      <UniqueIdentifier>{cc653418-3814-493d-8f66-9f39a22d3dcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\interface\rts">
+      <UniqueIdentifier>{b779f665-7f4d-479c-b35f-8ddadea83eb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\public">
+      <UniqueIdentifier>{ee13114e-2019-4938-8465-07e52fbe2455}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\gif\SGifPlayer.cpp">
+      <Filter>Source Files\common\ui\controls.extend\gif</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\gif\SSkinAPNG.cpp">
+      <Filter>Source Files\common\ui\controls.extend\gif</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\gif\SSkinGif.cpp">
+      <Filter>Source Files\common\ui\controls.extend\gif</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\gif\SSkinPNGX.cpp">
+      <Filter>Source Files\common\ui\controls.extend\gif</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\image3d\3dlib.cpp">
+      <Filter>Source Files\common\ui\controls.extend\image3d</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\image3d\3dmatrix.cpp">
+      <Filter>Source Files\common\ui\controls.extend\image3d</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\image3d\3dtransform.cpp">
+      <Filter>Source Files\common\ui\controls.extend\image3d</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\propgrid\SPropertyGrid.cpp">
+      <Filter>Source Files\common\ui\controls.extend\propgrid</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\propgrid\SPropertyItemBase.cpp">
+      <Filter>Source Files\common\ui\controls.extend\propgrid</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\propgrid\propitem\SPropertyItem-Color.cpp">
+      <Filter>Source Files\common\ui\controls.extend\propgrid\propitem</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\propgrid\propitem\SPropertyItem-Option.cpp">
+      <Filter>Source Files\common\ui\controls.extend\propgrid\propitem</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\propgrid\propitem\SPropertyItem-Size.cpp">
+      <Filter>Source Files\common\ui\controls.extend\propgrid\propitem</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\propgrid\propitem\SPropertyItem-Text.cpp">
+      <Filter>Source Files\common\ui\controls.extend\propgrid\propitem</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SMcListViewEx\SHeaderCtrlEx.cpp">
+      <Filter>Source Files\common\ui\controls.extend\SMcListViewEx</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SMcListViewEx\SLoopButton.cpp">
+      <Filter>Source Files\common\ui\controls.extend\SMcListViewEx</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SMcListViewEx\SMCListViewEx.cpp">
+      <Filter>Source Files\common\ui\controls.extend\SMcListViewEx</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SMcListViewEx\STabCtrlHeaderBinder.cpp">
+      <Filter>Source Files\common\ui\controls.extend\SMcListViewEx</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\trayicon\SShellNotifyIcon.cpp">
+      <Filter>Source Files\common\ui\controls.extend\trayicon</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\ExtendCtrls.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\ExtendSkins.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SAnimImg.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SAniWindow.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SButtonEx.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SCalendar2.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SCheckBox2.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SChromeTabCtrl.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SComboBoxEx.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SDocHostUIHandler.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SFadeFrame.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SFreeMoveWindow.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SGroupList.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SIECtrl.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SImageMaskWnd.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SItembox.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SListboxex.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SListCtrlEx.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SProgressRing.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SRadioBox2.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SRatingBar.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SScrollText.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SSkinImgFrame3.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SSplitBar.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\STabCtrl2.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\SText.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\STreeBox.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\STurn3DView.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ui\controls.extend\TipWnd.cpp">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClCompile>
+    <ClCompile Include="Jocloud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\null_page\ui\uiNullPage.cpp">
+      <Filter>Source Files\scene\null_page\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\uiScenePage.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\setting_page\ui\uiSettingPage.cpp">
+      <Filter>Source Files\scene\setting_page\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="common\config\config.cpp">
+      <Filter>Source Files\common\config</Filter>
+    </ClCompile>
+    <ClCompile Include="common\string\string.cpp">
+      <Filter>Source Files\common\string</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\main\logic\logicLanguageTranslate.cpp">
+      <Filter>Source Files\scene\main\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\main\ui\uiMainDlg.cpp">
+      <Filter>Source Files\scene\main\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="common\log\log.cpp">
+      <Filter>Source Files\common\log</Filter>
+    </ClCompile>
+    <ClCompile Include="common\log\logger.cpp">
+      <Filter>Source Files\common\log</Filter>
+    </ClCompile>
+    <ClCompile Include="common\http\postman.cpp">
+      <Filter>Source Files\common\http</Filter>
+    </ClCompile>
+    <ClCompile Include="common\http\postoffice.cpp">
+      <Filter>Source Files\common\http</Filter>
+    </ClCompile>
+    <ClCompile Include="common\json\json_reader.cpp">
+      <Filter>Source Files\common\json</Filter>
+    </ClCompile>
+    <ClCompile Include="common\json\json_value.cpp">
+      <Filter>Source Files\common\json</Filter>
+    </ClCompile>
+    <ClCompile Include="common\json\json_writer.cpp">
+      <Filter>Source Files\common\json</Filter>
+    </ClCompile>
+    <ClCompile Include="common\thread\thread.cpp">
+      <Filter>Source Files\common\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\left_page\ui\uiLeftPage.cpp">
+      <Filter>Source Files\scene\left_page\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\right_page\ui\uiRightPage.cpp">
+      <Filter>Source Files\scene\right_page\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="common\crash\CCrashStack.cpp">
+      <Filter>Source Files\common\crash</Filter>
+    </ClCompile>
+    <ClCompile Include="common\crash\Msjexhnd.cpp">
+      <Filter>Source Files\common\crash</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\appInfoConstant.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="common\utils\utils.cpp">
+      <Filter>Source Files\common\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\same_room_page\ui\uiSameRoomPage.cpp">
+      <Filter>Source Files\scene\same_room_page\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\different_room_page\ui\uiDifferentRoomPage.cpp">
+      <Filter>Source Files\scene\different_room_page\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\main\logic\logicPageManager.cpp">
+      <Filter>Source Files\scene\main\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\thunder\MediaManager.cpp">
+      <Filter>Source Files\interface\thunder</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\thunder\ThunderManager.cpp">
+      <Filter>Source Files\interface\thunder</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\public\MediaDeviceManage.cpp">
+      <Filter>Source Files\scene\public</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\public\SouiRealWnd.cpp">
+      <Filter>Source Files\scene\public</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\public\PopupRealWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\public\VideoNativeWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\public\RaysMessageBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\public\RemoteUserList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Jocloud.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\dlghelp\souidlgs.h">
+      <Filter>Source Files\common\ui\controls.extend\dlghelp</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\gif\SGifPlayer.h">
+      <Filter>Source Files\common\ui\controls.extend\gif</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\gif\SSkinAni.h">
+      <Filter>Source Files\common\ui\controls.extend\gif</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\gif\SSkinAPNG.h">
+      <Filter>Source Files\common\ui\controls.extend\gif</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\gif\SSkinGif.h">
+      <Filter>Source Files\common\ui\controls.extend\gif</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\gif\SSkinPNGX.h">
+      <Filter>Source Files\common\ui\controls.extend\gif</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\image3d\3dlib.h">
+      <Filter>Source Files\common\ui\controls.extend\image3d</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\image3d\3dmatrix.h">
+      <Filter>Source Files\common\ui\controls.extend\image3d</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\image3d\3dTransform.h">
+      <Filter>Source Files\common\ui\controls.extend\image3d</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\image3d\PerspectiveTransform.h">
+      <Filter>Source Files\common\ui\controls.extend\image3d</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\propgrid\SPropertyEmbedWndHelper.hpp">
+      <Filter>Source Files\common\ui\controls.extend\propgrid</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\propgrid\SPropertyGrid.h">
+      <Filter>Source Files\common\ui\controls.extend\propgrid</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\propgrid\SPropertyItemBase.h">
+      <Filter>Source Files\common\ui\controls.extend\propgrid</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\propgrid\SPropertyItem-i.h">
+      <Filter>Source Files\common\ui\controls.extend\propgrid</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\propgrid\propitem\SPropertyItem-Color.h">
+      <Filter>Source Files\common\ui\controls.extend\propgrid\propitem</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\propgrid\propitem\SPropertyItem-Option.h">
+      <Filter>Source Files\common\ui\controls.extend\propgrid\propitem</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\propgrid\propitem\SPropertyItem-Size.h">
+      <Filter>Source Files\common\ui\controls.extend\propgrid\propitem</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\propgrid\propitem\SPropertyItem-Text.h">
+      <Filter>Source Files\common\ui\controls.extend\propgrid\propitem</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SMcListViewEx\Adapter参考.h">
+      <Filter>Source Files\common\ui\controls.extend\SMcListViewEx</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SMcListViewEx\SHeaderCtrlEx.h">
+      <Filter>Source Files\common\ui\controls.extend\SMcListViewEx</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SMcListViewEx\SLoopButton.h">
+      <Filter>Source Files\common\ui\controls.extend\SMcListViewEx</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SMcListViewEx\SMCListViewEx.h">
+      <Filter>Source Files\common\ui\controls.extend\SMcListViewEx</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SMcListViewEx\STabCtrlHeaderBinder.h">
+      <Filter>Source Files\common\ui\controls.extend\SMcListViewEx</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\smiley\SSmileyCtrl.h">
+      <Filter>Source Files\common\ui\controls.extend\smiley</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\trayicon\SShellNotifyIcon.h">
+      <Filter>Source Files\common\ui\controls.extend\trayicon</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\ExtendCtrls.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\ExtendSkins.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\FileHelper.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\reg.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SAnimator.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SAnimImg.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SAniWindow.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SButtonEx.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SCalendar2.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SCheckBox2.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SChromeTabCtrl.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SComboBoxEx.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SDocHostUIHandler.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SFadeFrame.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SFreeMoveWindow.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SGroupList.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SIECtrl.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SImageMaskWnd.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SItembox.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SListboxex.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SListCtrlEx.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SProgressRing.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SRadioBox2.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SRatingBar.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SScrollText.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SSkinImgFrame3.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SSkinNewScrollBar.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SSplitBar.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\STabCtrl2.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SText.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\STreeBox.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\STurn3DView.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\SVscrollbar.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ui\controls.extend\TipWnd.h">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\null_page\ui\uiNullPage.h">
+      <Filter>Source Files\scene\null_page\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\uiIBasePage.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\uiScenePage.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\setting_page\ui\uiSettingPage.h">
+      <Filter>Source Files\scene\setting_page\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\uiPageConstant.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="common\config\config.h">
+      <Filter>Source Files\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="common\string\string.h">
+      <Filter>Source Files\common\string</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\main\logic\logicLanguageTranslate.h">
+      <Filter>Source Files\scene\main\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\main\ui\uiMainDlg.h">
+      <Filter>Source Files\scene\main\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="common\log\log.h">
+      <Filter>Source Files\common\log</Filter>
+    </ClInclude>
+    <ClInclude Include="common\http\postDefine.h">
+      <Filter>Source Files\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="common\http\postman.h">
+      <Filter>Source Files\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="common\http\postoffice.h">
+      <Filter>Source Files\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="common\json\autolink.h">
+      <Filter>Source Files\common\json</Filter>
+    </ClInclude>
+    <ClInclude Include="common\json\config.h">
+      <Filter>Source Files\common\json</Filter>
+    </ClInclude>
+    <ClInclude Include="common\json\features.h">
+      <Filter>Source Files\common\json</Filter>
+    </ClInclude>
+    <ClInclude Include="common\json\forwards.h">
+      <Filter>Source Files\common\json</Filter>
+    </ClInclude>
+    <ClInclude Include="common\json\json.h">
+      <Filter>Source Files\common\json</Filter>
+    </ClInclude>
+    <ClInclude Include="common\json\json_batchallocator.h">
+      <Filter>Source Files\common\json</Filter>
+    </ClInclude>
+    <ClInclude Include="common\json\reader.h">
+      <Filter>Source Files\common\json</Filter>
+    </ClInclude>
+    <ClInclude Include="common\json\value.h">
+      <Filter>Source Files\common\json</Filter>
+    </ClInclude>
+    <ClInclude Include="common\json\writer.h">
+      <Filter>Source Files\common\json</Filter>
+    </ClInclude>
+    <ClInclude Include="common\thread\thread.h">
+      <Filter>Source Files\common\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="common\log\loggerExt.h">
+      <Filter>Source Files\common\log</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\left_page\ui\uiLeftPage.h">
+      <Filter>Source Files\scene\left_page\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\right_page\ui\uiRightPage.h">
+      <Filter>Source Files\scene\right_page\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="common\crash\CCrashStack.h">
+      <Filter>Source Files\common\crash</Filter>
+    </ClInclude>
+    <ClInclude Include="common\crash\Msjexhnd.h">
+      <Filter>Source Files\common\crash</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\appInfoConstant.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="common\utils\utils.h">
+      <Filter>Source Files\common\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\same_room_page\ui\uiSameRoomPage.h">
+      <Filter>Source Files\scene\same_room_page\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\different_room_page\ui\uiDifferentRoomPage.h">
+      <Filter>Source Files\scene\different_room_page\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\main\logic\logicPageManager.h">
+      <Filter>Source Files\scene\main\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\thunder\MediaManager.h">
+      <Filter>Source Files\interface\thunder</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\thunder\ThunderManager.h">
+      <Filter>Source Files\interface\thunder</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\public\MediaDeviceManage.h">
+      <Filter>Source Files\scene\public</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\public\SouiRealWnd.h">
+      <Filter>Source Files\scene\public</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\public\PopupRealWnd.h" />
+    <ClInclude Include="scene\public\VideoNativeWnd.h" />
+    <ClInclude Include="scene\public\RaysMessageBox.h" />
+    <ClInclude Include="scene\public\RaysPublics.h" />
+    <ClInclude Include="scene\public\RemoteUserList.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\soui_res.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="common\json\json_internalarray.inl">
+      <Filter>Source Files\common\json</Filter>
+    </None>
+    <None Include="common\json\json_internalmap.inl">
+      <Filter>Source Files\common\json</Filter>
+    </None>
+    <None Include="common\json\json_valueiterator.inl">
+      <Filter>Source Files\common\json</Filter>
+    </None>
+    <None Include="config.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="uires\uidef\init.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\values\color.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\values\skin.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\values\string.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_main.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\Translator\lang_cn.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\Translator\lang_jp.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\xml\RealDlg.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\xml\LocalRealDlg.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\xml\popupDlg.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\xml\page_videoplayer_playing.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_VideoPlayer.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_VideoPlayer_Playing.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\xml\messagebox.xml">
+      <Filter>SoUI Resource</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="uires\uires.idx">
+      <Filter>SoUI Resource</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="common\ui\controls.extend\readme.txt">
+      <Filter>Source Files\common\ui\controls.extend</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

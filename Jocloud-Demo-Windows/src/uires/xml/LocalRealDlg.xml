@@ -1,0 +1,13 @@
+<SOUI title="DUI-DEMO" width="600" height="400" appwin="0" resize="1" translucent="0">
+  <root skin="_skin.sys.btn.minimize" cache="1">
+    <window pos="0,0,-0,-0"  colorBkgnd="@color/canvas_state_bg" class="window_canvas_state_bg_border" name="same_room_wnd">
+      <img pos="|0,|0,@49,@48" offset="-0.5,-0.5" skin="skin_canvas_default" name="same_room_canvas_default_1" />
+      <window  pos="0,0,-0,-0" name="same_room_canvas_state_1" >
+        <window pos="0,0,-0,30" name="same_room_canvas_state_top_1" colorBkgnd="@color/gray" translucent="1" layeredWindow="1" alpha="100">
+          <!--<window pos="0,0,-0,30" colorBkgnd="@color/canvas_state_bg" />-->
+          <text pos="10,0,-0,30" name="same_room_canvas_state_uid_1" class="font_canvas_uid" text="1" focusable="1"/>
+        </window>
+      </window>
+    </window>
+  </root>
+</SOUI>

@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<include>
+    <window pos="[0,{0,-0,-0" >
+        <window pos="[9,[10,-10,-240}"  >
+            <window pos="24,26,-24,-26" name="same_room_small_canvas" visible="1">
+
+              <window pos="|0,|0,-0,-0"  offset="-1,-1" display="0">
+                 <realwnd  pos="[0,[0,-0,-0"  name="same_room_canvas_0" wndclass="SLocalRealWnd" colorBkgnd="@color/canvas_state_bg" class="window_canvas_state_bg_border">      
+                  </realwnd>
+
+                <!--<realwnd pos="0,0,-0,-0" name="videoplay_playing_realwnd_player" id="100" wndclass="staticplay" wndname="objPlayer"/>-->
+                <!--<popuprealwnd pos="0,0,-0,-0" name="same_room_canvas_0" id="1001" popup="1" wndclass="VideoPlayingWnd" wndname="objVideoplayerWnd"/>-->
+                
+              </window>
+
+              <window pos="|0,|0,-0,-0" offset="0,-1" colorBkgnd="@color/Black">
+                <realwnd pos="0,0,-0,-0"  name="same_room_canvas_1" wndclass="SLocalRealWnd" colorBkgnd="@color/canvas_state_bg" class="window_canvas_state_bg_border" >
+                </realwnd>
+              </window>
+
+              <window pos="|0,|0,-0,-0" offset="-1,0" colorBkgnd="@color/Black">
+                <realwnd pos="0,0,-0,-0" name="same_room_canvas_2" wndclass="SLocalRealWnd" colorBkgnd="@color/canvas_state_bg" class="window_canvas_state_bg_border">                  
+                </realwnd>
+              </window >
+
+              <window pos="|0,|0,-0,-0" offset="0,0" colorBkgnd="@color/Black">
+                <realwnd pos="0,0,-0,-0" offset="0,0" name="same_room_canvas_3" wndclass="SLocalRealWnd" colorBkgnd="@color/canvas_state_bg" class="window_canvas_state_bg_border">  
+                </realwnd>
+              </window >
+            </window>
+
+          <window pos="24,26,-24,-26" name="same_room_big_canvas" colorBkgnd="@color/canvas_state_bg" visible="0">
+            <realwnd pos="0,0,-0,-0" name="same_room_big_canvas_1" wndclass="SLocalRealWnd" colorBkgnd="@color/canvas_state_bg" class="window_canvas_state_bg_border" >
+            </realwnd>
+          </window>
+          
+        </window>
+      
+        <window pos="{0,[0,-10,@230">
+            <window pos="|0,|0" offset="-0.5,-0.5" width="605" height="230"  >
+                <window pos="[3,{0,@150,@130" name="same_room_control_left">
+                    <text pos="[0,[0,@71,@16" text="same_room_uid_text" font="size:11,weight:400" colorText="@color/font_text_color_gray4" />
+                    <window pos="{0,[5,@150,@32" class="window_border">
+                        <edit pos="{0,{0,@100,@32" name="same_room_edit_uid" maxBuf="6" inset="5,0,5,0" cueText="uid_edit_hint" cueColor="@color/font_text_color_gray3" font="size:12,bold:1" colorText="@color/edit_text_color"></edit>
+                        <button pos="-25,10,@12,@12" name="same_room_btn_clear_uid" skin="skin_global_btn_clear" focusable="0" /> <!-- focusable 是去掉虚框-->
+                    </window>
+                    <text pos="{0,[24,@80,@16" text="same_room_camera_select_text" font="size:11,weight:400" colorText="@color/font_text_color_gray4" />
+                    <combobox name="same_room_cbx_camera" notifyChange="1" class="window_border" pos="{0,[5,@150,@32" btnSkin="skin_combox_dropbtn" dropDown="1" dropHeight="300" dotted="0" animateTime="200" curSel="0" focusable="0">
+                        <liststyle class="cls_edit"  itemSkin="skin_tab_left" itemHeight="30" colorText="#000000" colorSelText="#FFFFFF" colorItemBkgnd="#FFFFFF" colorItemSelBkgnd="#000088" />
+                        <editstyle inset="5,0,5,0" margin="0" colorText="#000000" align="left" colorBkgnd="#FFFFFF" />
+                        <items>
+                            <item text="setting_lang_cn" data="2000" />
+                            <item text="setting_lang_en" data="2001" />
+                        </items>
+                    </combobox>
+                </window>
+                <window pos="[24,{0,@150,@130" name="same_room_control_center">
+                    <text pos="[0,[0,@81,@16" text="same_room_roomid_text" font="size:11,weight:400" colorText="@color/font_text_color_gray4" />
+                    <window pos="{0,[5,@150,@32" class="window_border">
+                      <edit pos="{0,{0,@100,@32" name="same_room_edit_roomid" maxBuf="8" inset="5,0,5,0" cueText="roomid_edit_hint" cueColor="@color/font_text_color_gray3" font="size:12,bold:1" colorText="@color/edit_text_color"></edit>
+                        <button pos="-25,10,@12,@12" name="same_room_btn_clear_roomid" skin="skin_global_btn_clear" focusable="0" /> <!-- focusable 是去掉虚框-->
+                    </window>
+                    <text pos="{0,[24,@100,@16" text="same_room_audio_input_select_text" font="size:11,weight:400" colorText="@color/font_text_color_gray4" />
+                    <combobox name="same_room_cbx_audio_input" class="window_border" pos="{0,[5,@150,@32" btnSkin="skin_combox_dropbtn" dropDown="1" dropHeight="300"  dotted="0" animateTime="200" curSel="0" focusable="0">
+                        <liststyle class="cls_edit" itemSkin="skin_tab_left" itemHeight="30" colorText="#000000" colorSelText="#FFFFFF" colorItemBkgnd="#FFFFFF" colorItemSelBkgnd="#000088" />
+                        <editstyle inset="5,0,5,0" margin="0" colorText="#000000" align="left" colorBkgnd="#FFFFFF" />
+                        <items>
+                            <item text="setting_lang_cn" data="2000" />
+                            <item text="setting_lang_en" data="2001" />
+                        </items>
+                    </combobox>
+                </window>
+                <window pos="[27,{0,@150,@130" name="same_room_control_right">
+                    <window pos="{0,[21,@75,@32">
+                        <button pos="0,0,@75,@32" name="same_room_btn_start" skin="skin_png_main_btn" focusable="0" text="same_room_btn_start_text" colorText="@color/white" /> <!-- focusable 是去掉虚框-->
+                    </window>
+                    <text pos="{0,[24,@100,@16" text="same_room_audio_out_select_text" font="size:11,weight:400" colorText="@color/font_text_color_gray4" />
+                    <combobox name="same_room_cbx_audio_output" class="window_border" pos="{0,[5,@150,@32" btnSkin="skin_combox_dropbtn" dropDown="1" dropHeight="300" dotted="0" animateTime="200" curSel="0" focusable="0">
+                        <liststyle class="cls_edit" itemSkin="skin_tab_left" itemHeight="30" colorText="#000000" colorSelText="#FFFFFF" colorItemBkgnd="#FFFFFF" colorItemSelBkgnd="#000088" />
+                        <editstyle inset="5,0,5,0" margin="0" colorText="#000000" align="left" colorBkgnd="#FFFFFF" />
+                        <items>
+                            <item text="setting_lang_cn" data="2000" />
+                            <item text="setting_lang_en" data="2001" />
+                        </items>
+                    </combobox>
+                </window>
+                <window pos="0,[50,-10,@36">
+                  <button pos="0,0,@36,@36" name="same_room_btn_camera" skin="skin_btn_camera_normal" focusable="0"/>
+                  <button pos="47,0,@36,@36" name="same_room_btn_mic" focusable="0" skin="skin_btn_audio_normal"/>
+                  <button pos="350,0,@36,@36" name="same_room_btn_feedback" visible="0" display="0" skin="skin_btn_feedback_normal"/>
+                    <button pos="398,0,@36,@36" name="same_room_btn_doc" visible="0" display="0" skin="skin_btn_doc_normal" />
+                     <!-- btn_border 图片会模糊-->
+                    <button pos="524,0,@36,@36" name="same_room_btn_api" skin="skin_btn_api_normal"  />
+                  <button pos="446,0,@36,@36" name="same_room_btn_log" visible="0" display="0" skin="skin_btn_log_normal" class="btn_border" />
+                  <button pos="570,0,@36,@36" name="same_room_btn_quit" skin="skin_btn_quit_normal" />
+                </window>
+            </window>
+        </window> 
+    </window>
+</include>

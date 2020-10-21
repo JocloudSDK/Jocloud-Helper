@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<skin>
+	<imgframe name="skin_category" src="img:png_btn_catetory" states="3" margin="3,3,3,3"/>
+	<imglist name="skin_icons" src="img:png_icons" states="11"/>
+	<imglist name="skin_menuicon" src="img:png_small_icons" states="12" />
+	<imgframe name="skin_tab_left" src="img:png_tab_left" states="3" margin="1,1,1,1" />
+	<imgframe name="skin_left_banner" src="img:png_left_banner" margin="1,1,1,1" />
+	<imgframe name="skin_left_video_advance" src="img:png_left_video_advance" margin="1,1,1,1" />
+	<imgframe name="skin_left_audio_advance" src="img:png_left_audio_advance" margin="1,1,1,1" />
+	<imgframe name="skin_left_rts" src="img:png_left_rts" margin="1,1,1,1" />
+	<imgframe name="skin_left_mix_picture" src="img:png_left_mix_picture" margin="1,1,1,1" />
+	<imglist name="skin_left_switch_language" src="img:png_left_switch_language" states="1" />
+  <imglist name="skin_left_switch_en_language" src="img:png_left_switch_en_language" states="1" />
+  <imglist name="skin_global_btn_into" src="img:png_btn_into" states="1" />
+  <imglist name="skin_global_btn_clear" src="img:png_global_btn_clear" states="4" >
+		<states>
+			<state index="0" value="normal"/>
+			<state index="0" value="hover"/>
+			<state index="0" value="hover|pushdown"/>
+			<state index="0" value="normal|checked"/>
+			<!--<state index="0" value="hover|checked"/>
+			<state index="0" value="hover|pushdown|checked"/>-->
+		</states>
+	</imglist>
+	<imglist name="skin_png_main_btn" src="img:png_main_btn" states="4" />
+  <imglist name="skin_main_btn_normal" src="img:png_main_btn_normal" states="4" />
+	<imglist name="skin_combox_dropbtn" src="img:png_combox_dropbtn" states="1" />
+
+	<imglist name="skin_btn_api_normal" src="img:png_btn_api_normal" states="4" />
+  
+  <imglist name="skin_btn_camera_open_main" src="img:png_btn_camera_open_main" states="4" />
+  <imglist name="skin_btn_camera_normal" src="img:png_normal_camera_btn" states="4" />
+  <imglist name="skin_btn_audio_open" src="img:png_audio_btn_open" states="4" />
+  <imglist name="skin_btn_audio_normal" src="img:png_normal_audio_btn" states="4" />
+	<imglist name="skin_btn_doc_normal" src="img:png_btn_doc_normal" states="4" >
+  </imglist>
+	<imglist name="skin_btn_feedback_normal" src="img:png_btn_feedback_normal" states="1" >
+  <states>
+    <state index="0" value="normal"/>
+  </states>
+  </imglist>
+	<imglist name="skin_btn_log_normal" src="img:png_btn_log_normal" states="1" >
+    <states>
+      <state index="0" value="normal"/>
+    </states>
+  </imglist>
+	<imglist name="skin_btn_mic_normal" src="img:png_normal_audio_btn" states="4" >
+  </imglist>
+	<imglist name="skin_btn_quit_normal" src="img:png_btn_quit_normal" states="4" >
+  </imglist>
+
+	<gradation name="skin_gradation" colorFrom="#0000bb" colorTo="#0000ff" vertical="0" />
+	<imgframe name="skin_canvas_default" src="img:png_canvas_default" margin="1,1,1,1" />
+	<imglist name="skin_btn_camera_close" src="img:png_btn_camera_close" states="4" >
+  </imglist>
+  <imglist name="skin_btn_camera_open" src="img:png_btn_camera_open"  states="4" />
+  <imglist name="skin_btn_audio_open" src="img:png_btn_audio_open"  states="4" />
+	<imglist name="skin_btn_mic_close" src="img:png_btn_mic_close" states="4" />
+  <imglist name="skin_btn_mic_open" src="img:png_btn_mic_open" states="4" />
+  
+  <imglist name="skin_close_camera_btn_same" src="img:png_close_camera_btn_same" states="4"/>
+  <imglist name="skin_close_audio_btn_same" src="img:png_close_audio_btn_same" states="4" />
+
+  <imgframe name="skin_signal_good_default" src="img:png_signal_good_default"  margin="1,1,1,1" />
+  <imgframe name="skin_signal_ordinary_default" src="img:png_signal_ordinary_default"  margin="1,1,1,1" />
+  <imgframe name="skin_signal_bad_default" src="img:png_signal_bad_default"  margin="1,1,1,1" />
+  <imgframe name="skin_signal_not" src="img:png_not_signal"  margin="1,1,1,1" />
+  
+  <imglist name="skin_btn_quick_normal" src="img:png_btn_quick_normal" states="1" />
+  <imglist name="skin_line_normal" src="img:png_line_normal" states="1" />
+
+  <imgframe name="skin_msg_bg" src="img:msg_bg" margin-y="45"/>
+  <imglist name="skin_ok_btn" src="img:ok_btn" states="4"/>
+  <imglist name="skin_title_logo" src="img:title_logo"/>
+  <imglist name="skin_logo" src="img:_logo"/>
+</skin>

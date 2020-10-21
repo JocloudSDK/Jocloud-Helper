@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<include>
+    <window pos="|0,|0" offset="-0.5,-0.5" width="400" height="300" colorBkgnd="@color/red">
+        <text pos="[30,[30" width="200" height="40" text="setting_main_text"/>
+        <window pos="50],[5,@300,@50" colorBkgnd="@color/green">
+            <text pos="[5,[15" text="setting_appid"/>
+            <edit pos="[15,3],@200,@40" name="edit_dir" colorBkgnd="@color/blue" inset="5,0,5,0" cueText="setting_edit_appid"/>
+        </window>
+        <window pos="50],[5,@300,@50" >
+            <text pos="[5,[15" text="setting_appid"/>
+            <combobox name="cbx_language" colorBkgnd="@color/green" pos="[10,6],@200,@30" dropDown="1" dropHeight="300" dotted="0" animateTime="200" curSel="0">
+                <liststyle itemSkin="skin_tab_left" itemHeight="30" colorText="#000000" colorSelText="#FFFFFF" colorItemBkgnd="#FFFFFF" colorItemSelBkgnd="#000088" />
+                <editstyle inset="5,0,5,0" margin="0" colorText="#000000" align="left" colorBkgnd="#FFFFFF" />
+                <items>
+                    <item text="setting_lang_cn" data="2000" />
+                    <item text="setting_lang_en" data="2001" />
+                </items>
+            </combobox>
+        </window>
+        <button pos="|0,[0,@100,@30" name="btn_savexx" offset="-1.1,0" text="setting_save"/>
+      <button pos="|0,[0,@100,@30" name="same_room_btn" skin="skin_btn_camera_close" focusable="0" />
+    </window>
+</include>

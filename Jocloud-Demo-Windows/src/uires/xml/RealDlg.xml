@@ -1,0 +1,7 @@
+<SOUI title="DUI-DEMO" width="-1" height="-1" appwin="0" resize="1" translucent="0">
+  <root skin="_skin.sys.btn.minimize" cache="1">
+    <window pos="0,0,-0,-0" colorBkgnd="@color/canvas_state_bg" class="window_canvas_state_bg_border">
+  
+    </window>
+  </root>
+</SOUI>

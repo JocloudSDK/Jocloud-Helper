@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DE3C8056-FDDD-4652-AE3A-62EB59D0937C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>..\shadow\bin\$(Configuration)\</OutDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>..\shadow\bin\$(Configuration)\</OutDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(Configuration)64\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)64\</OutDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(Configuration)64\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)64\</OutDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\3rd\soui3\include\config;..\3rd\soui3\include\components;..\3rd\soui3\include\soui\include;..\3rd\soui3\include\utilities\include;..\depends\dwinternal\thundervs2015\include;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BrowseInformation>true</BrowseInformation>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\3rd\soui3\binary\x86\debug\lib;..\depends\dwinternal\thundervs2015\lib\release\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>utilitiesd.lib;soui3d.lib;thunderbolt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_USING_V110_SDK71_;_DEBUG;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>call ../build/debug_exportbin.bat</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\3rd\soui3\include\config;..\3rd\soui3\include\components;..\3rd\soui3\include\soui\include;..\3rd\soui3\include\utilities\include;..\depends\dwinternal\thundervs2015\include;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\3rd\soui3\binary\x86\release\lib;..\depends\dwinternal\thundervs2015\lib\release\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>utilities.lib;soui3.lib;thunderbolt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>call ../build/release_exportbin.bat</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>$(SOUI3PATH)\config;$(SOUI3PATH)\components;$(SOUI3PATH)\SOUI\include;$(SOUI3PATH)\utilities\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WINDOWS;STRICT;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BrowseInformation>true</BrowseInformation>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(SOUI3PATH)\bin64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>utilitiesd.lib;soui3d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_USING_V110_SDK71_;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>$(SOUI3PATH)\config;$(SOUI3PATH)\components;$(SOUI3PATH)\SOUI\include;$(SOUI3PATH)\utilities\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(SOUI3PATH)\bin64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>utilities.lib;soui3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="common\config\config.cpp" />
+    <ClCompile Include="common\crash\CCrashStack.cpp" />
+    <ClCompile Include="common\crash\Msjexhnd.cpp" />
+    <ClCompile Include="common\http\postman.cpp" />
+    <ClCompile Include="common\http\postoffice.cpp" />
+    <ClCompile Include="common\json\json_reader.cpp" />
+    <ClCompile Include="common\json\json_value.cpp" />
+    <ClCompile Include="common\json\json_writer.cpp" />
+    <ClCompile Include="common\log\log.cpp" />
+    <ClCompile Include="common\log\logger.cpp" />
+    <ClCompile Include="common\string\string.cpp" />
+    <ClCompile Include="common\thread\thread.cpp" />
+    <ClCompile Include="common\ui\controls.extend\ExtendCtrls.cpp" />
+    <ClCompile Include="common\ui\controls.extend\ExtendSkins.cpp" />
+    <ClCompile Include="common\ui\controls.extend\gif\SGifPlayer.cpp" />
+    <ClCompile Include="common\ui\controls.extend\gif\SSkinAPNG.cpp" />
+    <ClCompile Include="common\ui\controls.extend\gif\SSkinGif.cpp" />
+    <ClCompile Include="common\ui\controls.extend\gif\SSkinPNGX.cpp" />
+    <ClCompile Include="common\ui\controls.extend\image3d\3dlib.cpp" />
+    <ClCompile Include="common\ui\controls.extend\image3d\3dmatrix.cpp" />
+    <ClCompile Include="common\ui\controls.extend\image3d\3dtransform.cpp" />
+    <ClCompile Include="common\ui\controls.extend\propgrid\propitem\SPropertyItem-Color.cpp" />
+    <ClCompile Include="common\ui\controls.extend\propgrid\propitem\SPropertyItem-Option.cpp" />
+    <ClCompile Include="common\ui\controls.extend\propgrid\propitem\SPropertyItem-Size.cpp" />
+    <ClCompile Include="common\ui\controls.extend\propgrid\propitem\SPropertyItem-Text.cpp" />
+    <ClCompile Include="common\ui\controls.extend\propgrid\SPropertyGrid.cpp" />
+    <ClCompile Include="common\ui\controls.extend\propgrid\SPropertyItemBase.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SAnimImg.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SAniWindow.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SButtonEx.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SCalendar2.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SCheckBox2.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SChromeTabCtrl.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SComboBoxEx.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SDocHostUIHandler.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SFadeFrame.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SFreeMoveWindow.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SGroupList.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SIECtrl.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SImageMaskWnd.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SItembox.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SListboxex.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SListCtrlEx.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SMcListViewEx\SHeaderCtrlEx.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SMcListViewEx\SLoopButton.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SMcListViewEx\SMCListViewEx.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SMcListViewEx\STabCtrlHeaderBinder.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SProgressRing.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SRadioBox2.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SRatingBar.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SScrollText.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SSkinImgFrame3.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SSplitBar.cpp" />
+    <ClCompile Include="common\ui\controls.extend\STabCtrl2.cpp" />
+    <ClCompile Include="common\ui\controls.extend\SText.cpp" />
+    <ClCompile Include="common\ui\controls.extend\STreeBox.cpp" />
+    <ClCompile Include="common\ui\controls.extend\STurn3DView.cpp" />
+    <ClCompile Include="common\ui\controls.extend\TipWnd.cpp" />
+    <ClCompile Include="common\ui\controls.extend\trayicon\SShellNotifyIcon.cpp" />
+    <ClCompile Include="common\utils\utils.cpp" />
+    <ClCompile Include="interface\thunder\MediaManager.cpp" />
+    <ClCompile Include="interface\thunder\ThunderManager.cpp" />
+    <ClCompile Include="Jocloud.cpp" />
+    <ClCompile Include="scene\appInfoConstant.cpp" />
+    <ClCompile Include="scene\different_room_page\ui\uiDifferentRoomPage.cpp" />
+    <ClCompile Include="scene\left_page\ui\uiLeftPage.cpp" />
+    <ClCompile Include="scene\main\logic\logicLanguageTranslate.cpp" />
+    <ClCompile Include="scene\main\logic\logicPageManager.cpp" />
+    <ClCompile Include="scene\main\ui\uiMainDlg.cpp" />
+    <ClCompile Include="scene\null_page\ui\uiNullPage.cpp" />
+    <ClCompile Include="scene\public\MediaDeviceManage.cpp" />
+    <ClCompile Include="scene\public\PopupRealWnd.cpp" />
+    <ClCompile Include="scene\public\RaysMessageBox.cpp" />
+    <ClCompile Include="scene\public\RemoteUserList.cpp" />
+    <ClCompile Include="scene\public\SouiRealWnd.cpp" />
+    <ClCompile Include="scene\public\VideoNativeWnd.cpp" />
+    <ClCompile Include="scene\right_page\ui\uiRightPage.cpp" />
+    <ClCompile Include="scene\same_room_page\ui\uiSameRoomPage.cpp" />
+    <ClCompile Include="scene\setting_page\ui\uiSettingPage.cpp" />
+    <ClCompile Include="scene\uiScenePage.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\config\config.h" />
+    <ClInclude Include="common\crash\CCrashStack.h" />
+    <ClInclude Include="common\crash\Msjexhnd.h" />
+    <ClInclude Include="common\http\postDefine.h" />
+    <ClInclude Include="common\http\postman.h" />
+    <ClInclude Include="common\http\postoffice.h" />
+    <ClInclude Include="common\json\autolink.h" />
+    <ClInclude Include="common\json\config.h" />
+    <ClInclude Include="common\json\features.h" />
+    <ClInclude Include="common\json\forwards.h" />
+    <ClInclude Include="common\json\json.h" />
+    <ClInclude Include="common\json\json_batchallocator.h" />
+    <ClInclude Include="common\json\reader.h" />
+    <ClInclude Include="common\json\value.h" />
+    <ClInclude Include="common\json\writer.h" />
+    <ClInclude Include="common\log\log.h" />
+    <ClInclude Include="common\log\loggerExt.h" />
+    <ClInclude Include="common\string\string.h" />
+    <ClInclude Include="common\thread\thread.h" />
+    <ClInclude Include="common\ui\controls.extend\dlghelp\souidlgs.h" />
+    <ClInclude Include="common\ui\controls.extend\ExtendCtrls.h" />
+    <ClInclude Include="common\ui\controls.extend\ExtendSkins.h" />
+    <ClInclude Include="common\ui\controls.extend\FileHelper.h" />
+    <ClInclude Include="common\ui\controls.extend\gif\SGifPlayer.h" />
+    <ClInclude Include="common\ui\controls.extend\gif\SSkinAni.h" />
+    <ClInclude Include="common\ui\controls.extend\gif\SSkinAPNG.h" />
+    <ClInclude Include="common\ui\controls.extend\gif\SSkinGif.h" />
+    <ClInclude Include="common\ui\controls.extend\gif\SSkinPNGX.h" />
+    <ClInclude Include="common\ui\controls.extend\image3d\3dlib.h" />
+    <ClInclude Include="common\ui\controls.extend\image3d\3dmatrix.h" />
+    <ClInclude Include="common\ui\controls.extend\image3d\3dTransform.h" />
+    <ClInclude Include="common\ui\controls.extend\image3d\PerspectiveTransform.h" />
+    <ClInclude Include="common\ui\controls.extend\propgrid\propitem\SPropertyItem-Color.h" />
+    <ClInclude Include="common\ui\controls.extend\propgrid\propitem\SPropertyItem-Option.h" />
+    <ClInclude Include="common\ui\controls.extend\propgrid\propitem\SPropertyItem-Size.h" />
+    <ClInclude Include="common\ui\controls.extend\propgrid\propitem\SPropertyItem-Text.h" />
+    <ClInclude Include="common\ui\controls.extend\propgrid\SPropertyEmbedWndHelper.hpp" />
+    <ClInclude Include="common\ui\controls.extend\propgrid\SPropertyGrid.h" />
+    <ClInclude Include="common\ui\controls.extend\propgrid\SPropertyItem-i.h" />
+    <ClInclude Include="common\ui\controls.extend\propgrid\SPropertyItemBase.h" />
+    <ClInclude Include="common\ui\controls.extend\reg.h" />
+    <ClInclude Include="common\ui\controls.extend\SAnimator.h" />
+    <ClInclude Include="common\ui\controls.extend\SAnimImg.h" />
+    <ClInclude Include="common\ui\controls.extend\SAniWindow.h" />
+    <ClInclude Include="common\ui\controls.extend\SButtonEx.h" />
+    <ClInclude Include="common\ui\controls.extend\SCalendar2.h" />
+    <ClInclude Include="common\ui\controls.extend\SCheckBox2.h" />
+    <ClInclude Include="common\ui\controls.extend\SChromeTabCtrl.h" />
+    <ClInclude Include="common\ui\controls.extend\SComboBoxEx.h" />
+    <ClInclude Include="common\ui\controls.extend\SDocHostUIHandler.h" />
+    <ClInclude Include="common\ui\controls.extend\SFadeFrame.h" />
+    <ClInclude Include="common\ui\controls.extend\SFreeMoveWindow.h" />
+    <ClInclude Include="common\ui\controls.extend\SGroupList.h" />
+    <ClInclude Include="common\ui\controls.extend\SIECtrl.h" />
+    <ClInclude Include="common\ui\controls.extend\SImageMaskWnd.h" />
+    <ClInclude Include="common\ui\controls.extend\SItembox.h" />
+    <ClInclude Include="common\ui\controls.extend\SListboxex.h" />
+    <ClInclude Include="common\ui\controls.extend\SListCtrlEx.h" />
+    <ClInclude Include="common\ui\controls.extend\SMcListViewEx\Adapter参考.h" />
+    <ClInclude Include="common\ui\controls.extend\SMcListViewEx\SHeaderCtrlEx.h" />
+    <ClInclude Include="common\ui\controls.extend\SMcListViewEx\SLoopButton.h" />
+    <ClInclude Include="common\ui\controls.extend\SMcListViewEx\SMCListViewEx.h" />
+    <ClInclude Include="common\ui\controls.extend\SMcListViewEx\STabCtrlHeaderBinder.h" />
+    <ClInclude Include="common\ui\controls.extend\smiley\SSmileyCtrl.h" />
+    <ClInclude Include="common\ui\controls.extend\SProgressRing.h" />
+    <ClInclude Include="common\ui\controls.extend\SRadioBox2.h" />
+    <ClInclude Include="common\ui\controls.extend\SRatingBar.h" />
+    <ClInclude Include="common\ui\controls.extend\SScrollText.h" />
+    <ClInclude Include="common\ui\controls.extend\SSkinImgFrame3.h" />
+    <ClInclude Include="common\ui\controls.extend\SSkinNewScrollBar.h" />
+    <ClInclude Include="common\ui\controls.extend\SSplitBar.h" />
+    <ClInclude Include="common\ui\controls.extend\STabCtrl2.h" />
+    <ClInclude Include="common\ui\controls.extend\SText.h" />
+    <ClInclude Include="common\ui\controls.extend\STreeBox.h" />
+    <ClInclude Include="common\ui\controls.extend\STurn3DView.h" />
+    <ClInclude Include="common\ui\controls.extend\SVscrollbar.h" />
+    <ClInclude Include="common\ui\controls.extend\TipWnd.h" />
+    <ClInclude Include="common\ui\controls.extend\trayicon\SShellNotifyIcon.h" />
+    <ClInclude Include="common\utils\utils.h" />
+    <ClInclude Include="interface\thunder\MediaManager.h" />
+    <ClInclude Include="interface\thunder\ThunderManager.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="scene\appInfoConstant.h" />
+    <ClInclude Include="scene\different_room_page\ui\uiDifferentRoomPage.h" />
+    <ClInclude Include="scene\left_page\ui\uiLeftPage.h" />
+    <ClInclude Include="scene\main\logic\logicLanguageTranslate.h" />
+    <ClInclude Include="scene\main\logic\logicPageManager.h" />
+    <ClInclude Include="scene\main\ui\uiMainDlg.h" />
+    <ClInclude Include="scene\null_page\ui\uiNullPage.h" />
+    <ClInclude Include="scene\public\MediaDeviceManage.h" />
+    <ClInclude Include="scene\public\PopupRealWnd.h" />
+    <ClInclude Include="scene\public\RaysMessageBox.h" />
+    <ClInclude Include="scene\public\RaysPublics.h" />
+    <ClInclude Include="scene\public\RemoteUserList.h" />
+    <ClInclude Include="scene\public\SouiRealWnd.h" />
+    <ClInclude Include="scene\public\VideoNativeWnd.h" />
+    <ClInclude Include="scene\right_page\ui\uiRightPage.h" />
+    <ClInclude Include="scene\same_room_page\ui\uiSameRoomPage.h" />
+    <ClInclude Include="scene\setting_page\ui\uiSettingPage.h" />
+    <ClInclude Include="scene\uiIBasePage.h" />
+    <ClInclude Include="scene\uiPageConstant.h" />
+    <ClInclude Include="scene\uiScenePage.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="common\json\json_internalarray.inl" />
+    <None Include="common\json\json_internalmap.inl" />
+    <None Include="common\json\json_valueiterator.inl" />
+    <None Include="config.ini" />
+    <None Include="res\soui_res.rc2" />
+    <CustomBuild Include="uires\uires.idx">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"..\tools\uiresbuilder.exe" -i "%(FullPath)" -p uires -r .\res\soui_res.rc2 -h .\res\resource.h idtable</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building SoUI Resource</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\res\soui_res.rc2;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"..\tools\uiresbuilder.exe" -i "%(FullPath)" -p uires -r .\res\soui_res.rc2 -h .\res\resource.h idtable</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building SoUI Resource</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\res\soui_res.rc2;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"..\tools\uiresbuilder.exe" -i "%(FullPath)" -p uires -r .\res\soui_res.rc2 -h .\res\resource.h idtable</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building SoUI Resource</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\res\soui_res.rc2;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building SoUI Resource</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\res\soui_res.rc2;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="uires\Translator\lang_cn.xml" />
+    <Xml Include="uires\Translator\lang_jp.xml" />
+    <Xml Include="uires\uidef\init.xml" />
+    <Xml Include="uires\values\color.xml" />
+    <Xml Include="uires\values\skin.xml" />
+    <Xml Include="uires\values\string.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="uires\xml\dlg_main.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="uires\xml\dlg_VideoPlayer.xml" />
+    <Xml Include="uires\xml\dlg_VideoPlayer_Playing.xml" />
+    <Xml Include="uires\xml\LocalRealDlg.xml" />
+    <Xml Include="uires\xml\messagebox.xml" />
+    <Xml Include="uires\xml\page_videoplayer_playing.xml" />
+    <Xml Include="uires\xml\popupDlg.xml" />
+    <Xml Include="uires\xml\RealDlg.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="common\ui\controls.extend\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Jocloud.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

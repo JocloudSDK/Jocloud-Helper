@@ -1,0 +1,7 @@
+﻿<SOUI name="gulutv_tools_video_playing" resizable="0" appWnd="0" translucent="0">  
+  <root cache="1">
+	<window pos="0,0,-0,-0" font="adding:0"  colorBkgnd="#000000">	
+		<realwnd pos="0,0,-0,-0" name="videoplay_playing_realwnd_player" id="100" wndclass="staticplayxx" wndname="objPlayer"/>
+	</window>
+  </root>
+</SOUI>
